@@ -1,0 +1,38 @@
+/* loader.css */
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+
+.refresh-icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 5px solid #3498db;
+  border-right: 5px solid transparent;
+  border-radius: 50%;
+  animation: rotate 1s infinite linear;
+}
