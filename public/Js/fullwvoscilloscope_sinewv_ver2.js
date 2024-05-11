@@ -1,6 +1,3 @@
-/*  Document Name:hlfwvoscilloscope_sinewv.js
- Author     : MIT
- */
 
 var flag;
 var vp;

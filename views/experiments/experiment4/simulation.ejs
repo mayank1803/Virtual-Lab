@@ -1,178 +1,144 @@
 <%- include ('../../partials/header') %>
-  <!-- main body -->
- 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js"></script>
+<script class="include" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script class="include" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.9/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shCore.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushJScript.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/SyntaxHighlighter/3.0.83/scripts/shBrushXml.min.js"></script>
+<script class="include" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.9/plugins/jqplot.meterGaugeRenderer.min.js"></script>
+<script type="text/javascript" src="./Js/popup.js"></script>
+<link rel="stylesheet" type="text/css" href="./stylesheets/popup.css">
+<link rel="stylesheet" type="text/css" href="./stylesheets/bjtceincss.css">
 
-  <link rel="stylesheet" type="text/css" href="./stylesheets/hlfwvoscilloscope_ver2.css">
- 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>    
-  
-  <script src="./Js/hlfwvoscilloscope_knob_ver2.js"></script>
-  <script src="./Js/hlfwvoscilloscope_axis_ver2.js"></script>
-  <script src="./Js/hlfwvoscilloscope_sinewv_ver2.js"></script>
- <script src="./Js/halfwaverect_ver2.js"></script>
- <script src="./Js/halfwvrecboth_ver2.js"></script>
- <script src="./Js/halfwvgrnd_ver2.js"></script>
- <script src="./Js/hlfwvpeakcurrent.js"></script> 
- <body bgcolor="#000066">
-    <br>
-    <div style="font-size:25px; text-align:center;padding-right:100px; height:60px">  <b>Half Wave Rectifier </b></div>
-    <br><br>
- 
-  
-   <div class="wholebody">
-       
-      <div id="description" style="background-color:rgb(114, 35, 184);">
-          <div class="dropdown">
-              <p style="text-align:center;padding-right:350px;color:white "> INSTRUCTION</p>
-              <div class="dropdown-content">
-                  <ol type="1">
-                      <li>Set the  resistor \(R_L\).</li>                          
-                      <li>Click on 'ON' button to start the experiment.</li>
-                      <li>Double click on 'Sine Wave' button to generate input waveform </li>
-                      <li>Click on 'Oscilloscope' button to get the rectified output. </li>
-                      <li>Vary the Amplitude, Frequency, volt/div  using the controllers.</li> 
-                      <li>Click on "Dual" button to observe both the waveform.</li>
-                      <li>Channel 1 shows the input sine waveform, Channel 2 shows the output rectified  waveform. </li>
-                      <li>Calculate the Ripple Factor.Theoretical Ripple Factor= 1.21.</li>
-        <li>Note: Read the Virtual oscilloscope tutorial provided at the bottom.</li>
-                      
-                  </ol> 
-              </div>
-          </div>
-      </div>
+<body bgcolor="#000066"> 
     
-
-<div id="grpwrap" >
-          
-          <div style="position:absolute; font-size:16px; top:0px;left:0px;  height:50px;background-color:rgb(114, 35, 184);  width:600px;font-weight: bold;"><p style="text-align:center;padding-right:370px;color:white"> <b> OSCILLOSCOPE</b></p>
-          </div>  
-         
-              <div class="canvas2d-view" id="canvas2d-view" >
-
-                  <center><canvas id="mycanvas" width="430" height="350" style="border:1px solid black;top:40px;">
-                      </canvas>  </center>
-              </div>
-              <!--  <output id="out"></output>-->
-              <div class="lowerleftsection">
-                   
-                  <input type="button" id="chhn1" value="Channel 1" onclick="chnlo()" disabled="true" />
-                  <input type="button" id="chhn2" value="Channel 2" onclick="chnlt()" disabled="true" />
-                  <input type="button" id="grnd" value="Ground" onclick="grnds()" disabled="true"/>
-                  <input type="button" id="dual" value="Dual" onclick="bthd()"  disabled="true"/>
-
-                  <input type="button" id="onff" onclick="mainswt()" value="On" style="position:relative;
-float:right;
-right:20px;
-top:140px;
-width:60px;
-cursor:pointer;
-text-align: center;
-border-radius: 10px;
-box-shadow: 0 2px #999;" />
-                  <div id="knob-container-fng" >
-                      <!------frequency-knob-container------------>
-                      <div id="frequency-knob-container-fng">
-                          <input  style="right:20px; top:10px" type="text" id="fq-knob-fng"  value="1000" readOnly=false oninput="freqfng()">
-                          <label>Frequency(Hz)</label>
-                      </div>
-
-                      <!-----------amplitude-knob-container---------------->
-                      <div id="amplitude-knob-container-fng">
-                          <input  style="right:20px; top:10px" type="text" id="amp-knob-fng" readOnly=false  value="1" oninput="ampfng()">
-                          <label>Amplitude(Volt)</label>
-                      </div>
-
-                  </div>  <!--------------- end of .knob-container-fng----------------------->
-
-              </div><!--------------- end of .lowerleftsection----------------------->
-  
-</div><!--------------- end of .graphSection----------------------->
-     
-              <div id="circuitsection">
-                  <div style="position:absolute; font-size:16px; top:0px;right:0px;  height:50px;background-color:rgb(114, 35, 184);  width:530px;font-weight: bold;"><p style="text-align:center;padding-right:390px;color:white"> <b> CIRCUIT </b></p></div>
-
-          <div id="circuit">
-                  <p>
-                  <img src ="./images/hlfwvr.png" style="width:300px;height:300px;position:absolute;right:70px" />  
-
-                  <input type="button" id="sinecrv" value="Sine Wave" onclick="drawsine()"  disabled=true style="position:absolute;left:130px;top:240px;cursor:pointer;text-align: center;border-radius: 5px;box-shadow: 0 2px #999;">
-                  <input type="button" id="rectifiedop" value="Oscilloscope" onclick="drawhlfrectifier()" disabled=true style="position:absolute;left:115px;top:10px;cursor:pointer;text-align: center;border-radius: 5px;box-shadow: 0 2px #999;">
-                  <input type="range" orient="vertical" id="resistor" min="100" max="1000" step='100' value="0" oninput="reschange()" ><label id="r">\(R_L\)</label>
-                  <input type="text" id="restr" placeholder="Resistance" style="width:100px" readonly >  <label id="resohm" style="margin-right: 80px;">Ohms</label>
-
-              </p>
-              </div><!--------------- end of .circuit----------------------->
-              </div> <!--------------- end of .circuitSection----------------------->
-<div id="controller" >
-<div id="cntrlr" style="position:absolute; background-color:rgb(114, 35, 184);   height:50px; top:0px; right:0px; width:530px;font-size: 16px;font-weight: bold;"><p style="text-align:center;padding-right:370px;color:white"><b>CONTROLS</b></p></div>
-         
-              <div class="middlerightmiddle">
-                  <div id="knob-container-amp">
-                      <!-----------amplitude-knob-container1(volt/div)---------------->
-                     
-                      <div id="amplitude-knob-container1">
-                          <input style="right:20px; top:10px" type="text" id="amp-knob1" value="1" readOnly=false oninput="amp1pdiv()">
-                          <label>Volt(V)/div</label><br>
-                          
-                      </div>
-                       
-                      <!-----------amplitude-knob-container2(volt/div)-------------->
-                      <div id="amplitude-knob-container2">
-                          <input style="right:20px; top:10px" type="text" id="amp-knob2"  value="1" readOnly=false oninput="amp2pdiv()" >
-                          <label>Volt(V)/div</label>
-                      </div>
-                  </div><!--------------- end of .knob-container-amp----------------------->
-
-                  <input type="range" orient="vertical" id="positiony1" min="-2" max="2" value="0" oninput="posiy1chnge()"  style="cursor:pointer;">  
-                  <label style="margin-right: 10px;" id="positnlabely1">Position-Y</label>
-        
-                  <label  id="positnlabelch1">Channel 1</label>
-                  <input type="range" orient="vertical" id="positiony2" min="-2" max="2"  value="0" oninput="posiy2chnge()" style="cursor:pointer;">  
-                  <label style="margin-left: 20px;" id="positnlabely2">Position-Y</label>
-                  <label id="positnlabelch2">Channel 2</label>
-                  <div class="middlerightsectiondivide"></div>
-
-              </div> <!--------------- end of .middlerightmiddle----------------------->
-             <div class="middlerightupper">
-                  <input  type="range"  id="positionx" min="-360" max="360" step="90"  value="0" oninput="posix2chnge()"  style="cursor:pointer;">
-                  <label id="positnlabelx">Position-X</label>
-
-                  <!-- -----knob---------- -->
-                  <div id="knob-container">
-                      <!------frequency-knob-container(time(ms)/div)------------>
-                      <div id="frequency-knob-container">
-                          <input style="right:20px; top:10px" type="text" id="fq-knob"  value="0.1"  readOnly=false oninput="timepdiv()">
-                          <label>Time(ms)/div</label>
-                      </div>
-                  </div><!--------------- end of .knob-container----------------------->
-
-              </div> <!--------------- end of .middlerightupper--------------------->
-    
-          </div>  <!--------------- end of .controllSection----------------------->
-      <div id="calcln" >
-          <div style="position:absolute; background-color:rgb(114, 35, 184);   height:50px; top:0px; right:0px; width:600px;font-size: 16px;font-weight: bold;">
-              <p style="text-align:center;padding-right:360px;color:white"> <b> CALCULATION</b></p>
-              <div><button id="calci"  onclick="calcul()" style="position:absolute;padding-right:40px; cursor:pointer;top:13px;right:20px;width:5px;height:25px;border:none; background-color:#a5c2ed;">
-                <img src="./images/Calculator.png" alt="Save icon" style="width:20px;height:20px;top:13px;" title="Calculate"/></button> 
+    <div id="dialogoverlay"></div>
+    <div id="dialogbox">
+        <div>
+            <div id="dialogboxhead"></div>
+            <div id="dialogboxbody"></div>
+            <div id="dialogboxfoot"></div>
         </div>
-          <div style=" position:absolute;  top:50px;  left:0px; height:190px; width:520px;">
-             <br>
-              &nbsp; &nbsp;  \(V_{rms}= \frac{V_m}{2}\), \(V_m\) is the peak voltage<br><br>
-              &nbsp; &nbsp; \(V_{dc}= \frac{V_m} {&#960;}\)<br>
-              &nbsp; &nbsp; Ripple Factor=\(\frac{V_{ac}}{V_{dc}}\) \(\quad\)Since,  \(V_{ac}=\sqrt{(V^2_{rms}-V^2_{dc})}\)<br><br>
-              &nbsp; &nbsp; Peak Current:<input type="text" id="pkcrt" placeholder="Peak Current" readonly >  <label id="currmamp">mA</label><br>
-        
-          </div>
-      </div>    <!--------------- end of .calcln----------------------->
-  </div><!--------------- end of .wholebody----------------------->
- 
- <script>
-     $('canvas').data('readonly', false);
-      </script>
+    </div>
+    <br>
+    <div style="font-size:30px; text-align:center;padding-right:100px; height:60px" class="mct"> <b> BJT- CB INPUT CHARACTERISTICS </b></div>
+    <br><br>
 
-  
-  
-       
+    <div id="whole_body" style=" background-color:white;position:relative; margin-left:auto; margin-right:auto; top:0px;height:1050px; width:1160px;">
+        <br><br><br><br>
+        <div id="ckt_values1" style="position:relative; top:180px;left:760px; height:300px; width:400px">
+            <p>
+                <img src ="./images/bjtcb.png" style="width:650px;height:350px;top:10px;position:absolute;right:70px" />  
+            <div class="example-content" style="position:absolute; top:10px;right:150px;left:200px">
+                <link rel="stylesheet" type="text/css" href="./stylesheets/css_metergauge_ver1.css">
+                <!------------------------------------Metergauge1(Voltmeter)base-emitter voltage-------------------------------------------------->
+                <div id="chart1" class="plot" style="position:relative;width:200px; height:110px;top:100px;right:420px"></div>
+                <script src="./Js/js_metergaugecbin_ver1.js"></script>
+
+                <!------------------------------------Metergauge2(Ammeter)Emitter current----------------------------------------------------->
+                <div id="chart2" class="plot" style="position:absolute;width:250px; height:110px;right:230px;top:-56px"></div>
+
+                <!------------------------------------Metergauge3(voltmeter)base-collector voltage------------------------------------------------------>
+                <div id="chart3" class="plot" style="position:absolute;width:250px; height:110px;right:40px;top:80px"></div>
+<!------------------------------------Metergauge4(Ammeter)collector current------------------------------------------------------>
+                <div id="chart4" class="plot" style="position:absolute;width:250px; height:110px;right:20px;top:-56px"></div>
+
+                 <p style="position:absolute;top:10px;right:415px;font-size:15px"><b>I<sub>E</sub></b></p>
+                 <p style="position:absolute;top:160px;right:450px;font-size:15px"><b>R<sub>h1</sub></b></p>
+                <p style="position:absolute;top:8px;right:200px;font-size:15px"><b>I<sub>C</sub></b></p>
+                 <p style="position:absolute;top:185px;right:75x;font-size:15px"><b>R<sub>h2</sub></b></p>
+                <p style="position:absolute;top:168px;right:410px;font-size:15px"><b>V<sub>BE</sub></b></p>
+                <p style="position:absolute;top:155px;right:210px;font-size:15px"><b>V<sub>CB</sub></b></p>
+                <p style="position:absolute;top:190px;right:-30px;font-size:15px"><b>V<sub>CC</sub></b></p>
+                <p style="position:absolute;top:190px;right:550px;font-size:15px"><b>V<sub>EE</sub></b></p>
 
 
-  <%- include ('../../partials/footer') %>
+            </div>	
+
+
+           <input type="number" value=""  id='voltbe'  min="0.3" max="1" step="0.01"  placeholder="Voltmeter"   style="background-color:#e6f5ff;position:absolute; top:199px;  right:470px; width:90px;cursor:pointer" readonly/>
+            <input type="number" value=""  id='voltbc'  min="0.3" max="1" step="0.01"  placeholder="Voltmeter"   style="background-color:#e6f5ff;position:absolute; top:179px;  right:265px; width:90px;cursor:pointer" readonly/>             
+           <input type="text" value="" id='ampe' placeholder=" Ammeter"  style="background-color:#e6f5ff;position:absolute; top:45px;  right:460px; width:90px;" readonly/>
+            <input type="text" value="" id='ampc' placeholder=" Ammeter"  style="background-color:#e6f5ff;position:absolute; top:45px;  right:250px; width:90px;" readonly/>
+         
+        </div>
+
+        <div id="cntrwrap" style="position:absolute;border: 2px solid  rgb(114, 35, 184); top:40px;width:370px;height:150px;right:350px;">
+            <div id="cntrlr" style="position:absolute; background-color: rgb(114, 35, 184);   height:50px; top:0px; right:0px; width:370px;font-size: 16px;font-weight: bold;"><p style="text-align:center;padding-right:210px;color:white"><b>CONTROLS</b></p></div>
+            <div id="slide" style=" position:absolute; top:70px; right:10px; width:350px;  border-radius: 10px;">
+
+                R<sub>h1</sub>  <input type="range"  id="base_r" min="1" max="100" step="1" value="1" oninput="resbChange()" style="width:150px;cursor:pointer"> &nbsp; Ohms<br>
+              <input type="text" value="" id='r_base' placeholder="Resistance"  style="background-color:#e6f5ff;position:absolute; right:25px; top:5px; width:70px;" readonly/> 
+          
+              R<sub>h2</sub>  <input type="range"  id="collector_r" min="1" max="100" step="1" value="1" oninput="rescChange()" style="width:150px;cursor:pointer"> &nbsp; Ohms<br>
+                  <input type="text" value="" id='r_collector' placeholder="Resistance"   style="background-color:#e6f5ff;position:absolute; top:35px; right:25px;width:70px;" readonly/>
+            <br>	
+                <input type="button" id="add" value="Add to Table" onclick="tabled()" style="position:absolute; top:100px; width:100px;  right:240px;cursor:pointer "/>  
+                <input type="button" id="plt" value="Plot" onclick="plot()" style="position:absolute; top:100px; width:100px; right:130px; cursor:pointer"/>  
+                <input type="button" id="clr" value="Clear" onclick="clearf()" style="position:absolute; top:100px; width:100px; right:20px; cursor:pointer "/>
+            </div></div>
+        <div id="msg" style="position:absolute;top:40px;right:40px;width:250px;height:150px;">
+            <p id="demo" style="color:red;"></p>
+            <p id="demos" style="color:green;"></p>
+
+        </div>
+        <div id="description" style="background-color:  rgb(114, 35, 184);   position:absolute; top:40px; left:50px; width:307px;font-size: 16px;font-weight: bold;">
+            <div class="dropdown">
+                <p style="text-align:center;padding-right:150px;color:white"> INSTRUCTION</p>
+                <div class="dropdown-content">
+                    <ol type="1">
+                       <li>Initially set rheostat R<sub>h1</sub> = 1 &#937; and rheostat R<sub>h2</sub> = 1 &#937; </li>
+                        <li>Set the Collector-Base Voltage(V<sub>CB</sub>) to 1 V  by adjusting the rheostat  R<sub>h2</sub></li>
+                        <li> Base Emitter Voltage(V<sub>BE</sub>) is varied  by adjusting the rheostat  R<sub>h1</sub>.</li>
+                        <li>Note the reading of emitter current(I<sub>E</sub>)in m Ampere.</li>
+                        <li>Click on 'Plot' to plot the I-V characteristics of Common-Base configuration. A graph is drawn with VBE along X-axis and IE along Y-axis.</li>
+                        <li>Click on 'Clear' button to take another sets of readings</li> 
+                        <li>Now set the Collector-Base Voltage(V<sub>CB</sub>) to 2 V, 3 V, 4 V</li>
+                        
+                         </ol> 
+
+                </div>
+            </div>
+        </div>
+        <div id="tblwrap" style="position:absolute;border: 2px solid  rgb(114, 35, 184); top:100px;width:305px;height:480px;left:50px">
+            <div style="position:absolute; font-size:16px;background-color:  rgb(114, 35, 184);  top:0px;left:0px; width:305px; height:50px;font-weight: bold;"><p style="text-align:center;padding-right:80px;color:white"> <b> EXPERIMENTAL TABLE</b></p>
+            </div>
+
+
+            <div id="table" style="background-color:#e6f5ff;position:absolute;top:50px;width:305px;height:430px; left:0px;overflow-y: auto;">
+
+                <table id="mytable" border="1">                    
+                    <tr>
+
+                        <th rowspan="2"> Serial No.</th>
+                        <th colspan="2">Base-Collector Voltage <br><input type="text" id="tbvbc1" size="4" readonly>V</th>
+                    </tr> 
+                    <tr>
+                        <th scope="col">Base-Emitter Voltage<br>V</th>
+                        <th scope="col">Emitter Current<br>mA</th>
+                    </tr>
+
+                </table>
+            </div></div>
+        <div id="grpwrap" style="position:absolute;border: 2px solid rgb(114, 35, 184); top:650px;width:1050px;height:360px;left:20px">
+            <div style="position:absolute; font-size:16px; top:0px;left:0px;  height:50px;background-color: rgb(114, 35, 184);  width:1050px;font-weight: bold;"><p style="text-align:center;padding-right:910px;color:white"> <b> GRAPH PLOT</b></p>
+
+                <div><button id="calci"  onclick="printf()" style="position:absolute;padding-right:40px; cursor:pointer;top:13px;right:20px;width:5px;height:25px;border:none; background-color:#a5c2ed;">
+                    <img src="./images/Printer.png" alt="Save icon" style="width:20px;height:20px;top:13px;" title="Print"/></button> 
+            </div>
+
+
+            </div>
+            <div id="chartContainer" style=" position:absolute;  top:50px;  left:0px; height:300px; width:1050px;  ">
+
+            </div>
+        </div>
+
+
+      
+    </div>
+   
+    <script src="./Js/bjtcbin_ver1.js"></script>
+
+
+<%- include ('../../partials/footer') %>

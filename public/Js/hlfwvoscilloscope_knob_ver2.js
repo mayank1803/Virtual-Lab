@@ -1,7 +1,3 @@
-/*  Document Name: hlfwvoscilloscope_knob.js
-Created on : 14 oct, 2018
- Author     : sukriti
- */
 
 var vmaxs;  //in volt
 var tmaxs; // in msec  0.001; //in sec

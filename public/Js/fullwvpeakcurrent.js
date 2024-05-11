@@ -1,7 +1,4 @@
-/*  Document Name:hlfwvpeakcurrent.js
- Created on : 16 oct, 2018
- Author     : sukriti
- */
+
 var res;
 
 function reschange(){

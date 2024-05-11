@@ -1,6 +1,4 @@
-/*  Document Name: hlfwvoscilloscope_axis.js
- Author     : MIT
- */
+
 var canvas, ctx;
 var flag;
 var axes = {};

@@ -87,6 +87,9 @@ $(document).ready(function () {
 });
 
 // -------------------------------------canvas.js ------------------------//
+
+
+
 function plot() {
     for (var tabrowindex = 2; tabrowindex < table.rows.length; tabrowindex++) {
         var rwe1 = table.rows[tabrowindex].cells;
@@ -128,6 +131,9 @@ function plot() {
     document.getElementById("voltce").style.borderColor = "";
 
 }
+
+
+
 function printf() {
     document.getElementById("demo").innerHTML = "";
     document.getElementById("demos").innerHTML = "";

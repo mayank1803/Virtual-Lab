@@ -1,7 +1,3 @@
-/*  Document Name:halfwvrecgrnd.js
- Created on : 14 oct, 2018
- Author     : sukriti
- */
 
 
 var flag;

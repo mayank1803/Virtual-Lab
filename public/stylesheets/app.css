@@ -13,7 +13,7 @@ body{
     /* alternatively can be py-0  */
 }
 #mainNavbar .nav-link{
-    color:rgb(22, 24, 23);
+    color:rgb(0, 0, 0);;
 
 }
 
@@ -46,7 +46,7 @@ table {
     border-bottom: 1px solid #ddd;
   }
   
-  tr:hover {background-color:#f5f5f5;}
+  tr:hover {background-color:#222222;}
 
   .hide{
       display: none;
@@ -66,27 +66,27 @@ h5:hover .instruct{
     font-size: 15px;
 
 }
-nav#lab-article-navigation, nav#experiment-article-navigation 
+div#lab-article-navigation, #experiment-article-navigation 
 {
 	height:90px;
 	margin: 0 auto;
 	width:1024px;
 	background: url(../images/content_bg.jpg);
 } 
-nav#lab-article-navigation ul li, nav#experiment-article-navigation ul li
+nav#lab-article-navigation ul li, #experiment-article-navigation ul li
 {
 	float: left ;
 	list-style: none;
 	margin-right: 0.3em; 
 }
 
-nav#lab-article-navigation ul li img, nav#experiment-article-navigation ul li img
+nav#lab-article-navigation ul li img, #experiment-article-navigation ul li img
 {
 	width:50px;
 	height:50px;
 } 
-nav#lab-article-navigation ul li a:link, nav#experiment-article-navigation ul li a:link,
-nav#lab-article-navigation ul li a:visited, nav#experiment-article-navigation ul li a:visited
+nav#lab-article-navigation ul li a:link, #experiment-article-navigation ul li a:link,
+nav#lab-article-navigation ul li a:visited, #experiment-article-navigation ul li a:visited
 {
 	color:#02568e;
 	text-decoration: underline;
@@ -96,8 +96,8 @@ nav#lab-article-navigation ul li a:visited, nav#experiment-article-navigation ul
 	padding: 9px;
 }
 
-nav#lab-article-navigation ul li a:hover, nav#experiment-article-navigation ul li a:hover,
-nav#lab-article-navigation ul li a:focus, nav#experiment-article-navigation ul li a:focus 
+nav#lab-article-navigation ul li a:hover, #experiment-article-navigation ul li a:hover,
+nav#lab-article-navigation ul li a:focus, #experiment-article-navigation ul li a:focus 
 {
 	color: #ffffff;
 	background-color:#c5ccc8;

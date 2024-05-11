@@ -1,6 +1,3 @@
-/*  Document Name:halfwvrecgrnd.js
- Author     : MIT
- */
 
 
 var flag;

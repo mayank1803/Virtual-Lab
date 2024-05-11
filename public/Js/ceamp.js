@@ -1,6 +1,5 @@
 /* 
- Created on : 13 Apr, 2017, 10:48:22 AM
- Author     : sukriti
+
  */
 //var vs;
 //var rs=100, rc=4000, re=1000, rl=2000;
@@ -299,4 +298,11 @@ function cleard() {
     document.getElementById("highfq").value = "";
     document.getElementById("midbnd").value = "";
     document.getElementById("chartContainer").innerHTML = "";
+}
+function printf() {
+
+    document.getElementById("demo").innerHTML = "";
+    // document.getElementById("demos").innerHTML = "";
+
+    window.print();
 }

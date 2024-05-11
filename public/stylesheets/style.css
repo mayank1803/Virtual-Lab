@@ -1,5 +1,5 @@
 /* =============================================================================
-   HTML5 CSS Reset Minified - Eric Meyer
+   HTML5 CSS Reset Minified 
    ========================================================================== */
 
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
@@ -15,7 +15,7 @@ abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
 table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #77abed;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
-li{list-style:none}
+li{list-style:none; }
 
 
 /* =============================================================================
@@ -26,8 +26,9 @@ li{list-style:none}
 
 html,body{ 
 	width:100%;
-	height:70%;
-	background:#e78c71;
+	/* height:75%; */
+	background:black;
+  height: 40vh;
 }
 
 html{
@@ -36,6 +37,7 @@ html{
 
 body{
   font:normal 75% Arial, Helvetica, sans-serif;
+  background-color: black !important;
 }
 
 canvas{
@@ -61,6 +63,31 @@ canvas{
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
+.mct{
+  /* background-color: rgb(0, 0, 0); */
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  color: rgb(8, 224, 244);
+  vertical-align: middle;
+  text-align: center;
+  /* padding: 7px 0; */
+}
+.jct{
+  width: 100%;
+  border-radius: 10px;
+  padding: 2.4rem;
+  /* backdrop-filter: blur(9.370063px); */
+  border: 0.3px solid var(--stroke-prism, rgba(255, 255, 255, 0.35));
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(9.3700633049px);
+  backdrop-filter: blur(9.3700633049px);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+
 
 .js-count-particles{
   font-size: 1.1em;
@@ -88,10 +115,77 @@ canvas{
 
 #particles-js{
   width: 100%;
-  height: 70%;
-  background-color: #a30909;
+  height: 45%;
+  background-color: rgb(0, 0, 0);
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+}
+
+#particles-js canvas{
+  height: 1000% !important;
+}
+
+.topic{
+  margin: 2.2em 0;
+}
+
+.mct h3{
+  font-size: 42px;
+
+}
+
+
+.nav-item-1{
+  color: white;
+  transition: all 0.6s ease;
+  /* transition: background-color 0.3s ease; */
+}
+
+.nav-item-1:hover{
+  color: rgb(8, 224, 244);
+
+}
+
+.my-container{
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 2.4rem;
+  /* backdrop-filter: blur(9.370063px); */
+  border: 0.3px solid var(--stroke-prism, rgba(255, 255, 255, 0.35));
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(9.3700633049px);
+  backdrop-filter: blur(9.3700633049px);
+  color: white;
+  font-size: 20px;
+  /* text-align: center; */
+}
+
+.option-selector{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option-selector .image{
+  padding: 0.6em;
+  background-color: white;
+  border-radius: 0.4em;
+}
+
+.option-selector img{
+  width: 180px;
+  height: 180px;
+  background-color: white;
+}
+
+.option-selector a{
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.option-selector a:hover{
+  color: rgb(8, 224, 244);
 }

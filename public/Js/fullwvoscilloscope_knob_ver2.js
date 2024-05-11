@@ -1,6 +1,3 @@
-/*  Document Name: hlfwvoscilloscope_knob.js
- Author     : MIT
- */
 
 var vmaxs;  //in volt
 var tmaxs; // in msec  0.001; //in sec

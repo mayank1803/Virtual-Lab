@@ -1,6 +1,4 @@
-/*  Document Name:halfwaverect.js
- Author     : MIT
- */
+
 
 var flag;
 var vp;

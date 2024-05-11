@@ -1,0 +1,137 @@
+
+  
+.demo {
+    /* for IE10+ touch devices */
+    touch-action:none;
+}
+
+.jtk-demo-canvas {    
+    height:550px;
+    /*max-height:700px;
+    border:1px solid #CCC;
+    background-color:white;*/
+    display: flex;
+    position:absolute;
+    top:5px;
+}
+.canvas-wide {
+    margin-left:0;
+}
+
+/** JSPLUMB ARTEFACTS **/
+.jtk-overlay {
+    z-index: 51;
+}
+
+.jtk-endpoint {
+    z-index: 50;
+    cursor: move;
+}
+
+.jtk-connector {
+    z-index: 1;
+}
+
+/** ELEMENTS **/
+.littledot
+{
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    background-image: url(./images/littledot.png);
+    z-index: 5;
+    position: absolute;
+    border-radius: 31px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.cmdLink detach{
+  margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+.littledot-hover-hover {
+    border: 2px solid orange;
+}
+
+.dropHover {
+    border: 1px solid orange;
+}
+
+/** ELEMENT POSITIONS **/
+#ld1 {
+ position: absolute;
+    top: 110px;
+    left: -80px;
+}
+
+
+
+
+#ld3 {
+ position: absolute;
+    top:150px;
+    left:5px;
+}
+
+#ld4 {
+ position: absolute;
+    top:22px;
+    left:102px;
+}
+
+#ld5 {
+ position: absolute;
+    top: 285px;
+    left:115px;
+}
+
+#ld6 {
+ position: absolute;
+    top: 150px;
+    left:215px;;
+}
+#ld10 {
+ position: absolute;
+    top:142px;
+    left:260px;
+}
+#ld11{
+ position: absolute;
+    top:280px;
+    left:263px;
+}
+
+#ld7 {
+ position: absolute;
+    top: 40px;
+    left: 0px;
+}
+
+#ld8 {
+ position: absolute;
+    top: 175px;
+    left:310px;
+   
+}
+
+
+#ld9 {
+ position: absolute;
+    top:145px;
+    left:-80px;
+}
+
+
+#ld12 {
+ position: absolute;
+    top: 185px;
+    left: -75px;
+    
+}
+path, .jtk-endpoint {
+    cursor: pointer;
+}

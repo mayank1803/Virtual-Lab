@@ -1,0 +1,198 @@
+
+<html>
+    <head>
+        <title>Forward Biased-Silicon Diode</title>
+        <meta name="description" content="EMF Generation">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		
+		
+        <script src="./js/canvasjs.min.js"></script>
+        <script class="include" type="text/javascript" src="./js/jquery_files/jquery.min.js"></script>
+        <script class="include" type="text/javascript" src="./js/jquery_files/jquery.jqplot.min.js"></script>
+        <script type="text/javascript" src="./js/jquery_files/shCore.min.js"></script>
+        <script type="text/javascript" src="./js/jquery_files/shBrushJScript.min.js"></script>
+        <script type="text/javascript" src="./js/jquery_files/shBrushXml.min.js"></script>
+        <script class="include" type="text/javascript" src="./js/jquery_files/jqplot.meterGaugeRenderer.min.js"></script>
+        <script type="text/javascript" src="./pop_up/pop_up.js"></script>
+        <link rel="stylesheet" type="text/css" href="./pop_up/pop_up.css">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/diodefrwcss.css">
+
+  <!--script type="text/javascript">
+            $(document).ready(function(){
+                 $("#reverse_si").click(function(){
+                     $("#whole_body").load("reversebiaseddiode_si.html");
+                 });
+            });
+        </script--> 
+		<link rel="stylesheet" href="./stylesheets/cktconnection_frwdsi.css">
+    <!---- library file ----->
+  <script src="./js/graph.ob.js"></script>
+  <script src="./js/graph_use.ob.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+<!--------------------------> 
+
+    </head>
+    <body data-demo-id="animation"; style="width:100%;">  
+        <header class="default" id="experiment-header">
+            <!-- <div class="logo" id="experiment-header-logo" style="text-align:center;">
+
+                <img src="./images/logo.jpg" style="height:150px;width:1160px;"></div> -->
+        </header> <!--onload="myfnc()" background="C:\Users\sukriti\ohmslaw\image\pg_bg.gif"  ; background-color:#76a0ef;background-color:#8db0f2;background-color:#76a0ef;-->
+        <div id="dialogoverlay"></div>
+        <div id="dialogbox">
+            <div>
+                <div id="dialogboxhead"></div>
+                <div id="dialogboxbody"></div>
+                <div id="dialogboxfoot"></div>
+            </div>
+        </div>
+        <div id="whole_body" style=" background-color:white;position:relative; margin-left:auto; margin-right:auto; top:0px;height:950px; width:1260px;">
+    
+            <div style="font-size:25px; text-align:center;padding-right:100px; height:60px"> <b> Forward Bias  Silicon Diode </b></div>
+            <br>
+            <br>
+            <div id="ckt_values1" style="position:relative; top:0px;left:460px; height:300px; width:400px">
+                <p>
+                    <img src ="./images/diode_frwd.png" id="frwdimage" width=400px;height=400px;/>  
+               
+<div class="jtk-demo-canvas canvas-wide animation-demo jtk-surface jtk-surface-nopan" id="canvas">
+                <div class="littledot" id="ld1"></br><a href="#" class="cmdLink detach" rel="ld1">1</a>
+</div>			
+                <div class="littledot" id="ld3"></br><a href="#" class="cmdLink detach" rel="ld3">3</a></div>
+                <div class="littledot" id="ld4"></br><a href="#" class="cmdLink detach" rel="ld4">4</a></div>
+                <div class="littledot" id="ld5"></br><a href="#" class="cmdLink detach" rel="ld5">5</a></div>
+                <div class="littledot" id="ld6"></br><a href="#" class="cmdLink detach" rel="ld6">6</a></div>
+                <div class="littledot" id="ld7"></br><a href="#" class="cmdLink detach" rel="ld7">7</a></div>
+                <div class="littledot" id="ld8"></br><a href="#" class="cmdLink detach" rel="ld8">8</a></div>
+                <div class="littledot" id="ld9"></br><a href="#" class="cmdLink detach" rel="ld9">9</a></div> 
+                <div class="littledot" id="ld10"></br><a href="#" class="cmdLink detach" rel="ld10">10</a></div> 
+				<div class="littledot" id="ld11"></br><a href="#" class="cmdLink detach" rel="ld11">11</a></div> 				
+				
+                <div class="littledot" id="ld12"></br><a href="#" class="cmdLink detach" rel="ld12">12</a></div>
+		
+</div>
+<script src="./js/jsplumb1.js"></script>
+			   <div class="example-content" style="position:absolute; top:10px;right:150px;left:200px">
+                    <link rel="stylesheet" type="text/css" href="./stylesheets/css_metergauge.css">
+                    <!------------------------------------Metergauge1(Voltmeter)-------------------------------------------------->
+                    <div id="chart1" class="plot" style="position:relative;width:200px; height:110px;top:35px;right:-55px"></div>
+                    <script src="./js/jquery_files/js_metergaugefrd_si.js"></script>
+
+                    <!------------------------------------Metergauge2(Ammeter)---------------------------------------------------->
+                    <div id="chart2" class="plot" style="position:absolute;width:250px; height:110px;right:-140px;top:-80px"></div>
+
+
+                    
+                </div>	
+                <input type="text"   id='dc'  value=""  placeholder="Volt" oninput="txtchng()"  style="background-color:#e6f5ff;position:absolute; top:290px;  right:225px;  width:70px" readonly/>
+                <input type="text" value="" id ='volt' placeholder="Volt"  style="background-color:#e6f5ff;position:absolute; top:173px;  right:20px; width:70px" readonly/>
+                <input type="text" value="" id='amp' placeholder="Ampere"  style="background-color:#e6f5ff;position:absolute; top:22px;  right:185px; width:70px" readonly/>
+                <input type ="text" value="" id="res"    placeholder="Resistance" oninput="txtchnge()"  style="background-color:#e6f5ff;position:absolute; top:90px;  right:270px; width:90px" readonly/>
+               
+            </div>
+
+
+            <div id="cntrwrap" style="position:absolute;border: 2px solid rgb(114, 35, 184); top:20px;width:340px;height:200px;right:10px;">
+                <div id="cntrlr" style="position:absolute; background-color:rgb(114, 35, 184);   height:50px; top:0px; right:0px; width:340px;font-size: 16px;font-weight: bold;"><p style="text-align:center;padding-right:210px;color:white"><b>CONTROLS</b></p></div>
+                <div id="slide" style=" position:absolute; top:70px; right:-10px; width:350px;  border-radius: 10px;">
+&nbsp Select Diode:  <select  id="diode_type" onchange="setdiode()" style="width:110px; " disabled=true; >
+                 <option value="choose" selected>Choose Diode</option> 
+                                    <option value="0.6">1N4001</option>                                  
+                                    <option value="0.6">1N4004</option>
+				    <option value="0.6">1N4007</option>
+                                    <option value="0.5">1N4148</option>
+				    <option value="0.62">1N4448</option>
+			            <option value="0.6">1N5408</option>
+			            
+				  
+                   </select> <b>V<sub>F</sub</b> <input type ="text" value="" id="diodevalue"    placeholder="Value"   style="background-color:#e6f5ff;position:absolute; top:0px;  right:30px; width:80px" readonly/> <br>
+                    &nbsp&nbsp DC volt : &nbsp&nbsp&nbsp <input type="range" name="inpdc" id="vdc" min="0.2" max="5" step="0.1"  disabled=true; value="0.2"  oninput="sliderChange()" style="width:180px"> &nbsp; Volt<br>	
+  
+                    &nbsp&nbsp Resistance : <input type="range" name="resis" id="res1" min="100" max="2000" step="1" value="100" disabled=true; oninput="textChange()" style="width:180px "> &nbsp; ohms<br>
+  
+                    <br>	
+                    <input type="button" id="add" value="Add to Table" onclick="tabled()" disabled=true; style="position:absolute; top:100px; width:100px;  right:250px;cursor:pointer ; display:block"/>  
+                    <input type="button" id="plt" value="Plot" onclick="plot()" disabled=true; style="position:absolute; top:100px; width:100px; right:140px;cursor:pointer; display:block "/>
+
+ 
+                    <input type="button" id="clr" value="Clear" onclick="clearf()" disabled=true; style="position:absolute; top:100px; width:100px; right:30px;cursor:pointer  "/>
+<button id="check-button" style="position:absolute; top:190px; width:100px; right:140px;cursor:pointer;  ">Check connection</button>
+<button  id="delete-connct"  onclick="deleteconnection()"  style="position:absolute; top:190px; width:100px; right:30px;cursor:pointer; ">Delete all connection</button>
+                
+			   </div>
+            </div>
+            <div id="msg" style="position:absolute;top:320px;right:100px;width:270px;height:90px;">
+                <p id="demo" style="color:red;"></p>
+                <p id="demos" style="color:green;"></p>
+<!-- <input type="button"   value="Check for Reverse Bias" id="reverse_si" onclick="checkreverse()" style="position:absolute;left:150px;top:15px;display:none"/> -->
+            </div>
+            <div id="description" style="background-color: rgb(114, 35, 184);   position:absolute; top:10px; left:10px; width:307px;font-size: 16px;font-weight: bold;">
+                <div class="dropdown">
+                    <p style="text-align:center;padding-right:150px;color:white"> INSTRUCTION</p>
+                    <div class="dropdown-content">
+                        <ol type="1">
+<li>Connect the components as mentioned below:<br>
+                        L1-L3, L4-L7, L8-L10,  L5-L10, L6-L11,L9-L11, L9-L12.(For eg. click on 1 and then drag to 3 and so on.)</li>
+				<li> Click on  'Check Connection' button to check the connections.</li>
+<li> If connected wrong, double click on the wrong connection.   Else click on 'Delete all connection' button to erase all the connections.</li>	
+                            
+                            
+			<li>Select the diode (Click on the drop down "choose diode").</li>
+<li>Set DC voltage to 0.2 V .</li>
+			<li>Set the resistor.</li>
+                            <li>Voltmeter is placed parallel to Silicon diode and ammeter series with resistor.</li>
+                            <li>The positive side of battery to the P side(anode) and the negative of battery to the N side(cathode) of the diode.</li>
+                            <li>Now  vary the voltage upto 5V and note the Voltmeter and Ammeter reading for particular DC voltage .  </li>
+                            <li>Take the readings and note Voltmeter reading across Silicon diode and Ammeter reading.</li>
+                            <li>Plot the V-I graph  and observe the change.</li>
+							<li> Calculate the dynamic resistance of the diode. rd=&#916;V/&#916;I </li>
+                            <li>Therefore from the graph we see that the diode starts conducting when the forward bias voltage exceeds around 0.6 volts (for Si diode). This voltage is called cut-in voltage.</li>
+
+                        </ol> 
+
+                    </div>
+                </div>
+            </div>
+            <div id="tblwrap" style="position:absolute;border: 2px solid rgb(114, 35, 184); top:100px;width:305px;height:455px;left:10px">
+                <div style="position:absolute; font-size:16px;background-color: rgb(114, 35, 184);  top:0px;left:0px; width:305px; height:50px;font-weight: bold;"><p style="text-align:center;padding-right:80px;color:white"> <b> EXPERIMENTAL TABLE</b></p>
+                </div>
+                <div id="table" style="background-color:#e6f5ff;position:absolute;top:50px;width:305px;height:405px; left:0px;overflow-y: auto;">
+
+                    <table id="mytable" border="1" >                    
+                        <tr>
+                            <th>Serial No.</th>
+                            <th>Forward Voltage(Volt)</th>
+                            <th>Forward Current(mAmp)</th>
+
+                        </tr>                   
+
+                    </table>
+
+                </div></div>
+            <div id="grpwrap" style="position:absolute;border: 2px solid rgb(114, 35, 184); top:570px;width:1050px;height:360px;left:10px">
+                <div style="position:absolute; font-size:16px; top:0px;left:0px;  height:50px;background-color:rgb(114, 35, 184);  width:1050px;font-weight: bold;"><p style="text-align:center;padding-right:910px;color:white"> <b> GRAPH PLOT</b></p>
+
+                    <div class="tooltip" ><button id="calci"  onclick="printf()" style="position:absolute;padding-right:40px; cursor:pointer;top:13px;right:20px;width:5px;height:25px;border:none; background-color:rgb(114, 35, 184);">
+                        <img src="./images/Printer.png" alt="Save icon" style="width:20px;height:20px;top:13px;"/></button> 
+                    <span class="tooltiptext">Print</span></div>
+
+                </div>
+                <div id="chartContainer" style=" position:absolute;  top:50px;  left:0px; height:300px; width:1050px;  ">
+
+                </div>
+            </div>
+
+            <!--<div align="center" style="position:absolute; top:960px; width:1160px">
+          <INPUT TYPE="button" onClick="printf()" value="Click here to print" style="cursor: pointer; text-align:center; font-size: 20px; height:40px; width:500px" >
+          <br><br></div>-->
+        </div>
+        
+ <script src="./js/forwardbiaseddiode_si.js"></script>
+ <script src="./js/switchforwardtoreverse_si.js"></script>
+ 
+		   <script src="./js/cktconnection_frwdsi.js"></script>
+    </body>
+</html>
+

@@ -1,7 +1,3 @@
-/*  Document Name:hlfwvoscilloscope_sinewv.js
- Created on : 14 oct, 2018
- Author     : sukriti
- */
 
 var flag;
 var vp;

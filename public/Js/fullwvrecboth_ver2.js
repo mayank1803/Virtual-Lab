@@ -1,6 +1,3 @@
-/*  Document Name:halfwvrecboth.js
- Author     : MIT
- */
 
 
 var flag;

@@ -1,7 +1,4 @@
-/* Document Name:rcfrqhpf.js
- * Author Name:Sukriti
- *  Created on : 15 sept, 2019, 20:21:22 PM 
- */
+
 var fq,vi;
 var rl;
 var cl;
@@ -121,7 +118,7 @@ function showDiv(){
         document.getElementById("graphplot").style.borderColor = "red";
                         }
                         else if(w==1){
-                            document.getElementById("demo").innerHTML = "Frequency Response of 1st order low pass filter"; 
+                            document.getElementById("demo").innerHTML = "Frequency Response of 1st order high pass filter"; 
     document.getElementById('chartContainer').style.display = "block";
      document.getElementById('chartContainers').style.display = "none";
      document.getElementById("chartContainers").innerHTML = "";
@@ -130,7 +127,7 @@ function showDiv(){
     dataPoints = [];
 }
  else if(w==2){
-      document.getElementById("demo").innerHTML = "Phase of 1st order low pass filter";
+      document.getElementById("demo").innerHTML = "Phase of 1st order high pass filter";
  document.getElementById('chartContainers').style.display = "block";
   document.getElementById('chartContainer').style.display = "none";
   document.getElementById("chartContainer").innerHTML = "";
@@ -227,6 +224,13 @@ function plotphase() {
     chart.render();
     
 }
+function printf() {
+
+    document.getElementById("demo").innerHTML = "";
+    // document.getElementById("demos").innerHTML = "";
+
+    window.print();
+}
 
 
 function addSymbols(e) {
@@ -239,4 +243,19 @@ function addSymbols(e) {
     var suffix = suffixes[order];
     return CanvasJS.formatNumber(e.value / Math.pow(1000, order)) + suffix;
 }
-
+function cleard() {
+    //-------------------------table clearing-------------------------------//
+        var rowCount = table.rows.length;
+        for (var j = rowCount - 1; j > 0; j--) {
+            table.deleteRow(j);
+        }
+        tabrowindex = 0;
+        dataPoints = [];
+    //--------------------------text box clearing---------------------------//
+        document.getElementById("rload").value = "";
+        document.getElementById("cload").value = "";
+        document.getElementById("fqr").value = "";
+        document.getElementById("vout").value = "";
+        document.getElementById("vin").value = "";
+        document.getElementById("chartContainer").innerHTML = "";
+    }

@@ -1,7 +1,4 @@
-/* Document Name:rcfrqlpf.js
- * Author Name:Sukriti
- *Created on : 10 sept, 2019, 12:48:22 PM
- */
+
 var fq,vi;
 var rl;
 var cl;
@@ -153,7 +150,7 @@ function plotfrequency(){
         theme: "theme1", //theme1
         // backgroundColor: "#bdf5bd",
         title: {
-            text: "Frequency Response of a 1st Order Low Pass Filter "
+            text: "Frequency Response of a 1st Order low Pass Filter "
         },
         // animationEnabled: true,
         // change to true
@@ -239,4 +236,26 @@ function addSymbols(e) {
     var suffix = suffixes[order];
     return CanvasJS.formatNumber(e.value / Math.pow(1000, order)) + suffix;
 }
+function cleard() {
+    //-------------------------table clearing-------------------------------//
+        var rowCount = table.rows.length;
+        for (var j = rowCount - 1; j > 0; j--) {
+            table.deleteRow(j);
+        }
+        tabrowindex = 0;
+        dataPoints = [];
+    //--------------------------text box clearing---------------------------//
+        document.getElementById("rload").value = "";
+        document.getElementById("cload").value = "";
+        document.getElementById("fqr").value = "";
+        document.getElementById("vout").value = "";
+        document.getElementById("chartContainer").value = "";
+    }
 
+    function printf() {
+
+        document.getElementById("demo").innerHTML = "";
+        // document.getElementById("demos").innerHTML = "";
+    
+        window.print();
+    }

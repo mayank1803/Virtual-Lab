@@ -1,24 +1,52 @@
 <%- include ('./partials/header') %>
-<br><br><br><br>    
-<nav id="experiment-article-navigation" class="default">
-        <ul id="experiment-article-navigation-menu">
-            <li> <a href="/simulation<%= experimentnumber %>"><img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOByYK39uVEW4MB5QUp7vGGXvgou7s3a3Exg&usqp=CAU>
-                    <br>
+    <br><br><br><br>
+    </div>
+    <div id="experiment-article-navigation " class="default my-container" style="width: 80%;">
+        <ul id="experiment-article-navigation-menu" class="option-selector">
+            <li> <a href="/simulation<%= experimentnumber %>">
+                    <div class="image">
+
+                        <img
+                            src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOByYK39uVEW4MB5QUp7vGGXvgou7s3a3Exg&usqp=CAU>
+
+
+                    </div> <br>
                     SIMULATION
                 </a>
 
             </li>
-                <li> <a href="/theory<%= experimentnumber %>"><img src=https://static.thenounproject.com/png/2336578-200.png>
+            <li> <a href="/theory<%= experimentnumber %>">
+                    <div class="image">
+                        <img src=https://static.thenounproject.com/png/2336578-200.png>
+                    </div>
+
                     <br>
                     THEORY
                 </a>
             </li>
-            <li> <a href="/procedure<%= experimentnumber %>"><img src=https://cdn.iconscout.com/icon/premium/png-256-thumb/virtual-lab-3396118-2828219.png>
+            <li> <a href="/procedure<%= experimentnumber %>">
+                    <div class="image">
+                        <img src=https://cdn.iconscout.com/icon/premium/png-256-thumb/virtual-lab-3396118-2828219.png>
+                    </div>
+
                     <br>
                     PROCEDURE
                 </a>
             </li>
-            
-    </nav>
+            <% if (experimentnumber !=2 && experimentnumber !=3 && experimentnumber !=4 && experimentnumber !=5 &&
+                experimentnumber !=10 ) { %>
+                <li> <a href="/circuitmaking<%= experimentnumber %>">
+                        <div class="image">
+                            <img
+                                src=https://as2.ftcdn.net/v2/jpg/06/75/52/59/1000_F_675525940_lp35X5U8mv0EDQ8ll5SOyZYjSJ497mn0.jpg>
+                        </div>
+
+                        <br>
+                        Custom circuit
+                    </a>
+                    <% } %>
+                </li>
+
     </div>
+
     <%- include ('./partials/footer') %>

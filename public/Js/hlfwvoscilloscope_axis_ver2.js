@@ -1,7 +1,4 @@
-/*  Document Name: hlfwvoscilloscope_axis.js
- Created on : 14 oct, 2018
- Author     : sukriti
- */
+
 var canvas, ctx;
 var flag;
 var axes = {};
