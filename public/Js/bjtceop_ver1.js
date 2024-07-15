@@ -3,14 +3,14 @@ var resb;
 function resbChange() {
     resb = document.getElementById("base_r").value;
     document.getElementById("r_base").value = resb;
-   firstres();
+    firstres();
 }
 
 var resc;
 function rescChange() {
     resc = document.getElementById("collector_r").value;
     document.getElementById("r_collector").value = resc;
-   check();
+    check();
 }
 
 
@@ -49,7 +49,7 @@ function tabled() {
         //Alert.render("Change the Collector-Emitter Voltage");
         document.getElementById("voltce").style.borderColor = "red";
         document.getElementById("demo").innerHTML = "Change the Collector-Emitter Voltage";
-    }  
+    }
     else if (table.rows.length <= 21) {
         document.getElementById("ampb").style.borderColor = "";
         document.getElementById("voltce").style.borderColor = "";
@@ -81,8 +81,9 @@ function tabled() {
 $(document).ready(function () {
     $("#plt").click(function () {
         $('html,body').animate({
-            scrollTop: $("#grpwrap").offset().top},
-        'slow');
+            scrollTop: $("#grpwrap").offset().top
+        },
+            'slow');
     });
 });
 
@@ -93,7 +94,7 @@ $(document).ready(function () {
 function plot() {
     for (var tabrowindex = 2; tabrowindex < table.rows.length; tabrowindex++) {
         var rwe1 = table.rows[tabrowindex].cells;
-        dataPoints.push({x: parseFloat(rwe1[1].innerHTML), y: parseFloat(rwe1[2].innerHTML)});
+        dataPoints.push({ x: parseFloat(rwe1[1].innerHTML), y: parseFloat(rwe1[2].innerHTML) });
     }
 
     chart = new CanvasJS.Chart("chartContainer", {
@@ -125,7 +126,7 @@ function plot() {
 
     //chart.options.data[0].dataPoints = dataPoints;
     chart.render();
-    
+
     document.getElementById("demos").innerHTML = "Print It <br><br>Take another sets of Collector-Emitter and <br>Collector Current readings for another<br> Base Current";
     document.getElementById("ampb").style.borderColor = "";
     document.getElementById("voltce").style.borderColor = "";
@@ -148,9 +149,9 @@ function clearf() {
     document.getElementById("voltce").value = "";
     document.getElementById("ampb").value = "";
     document.getElementById("ampc").value = "";
-     document.getElementById("r_base").value = 1;
+    document.getElementById("r_base").value = 1;
     document.getElementById("r_collector").value = 1;
-     document.getElementById("base_r").value = 1;
+    document.getElementById("base_r").value = 1;
     document.getElementById("collector_r").value = 1;
     document.getElementById("ampb").style.borderColor = "";
     document.getElementById("voltce").style.borderColor = "";
@@ -158,7 +159,7 @@ function clearf() {
     document.getElementById("demo").innerHTML = "";
     document.getElementById("demos").innerHTML = "";
     document.getElementById("tbib1").value = "";
-   
+
 
     var rowCount = mytable.rows.length;
 
@@ -170,7 +171,7 @@ function clearf() {
     dataPoints = [];
 
 
-//---------------------------------------------Metergauge1(base-emitter voltage)----------------------------------------------//
+    //---------------------------------------------Metergauge1(base-emitter voltage)----------------------------------------------//
     $(document).ready(function () {
         s1 = [0];
         plot3 = $.jqplot('chart1', [s1], {
@@ -189,7 +190,7 @@ function clearf() {
         });
     });
 
-//---------------------------------------------Metergauge2(base current)---------------------------------------------------//
+    //---------------------------------------------Metergauge2(base current)---------------------------------------------------//
     $(document).ready(function () {
         s2 = [0];
         plot3 = $.jqplot('chart2', [s2], {
@@ -209,7 +210,7 @@ function clearf() {
     });
 
 
-//---------------------------------------------Metergauge3(collector-emitter voltage)---------------------------------------------------//
+    //---------------------------------------------Metergauge3(collector-emitter voltage)---------------------------------------------------//
     $(document).ready(function () {
         s3 = [0];
         plot3 = $.jqplot('chart3', [s3], {
@@ -227,7 +228,7 @@ function clearf() {
             }
         });
     });
-    
+
     //---------------------------------------------Metergauge4(collector current)---------------------------------------------------//
     $(document).ready(function () {
         s4 = [0];
@@ -238,9 +239,9 @@ function clearf() {
             seriesDefaults: {
                 renderer: $.jqplot.MeterGaugeRenderer,
                 rendererOptions: {
-                     min: 0,
-                max: 100,
-                intervals: [20, 40, 60, 80],
+                    min: 0,
+                    max: 100,
+                    intervals: [20, 40, 60, 80],
                     intervalColors: ['#66cc66', '#cc6666', '#cc6666', '#E7E658']
                 }
             }

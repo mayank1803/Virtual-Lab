@@ -10,7 +10,7 @@ var resc;
 function rescChange() {
     resc = document.getElementById("collector_r").value;
     document.getElementById("r_collector").value = resc;
-   check();
+    check();
 }
 
 var tabrowindex = 0, tabrowindex2 = 0;
@@ -82,8 +82,9 @@ function tabled() {
 $(document).ready(function () {
     $("#plt").click(function () {
         $('html,body').animate({
-            scrollTop: $("#grpwrap").offset().top},
-        'slow');
+            scrollTop: $("#grpwrap").offset().top
+        },
+            'slow');
     });
 });
 
@@ -92,7 +93,7 @@ function plot() {
     for (var tabrowindex = 2; tabrowindex < table.rows.length; tabrowindex++) {
         var rwe1 = table.rows[tabrowindex].cells;
 
-        dataPoints.push({x: parseFloat(rwe1[1].innerHTML), y: parseFloat(rwe1[2].innerHTML)});
+        dataPoints.push({ x: parseFloat(rwe1[1].innerHTML), y: parseFloat(rwe1[2].innerHTML) });
     }
 
     chart = new CanvasJS.Chart("chartContainer", {
@@ -142,19 +143,19 @@ function printf() {
 }
 function clearf() {
 
-//    document.getElementById("siml").style.display = "block";
-//    document.getElementById("plt").style.display = "none";
-//    document.getElementById("clr").style.display = "none";
+    //    document.getElementById("siml").style.display = "block";
+    //    document.getElementById("plt").style.display = "none";
+    //    document.getElementById("clr").style.display = "none";
 
     document.getElementById("voltbe").value = "";
     document.getElementById("voltcb").value = "";
     document.getElementById("ampe").value = "";
     document.getElementById("ampc").value = "";
-     document.getElementById("r_base").value = 1;
+    document.getElementById("r_base").value = 1;
     document.getElementById("r_collector").value = 1;
-     document.getElementById("base_r").value = 1;
+    document.getElementById("base_r").value = 1;
     document.getElementById("collector_r").value = 1;
-   
+
 
     document.getElementById("chartContainer").innerHTML = "";
     document.getElementById("demo").innerHTML = "";
@@ -191,7 +192,7 @@ function clearf() {
         });
     });
 
-//---------------------------------------------Metergauge2(emitter current)---------------------------------------------------//
+    //---------------------------------------------Metergauge2(emitter current)---------------------------------------------------//
     $(document).ready(function () {
         s2 = [0];
         plot3 = $.jqplot('chart2', [s2], {
@@ -211,7 +212,7 @@ function clearf() {
     });
 
 
-//---------------------------------------------Metergauge3(collector-base voltage)---------------------------------------------------//
+    //---------------------------------------------Metergauge3(collector-base voltage)---------------------------------------------------//
     $(document).ready(function () {
         s3 = [0];
         plot3 = $.jqplot('chart3', [s3], {
@@ -221,15 +222,15 @@ function clearf() {
             seriesDefaults: {
                 renderer: $.jqplot.MeterGaugeRenderer,
                 rendererOptions: {
-                     min: -2,
-                max: 4,
-                intervals: [-2,0,2,4],
+                    min: -2,
+                    max: 4,
+                    intervals: [-2, 0, 2, 4],
                     intervalColors: ['#66cc66', '#cc6666', '#cc6666', '#E7E658']
                 }
             }
         });
     });
-//---------------------------------------------Metergauge4(collector current)---------------------------------------------------//
+    //---------------------------------------------Metergauge4(collector current)---------------------------------------------------//
     $(document).ready(function () {
         s4 = [0];
         plot3 = $.jqplot('chart4', [s4], {

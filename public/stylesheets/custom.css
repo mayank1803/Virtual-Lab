@@ -1,6 +1,6 @@
 @media screen and (min-width: 768px) {
     .dropdown-menu {
-        float:none;
+        float: none;
         font-size: 20px;
         width: 70%;
         margin: 0 15%
@@ -30,7 +30,7 @@
 
 @media screen and (max-width: 767px) {
     .dropdown-menu {
-        float:none;
+        float: none;
         font-size: 20px;
         width: 96%;
         margin: 0 2%
@@ -96,7 +96,12 @@
     color: #f8f8f2
 }
 
-.highlight .ch,.highlight .cm,.highlight .cp,.highlight .cpf,.highlight .c1,.highlight .cs {
+.highlight .ch,
+.highlight .cm,
+.highlight .cp,
+.highlight .cpf,
+.highlight .c1,
+.highlight .cs {
     color: #75715e
 }
 
@@ -120,7 +125,8 @@
     color: #75715e
 }
 
-.highlight .kc,.highlight .kd {
+.highlight .kc,
+.highlight .kd {
     color: #66d9ef
 }
 
@@ -128,7 +134,9 @@
     color: #f92672
 }
 
-.highlight .kp,.highlight .kr,.highlight .kt {
+.highlight .kp,
+.highlight .kr,
+.highlight .kt {
     color: #66d9ef
 }
 
@@ -168,11 +176,13 @@
     color: #f8f8f2
 }
 
-.highlight .ne,.highlight .nf {
+.highlight .ne,
+.highlight .nf {
     color: #a6e22e
 }
 
-.highlight .nl,.highlight .nn {
+.highlight .nl,
+.highlight .nn {
     color: #f8f8f2
 }
 
@@ -200,11 +210,18 @@
     color: #f8f8f2
 }
 
-.highlight .mb,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo {
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo {
     color: #ae81ff
 }
 
-.highlight .sb,.highlight .sc,.highlight .sd,.highlight .s2 {
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .s2 {
     color: #e6db74
 }
 
@@ -212,11 +229,19 @@
     color: #ae81ff
 }
 
-.highlight .sh,.highlight .si,.highlight .sx,.highlight .sr,.highlight .s1,.highlight .ss {
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .s1,
+.highlight .ss {
     color: #e6db74
 }
 
-.highlight .bp,.highlight .vc,.highlight .vg,.highlight .vi {
+.highlight .bp,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi {
     color: #f8f8f2
 }
 
@@ -228,23 +253,23 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
-    src: local("Open Sans Light"),local("OpenSans-Light"),url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTQ7aC6SjiAOpAWOKfJDfVRY.woff2) format("woff2");
-    unicode-range: U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F
+    src: local("Open Sans Light"), local("OpenSans-Light"), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTQ7aC6SjiAOpAWOKfJDfVRY.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
-    src: local("Open Sans Light"),local("OpenSans-Light"),url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRdwxCXfZpKo5kWAx_74bHs.woff2) format("woff2");
-    unicode-range: U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116
+    src: local("Open Sans Light"), local("OpenSans-Light"), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRdwxCXfZpKo5kWAx_74bHs.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
-    src: local("Open Sans Light"),local("OpenSans-Light"),url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTZ6vnaPZw6nYDxM4SVEMFKg.woff2) format("woff2");
+    src: local("Open Sans Light"), local("OpenSans-Light"), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTZ6vnaPZw6nYDxM4SVEMFKg.woff2) format("woff2");
     unicode-range: U+1F00-1FFF
 }
 
@@ -252,7 +277,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
-    src: local("Open Sans Light"),local("OpenSans-Light"),url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTfy1_HTwRwgtl1cPga3Fy3Y.woff2) format("woff2");
+    src: local("Open Sans Light"), local("OpenSans-Light"), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTfy1_HTwRwgtl1cPga3Fy3Y.woff2) format("woff2");
     unicode-range: U+0370-03FF
 }
 
@@ -260,47 +285,47 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
-    src: local("Open Sans Light"),local("OpenSans-Light"),url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTfgrLsWo7Jk1KvZser0olKY.woff2) format("woff2");
-    unicode-range: U+0102-0103,U+1EA0-1EF9,U+20AB
+    src: local("Open Sans Light"), local("OpenSans-Light"), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTfgrLsWo7Jk1KvZser0olKY.woff2) format("woff2");
+    unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
-    src: local("Open Sans Light"),local("OpenSans-Light"),url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTYjoYw3YTyktCCer_ilOlhE.woff2) format("woff2");
-    unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF
+    src: local("Open Sans Light"), local("OpenSans-Light"), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTYjoYw3YTyktCCer_ilOlhE.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
-    src: local("Open Sans Light"),local("OpenSans-Light"),url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
-    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000
+    src: local("Open Sans Light"), local("OpenSans-Light"), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    src: local("Open Sans"),local("OpenSans"),url(https://fonts.gstatic.com/s/opensans/v13/K88pR3goAWT7BTt32Z01m4X0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
-    unicode-range: U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F
+    src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/K88pR3goAWT7BTt32Z01m4X0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    src: local("Open Sans"),local("OpenSans"),url(https://fonts.gstatic.com/s/opensans/v13/RjgO7rYTmqiVp7vzi-Q5UYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
-    unicode-range: U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116
+    src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/RjgO7rYTmqiVp7vzi-Q5UYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    src: local("Open Sans"),local("OpenSans"),url(https://fonts.gstatic.com/s/opensans/v13/LWCjsQkB6EMdfHrEVqA1KYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/LWCjsQkB6EMdfHrEVqA1KYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
     unicode-range: U+1F00-1FFF
 }
 
@@ -308,7 +333,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    src: local("Open Sans"),local("OpenSans"),url(https://fonts.gstatic.com/s/opensans/v13/xozscpT2726on7jbcb_pAoX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/xozscpT2726on7jbcb_pAoX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
     unicode-range: U+0370-03FF
 }
 
@@ -316,47 +341,47 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    src: local("Open Sans"),local("OpenSans"),url(https://fonts.gstatic.com/s/opensans/v13/59ZRklaO5bWGqF5A9baEEYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
-    unicode-range: U+0102-0103,U+1EA0-1EF9,U+20AB
+    src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/59ZRklaO5bWGqF5A9baEEYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    src: local("Open Sans"),local("OpenSans"),url(https://fonts.gstatic.com/s/opensans/v13/u-WUoqrET9fUeobQW7jkRYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
-    unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF
+    src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/u-WUoqrET9fUeobQW7jkRYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    src: local("Open Sans"),local("OpenSans"),url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format("woff2");
-    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000
+    src: local("Open Sans"), local("OpenSans"), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    src: local("Open Sans Semibold"),local("OpenSans-Semibold"),url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSg7aC6SjiAOpAWOKfJDfVRY.woff2) format("woff2");
-    unicode-range: U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F
+    src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSg7aC6SjiAOpAWOKfJDfVRY.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    src: local("Open Sans Semibold"),local("OpenSans-Semibold"),url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNShdwxCXfZpKo5kWAx_74bHs.woff2) format("woff2");
-    unicode-range: U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116
+    src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNShdwxCXfZpKo5kWAx_74bHs.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    src: local("Open Sans Semibold"),local("OpenSans-Semibold"),url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSp6vnaPZw6nYDxM4SVEMFKg.woff2) format("woff2");
+    src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSp6vnaPZw6nYDxM4SVEMFKg.woff2) format("woff2");
     unicode-range: U+1F00-1FFF
 }
 
@@ -364,7 +389,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    src: local("Open Sans Semibold"),local("OpenSans-Semibold"),url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSvy1_HTwRwgtl1cPga3Fy3Y.woff2) format("woff2");
+    src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSvy1_HTwRwgtl1cPga3Fy3Y.woff2) format("woff2");
     unicode-range: U+0370-03FF
 }
 
@@ -372,47 +397,47 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    src: local("Open Sans Semibold"),local("OpenSans-Semibold"),url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSvgrLsWo7Jk1KvZser0olKY.woff2) format("woff2");
-    unicode-range: U+0102-0103,U+1EA0-1EF9,U+20AB
+    src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSvgrLsWo7Jk1KvZser0olKY.woff2) format("woff2");
+    unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    src: local("Open Sans Semibold"),local("OpenSans-Semibold"),url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSojoYw3YTyktCCer_ilOlhE.woff2) format("woff2");
-    unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF
+    src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSojoYw3YTyktCCer_ilOlhE.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    src: local("Open Sans Semibold"),local("OpenSans-Semibold"),url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNShampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
-    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000
+    src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNShampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    src: local("Open Sans Bold"),local("OpenSans-Bold"),url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzA7aC6SjiAOpAWOKfJDfVRY.woff2) format("woff2");
-    unicode-range: U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzA7aC6SjiAOpAWOKfJDfVRY.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    src: local("Open Sans Bold"),local("OpenSans-Bold"),url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzBdwxCXfZpKo5kWAx_74bHs.woff2) format("woff2");
-    unicode-range: U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzBdwxCXfZpKo5kWAx_74bHs.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    src: local("Open Sans Bold"),local("OpenSans-Bold"),url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzJ6vnaPZw6nYDxM4SVEMFKg.woff2) format("woff2");
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzJ6vnaPZw6nYDxM4SVEMFKg.woff2) format("woff2");
     unicode-range: U+1F00-1FFF
 }
 
@@ -420,7 +445,7 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    src: local("Open Sans Bold"),local("OpenSans-Bold"),url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzPy1_HTwRwgtl1cPga3Fy3Y.woff2) format("woff2");
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzPy1_HTwRwgtl1cPga3Fy3Y.woff2) format("woff2");
     unicode-range: U+0370-03FF
 }
 
@@ -428,47 +453,47 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    src: local("Open Sans Bold"),local("OpenSans-Bold"),url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzPgrLsWo7Jk1KvZser0olKY.woff2) format("woff2");
-    unicode-range: U+0102-0103,U+1EA0-1EF9,U+20AB
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzPgrLsWo7Jk1KvZser0olKY.woff2) format("woff2");
+    unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    src: local("Open Sans Bold"),local("OpenSans-Bold"),url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzIjoYw3YTyktCCer_ilOlhE.woff2) format("woff2");
-    unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzIjoYw3YTyktCCer_ilOlhE.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
 }
 
 @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    src: local("Open Sans Bold"),local("OpenSans-Bold"),url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
-    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    src: local("Roboto Light"),local("Roboto-Light"),url(https://fonts.gstatic.com/s/roboto/v15/0eC6fl06luXEYWpBSJvXCIX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
-    unicode-range: U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F
+    src: local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v15/0eC6fl06luXEYWpBSJvXCIX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    src: local("Roboto Light"),local("Roboto-Light"),url(https://fonts.gstatic.com/s/roboto/v15/Fl4y0QdOxyyTHEGMXX8kcYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
-    unicode-range: U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116
+    src: local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v15/Fl4y0QdOxyyTHEGMXX8kcYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    src: local("Roboto Light"),local("Roboto-Light"),url(https://fonts.gstatic.com/s/roboto/v15/-L14Jk06m6pUHB-5mXQQnYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    src: local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v15/-L14Jk06m6pUHB-5mXQQnYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
     unicode-range: U+1F00-1FFF
 }
 
@@ -476,7 +501,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    src: local("Roboto Light"),local("Roboto-Light"),url(https://fonts.gstatic.com/s/roboto/v15/I3S1wsgSg9YCurV6PUkTOYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    src: local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v15/I3S1wsgSg9YCurV6PUkTOYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
     unicode-range: U+0370-03FF
 }
 
@@ -484,47 +509,47 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    src: local("Roboto Light"),local("Roboto-Light"),url(https://fonts.gstatic.com/s/roboto/v15/NYDWBdD4gIq26G5XYbHsFIX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
-    unicode-range: U+0102-0103,U+1EA0-1EF9,U+20AB
+    src: local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v15/NYDWBdD4gIq26G5XYbHsFIX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    src: local("Roboto Light"),local("Roboto-Light"),url(https://fonts.gstatic.com/s/roboto/v15/Pru33qjShpZSmG3z6VYwnYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
-    unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF
+    src: local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v15/Pru33qjShpZSmG3z6VYwnYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
-    src: local("Roboto Light"),local("Roboto-Light"),url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2) format("woff2");
-    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000
+    src: local("Roboto Light"), local("Roboto-Light"), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: local("Roboto"),local("Roboto-Regular"),url(https://fonts.gstatic.com/s/roboto/v15/sTdaA6j0Psb920Vjv-mrzH-_kf6ByYO6CLYdB4HQE-Y.woff2) format("woff2");
-    unicode-range: U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F
+    src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v15/sTdaA6j0Psb920Vjv-mrzH-_kf6ByYO6CLYdB4HQE-Y.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: local("Roboto"),local("Roboto-Regular"),url(https://fonts.gstatic.com/s/roboto/v15/uYECMKoHcO9x1wdmbyHIm3-_kf6ByYO6CLYdB4HQE-Y.woff2) format("woff2");
-    unicode-range: U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116
+    src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v15/uYECMKoHcO9x1wdmbyHIm3-_kf6ByYO6CLYdB4HQE-Y.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: local("Roboto"),local("Roboto-Regular"),url(https://fonts.gstatic.com/s/roboto/v15/tnj4SB6DNbdaQnsM8CFqBX-_kf6ByYO6CLYdB4HQE-Y.woff2) format("woff2");
+    src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v15/tnj4SB6DNbdaQnsM8CFqBX-_kf6ByYO6CLYdB4HQE-Y.woff2) format("woff2");
     unicode-range: U+1F00-1FFF
 }
 
@@ -532,7 +557,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: local("Roboto"),local("Roboto-Regular"),url(https://fonts.gstatic.com/s/roboto/v15/_VYFx-s824kXq_Ul2BHqYH-_kf6ByYO6CLYdB4HQE-Y.woff2) format("woff2");
+    src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v15/_VYFx-s824kXq_Ul2BHqYH-_kf6ByYO6CLYdB4HQE-Y.woff2) format("woff2");
     unicode-range: U+0370-03FF
 }
 
@@ -540,47 +565,47 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: local("Roboto"),local("Roboto-Regular"),url(https://fonts.gstatic.com/s/roboto/v15/NJ4vxlgWwWbEsv18dAhqnn-_kf6ByYO6CLYdB4HQE-Y.woff2) format("woff2");
-    unicode-range: U+0102-0103,U+1EA0-1EF9,U+20AB
+    src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v15/NJ4vxlgWwWbEsv18dAhqnn-_kf6ByYO6CLYdB4HQE-Y.woff2) format("woff2");
+    unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: local("Roboto"),local("Roboto-Regular"),url(https://fonts.gstatic.com/s/roboto/v15/Ks_cVxiCiwUWVsFWFA3Bjn-_kf6ByYO6CLYdB4HQE-Y.woff2) format("woff2");
-    unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF
+    src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v15/Ks_cVxiCiwUWVsFWFA3Bjn-_kf6ByYO6CLYdB4HQE-Y.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: local("Roboto"),local("Roboto-Regular"),url(https://fonts.gstatic.com/s/roboto/v15/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format("woff2");
-    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000
+    src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v15/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    src: local("Roboto Medium"),local("Roboto-Medium"),url(https://fonts.gstatic.com/s/roboto/v15/ZLqKeelYbATG60EpZBSDy4X0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
-    unicode-range: U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F
+    src: local("Roboto Medium"), local("Roboto-Medium"), url(https://fonts.gstatic.com/s/roboto/v15/ZLqKeelYbATG60EpZBSDy4X0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    src: local("Roboto Medium"),local("Roboto-Medium"),url(https://fonts.gstatic.com/s/roboto/v15/oHi30kwQWvpCWqAhzHcCSIX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
-    unicode-range: U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116
+    src: local("Roboto Medium"), local("Roboto-Medium"), url(https://fonts.gstatic.com/s/roboto/v15/oHi30kwQWvpCWqAhzHcCSIX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    src: local("Roboto Medium"),local("Roboto-Medium"),url(https://fonts.gstatic.com/s/roboto/v15/rGvHdJnr2l75qb0YND9NyIX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    src: local("Roboto Medium"), local("Roboto-Medium"), url(https://fonts.gstatic.com/s/roboto/v15/rGvHdJnr2l75qb0YND9NyIX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
     unicode-range: U+1F00-1FFF
 }
 
@@ -588,7 +613,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    src: local("Roboto Medium"),local("Roboto-Medium"),url(https://fonts.gstatic.com/s/roboto/v15/mx9Uck6uB63VIKFYnEMXrYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    src: local("Roboto Medium"), local("Roboto-Medium"), url(https://fonts.gstatic.com/s/roboto/v15/mx9Uck6uB63VIKFYnEMXrYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
     unicode-range: U+0370-03FF
 }
 
@@ -596,47 +621,47 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    src: local("Roboto Medium"),local("Roboto-Medium"),url(https://fonts.gstatic.com/s/roboto/v15/mbmhprMH69Zi6eEPBYVFhYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
-    unicode-range: U+0102-0103,U+1EA0-1EF9,U+20AB
+    src: local("Roboto Medium"), local("Roboto-Medium"), url(https://fonts.gstatic.com/s/roboto/v15/mbmhprMH69Zi6eEPBYVFhYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    src: local("Roboto Medium"),local("Roboto-Medium"),url(https://fonts.gstatic.com/s/roboto/v15/oOeFwZNlrTefzLYmlVV1UIX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
-    unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF
+    src: local("Roboto Medium"), local("Roboto-Medium"), url(https://fonts.gstatic.com/s/roboto/v15/oOeFwZNlrTefzLYmlVV1UIX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    src: local("Roboto Medium"),local("Roboto-Medium"),url(https://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2) format("woff2");
-    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000
+    src: local("Roboto Medium"), local("Roboto-Medium"), url(https://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    src: local("Roboto Bold"),local("Roboto-Bold"),url(https://fonts.gstatic.com/s/roboto/v15/77FXFjRbGzN4aCrSFhlh3oX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
-    unicode-range: U+0460-052F,U+20B4,U+2DE0-2DFF,U+A640-A69F
+    src: local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v15/77FXFjRbGzN4aCrSFhlh3oX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    unicode-range: U+0460-052F, U+20B4, U+2DE0-2DFF, U+A640-A69F
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    src: local("Roboto Bold"),local("Roboto-Bold"),url(https://fonts.gstatic.com/s/roboto/v15/isZ-wbCXNKAbnjo6_TwHToX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
-    unicode-range: U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116
+    src: local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v15/isZ-wbCXNKAbnjo6_TwHToX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    src: local("Roboto Bold"),local("Roboto-Bold"),url(https://fonts.gstatic.com/s/roboto/v15/UX6i4JxQDm3fVTc1CPuwqoX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    src: local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v15/UX6i4JxQDm3fVTc1CPuwqoX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
     unicode-range: U+1F00-1FFF
 }
 
@@ -644,7 +669,7 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    src: local("Roboto Bold"),local("Roboto-Bold"),url(https://fonts.gstatic.com/s/roboto/v15/jSN2CGVDbcVyCnfJfjSdfIX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    src: local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v15/jSN2CGVDbcVyCnfJfjSdfIX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
     unicode-range: U+0370-03FF
 }
 
@@ -652,24 +677,24 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    src: local("Roboto Bold"),local("Roboto-Bold"),url(https://fonts.gstatic.com/s/roboto/v15/PwZc-YbIL414wB9rB1IAPYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
-    unicode-range: U+0102-0103,U+1EA0-1EF9,U+20AB
+    src: local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v15/PwZc-YbIL414wB9rB1IAPYX0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    unicode-range: U+0102-0103, U+1EA0-1EF9, U+20AB
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    src: local("Roboto Bold"),local("Roboto-Bold"),url(https://fonts.gstatic.com/s/roboto/v15/97uahxiqZRoncBaCEI3aW4X0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
-    unicode-range: U+0100-024F,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF
+    src: local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v15/97uahxiqZRoncBaCEI3aW4X0hVgzZQUfRDuZrPvH3D8.woff2) format("woff2");
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF
 }
 
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    src: local("Roboto Bold"),local("Roboto-Bold"),url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2) format("woff2");
-    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2212,U+2215,U+E0FF,U+EFFD,U+F000
+    src: local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOJBw1xU1rKptJj_0jans920.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000
 }
 
 html {
@@ -765,7 +790,8 @@ html[data-theme=dark] {
     --divide: #333
 }
 
-.landing-page .carousel-caption h1,.landing-page .carousel-caption p {
+.landing-page .carousel-caption h1,
+.landing-page .carousel-caption p {
     text-transform: uppercase
 }
 
@@ -781,7 +807,12 @@ button.dim {
     text-transform: uppercase
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 100
 }
 
@@ -809,7 +840,9 @@ h6 {
     font-size: 10px
 }
 
-h3,h4,h5 {
+h3,
+h4,
+h5 {
     margin-top: 5px;
     font-weight: 600
 }
@@ -828,12 +861,14 @@ h3,h4,h5 {
     color: var(--white)
 }
 
-.navbar-default .nav>li>a:focus,.navbar-default .nav>li>a:hover {
+.navbar-default .nav>li>a:focus,
+.navbar-default .nav>li>a:hover {
     background-color: var(--bg2);
     color: var(--white)
 }
 
-.nav.navbar-top-links>li>a:focus,.nav.navbar-top-links>li>a:hover {
+.nav.navbar-top-links>li>a:focus,
+.nav.navbar-top-links>li>a:hover {
     background-color: transparent
 }
 
@@ -870,7 +905,8 @@ h3,h4,h5 {
     min-height: 50px
 }
 
-.dd-item>button,code {
+.dd-item>button,
+code {
     white-space: nowrap
 }
 
@@ -979,7 +1015,8 @@ body.canvas-menu .nav-header {
     margin-left: 0
 }
 
-.white-bg .navbar-fixed-top,.white-bg .navbar-static-top {
+.white-bg .navbar-fixed-top,
+.white-bg .navbar-static-top {
     background: var(--white)
 }
 
@@ -992,7 +1029,8 @@ body.canvas-menu .nav-header {
     color: var(--navli)
 }
 
-.top-navigation .nav>li a:focus,.top-navigation .nav>li a:hover {
+.top-navigation .nav>li a:focus,
+.top-navigation .nav>li a:hover {
     background: var(--white);
     color: var(--purple)
 }
@@ -1010,11 +1048,13 @@ body.canvas-menu .nav-header {
     margin-right: 10px
 }
 
-.btn-default.active,.btn-default:active {
+.btn-default.active,
+.btn-default:active {
     box-shadow: 0 2px 5px var(--boxshadow) inset
 }
 
-.btn-white.active,.btn-white:active {
+.btn-white.active,
+.btn-white:active {
     box-shadow: 0 2px 5px var(--boxshadow) inset
 }
 
@@ -1024,15 +1064,18 @@ body.canvas-menu .nav-header {
     padding: 15px 25px
 }
 
-.btn-info.active,.btn-info:active {
+.btn-info.active,
+.btn-info:active {
     background-image: none
 }
 
-.btn-primary.active,.btn-primary:active {
+.btn-primary.active,
+.btn-primary:active {
     background-image: none
 }
 
-.btn-success.active,.btn-success:active {
+.btn-success.active,
+.btn-success:active {
     background-image: none
 }
 
@@ -1056,7 +1099,8 @@ body.canvas-menu .nav-header {
     padding: 40px
 }
 
-.body-small .top-navigation .wrapper.wrapper-content,.top-navigation.body-small .wrapper.wrapper-content {
+.body-small .top-navigation .wrapper.wrapper-content,
+.top-navigation.body-small .wrapper.wrapper-content {
     padding: 40px 0
 }
 
@@ -1069,30 +1113,33 @@ body.canvas-menu .nav-header {
 
 @media (max-width: 768px) {
     .top-navigation .navbar-header {
-        display:block;
+        display: block;
         float: none
     }
 }
 
-.menu-visible-lg,.menu-visible-md {
+.menu-visible-lg,
+.menu-visible-md {
     display: none !important
 }
 
 @media (min-width: 1200px) {
     .menu-visible-lg {
-        display:block !important
+        display: block !important
     }
 }
 
 @media (min-width: 992px) {
     .menu-visible-md {
-        display:block !important
+        display: block !important
     }
 }
 
 @media (max-width: 767px) {
-    .menu-visible-lg,.menu-visible-md {
-        display:block !important
+
+    .menu-visible-lg,
+    .menu-visible-md {
+        display: block !important
     }
 }
 
@@ -1120,7 +1167,10 @@ button.dim {
     color: var(--btnwarning)
 }
 
-.btn-info.btn-outline:hover,.btn-primary.btn-outline:hover,.btn-success.btn-outline:hover,.btn-warning.btn-outline:hover {
+.btn-info.btn-outline:hover,
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-warning.btn-outline:hover {
     color: var(--white)
 }
 
@@ -1136,7 +1186,8 @@ button.dim {
     color: var(--white)
 }
 
-.btn-primary.active:focus,.btn-primary.active:hover {
+.btn-primary.active:focus,
+.btn-primary.active:hover {
     background-color: var(--btnprimary);
     border-color: var(--btnprimary);
     color: var(--white)
@@ -1148,13 +1199,15 @@ button.dim {
     color: var(--white)
 }
 
-.btn-primary:active:focus,.btn-primary:active:hover {
+.btn-primary:active:focus,
+.btn-primary:active:hover {
     background-color: var(--btnprimary);
     border-color: var(--btnprimary);
     color: var(--white)
 }
 
-.btn-primary:focus,.btn-primary:hover {
+.btn-primary:focus,
+.btn-primary:hover {
     background-color: var(--btnprimary);
     border-color: var(--btnprimary);
     color: var(--white)
@@ -1170,7 +1223,9 @@ button.dim {
     border-color: var(--btnprimary)
 }
 
-.btn-primary[disabled]:active,.btn-primary[disabled]:focus,.btn-primary[disabled]:hover {
+.btn-primary[disabled]:active,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:hover {
     background-color: var(--btnprimary);
     border-color: var(--btnprimary)
 }
@@ -1187,7 +1242,8 @@ button.dim {
     color: var(--white)
 }
 
-.btn-success.active:focus,.btn-success.active:hover {
+.btn-success.active:focus,
+.btn-success.active:hover {
     background-color: var(--btnsuccess2);
     border-color: var(--btnsuccess2);
     color: var(--white)
@@ -1199,13 +1255,15 @@ button.dim {
     color: var(--white)
 }
 
-.btn-success:active:focus,.btn-success:active:hover {
+.btn-success:active:focus,
+.btn-success:active:hover {
     background-color: var(--btnsuccess2);
     border-color: var(--btnsuccess2);
     color: var(--white)
 }
 
-.btn-success:focus,.btn-success:hover {
+.btn-success:focus,
+.btn-success:hover {
     background-color: var(--btnsuccess2);
     border-color: var(--btnsuccess2);
     color: var(--white)
@@ -1221,7 +1279,9 @@ button.dim {
     border-color: var(--btndisabled)
 }
 
-.btn-success[disabled]:active,.btn-success[disabled]:focus,.btn-success[disabled]:hover {
+.btn-success[disabled]:active,
+.btn-success[disabled]:focus,
+.btn-success[disabled]:hover {
     background-color: var(--btndisabled);
     border-color: var(--btndisabled)
 }
@@ -1238,7 +1298,8 @@ button.dim {
     color: var(--white)
 }
 
-.btn-info.active:focus,.btn-info.active:hover {
+.btn-info.active:focus,
+.btn-info.active:hover {
     background-color: var(--btninfo2);
     border-color: var(--btninfo2);
     color: var(--white)
@@ -1250,13 +1311,15 @@ button.dim {
     color: var(--white)
 }
 
-.btn-info:active:focus,.btn-info:active:hover {
+.btn-info:active:focus,
+.btn-info:active:hover {
     background-color: var(--btninfo2);
     border-color: var(--btninfo2);
     color: var(--white)
 }
 
-.btn-info:focus,.btn-info:hover {
+.btn-info:focus,
+.btn-info:hover {
     background-color: var(--btninfo2);
     border-color: var(--btninfo2);
     color: var(--white)
@@ -1272,7 +1335,9 @@ button.dim {
     border-color: var(--btndisabled2)
 }
 
-.btn-info[disabled]:active,.btn-info[disabled]:focus,.btn-info[disabled]:hover {
+.btn-info[disabled]:active,
+.btn-info[disabled]:focus,
+.btn-info[disabled]:hover {
     background-color: var(--btndisabled2);
     border-color: var(--btndisabled2)
 }
@@ -1283,11 +1348,13 @@ button.dim {
     border: 1px solid var(--navborder2)
 }
 
-.btn-link.active,.btn-link:active {
+.btn-link.active,
+.btn-link:active {
     background-image: none
 }
 
-.btn-warning.active,.btn-warning:active {
+.btn-warning.active,
+.btn-warning:active {
     background-image: none
 }
 
@@ -1296,7 +1363,8 @@ button.dim {
     border: 1px solid var(--btndefault)
 }
 
-.btn-default.active:focus,.btn-default.active:hover {
+.btn-default.active:focus,
+.btn-default.active:hover {
     color: inherit;
     border: 1px solid var(--btndefault)
 }
@@ -1306,12 +1374,14 @@ button.dim {
     border: 1px solid var(--btndefault)
 }
 
-.btn-default:active:focus,.btn-default:active:hover {
+.btn-default:active:focus,
+.btn-default:active:hover {
     color: inherit;
     border: 1px solid var(--btndefault)
 }
 
-.btn-default:focus,.btn-default:hover {
+.btn-default:focus,
+.btn-default:hover {
     color: inherit;
     border: 1px solid var(--btndefault)
 }
@@ -1324,7 +1394,9 @@ button.dim {
     color: var(--btndisabled3)
 }
 
-.btn-default[disabled]:active,.btn-default[disabled]:focus,.btn-default[disabled]:hover {
+.btn-default[disabled]:active,
+.btn-default[disabled]:focus,
+.btn-default[disabled]:hover {
     color: var(--btndisabled3)
 }
 
@@ -1340,7 +1412,8 @@ button.dim {
     color: var(--white)
 }
 
-.btn-warning.active:focus,.btn-warning.active:hover {
+.btn-warning.active:focus,
+.btn-warning.active:hover {
     background-color: var(--btnwarning2);
     border-color: var(--btnwarning2);
     color: var(--white)
@@ -1352,13 +1425,15 @@ button.dim {
     color: var(--white)
 }
 
-.btn-warning:active:focus,.btn-warning:active:hover {
+.btn-warning:active:focus,
+.btn-warning:active:hover {
     background-color: var(--btnwarning2);
     border-color: var(--btnwarning2);
     color: var(--white)
 }
 
-.btn-warning:focus,.btn-warning:hover {
+.btn-warning:focus,
+.btn-warning:hover {
     background-color: var(--btnwarning2);
     border-color: var(--btnwarning2);
     color: var(--white)
@@ -1374,7 +1449,9 @@ button.dim {
     border-color: var(--btndisabled4)
 }
 
-.btn-warning[disabled]:active,.btn-warning[disabled]:focus,.btn-warning[disabled]:hover {
+.btn-warning[disabled]:active,
+.btn-warning[disabled]:focus,
+.btn-warning[disabled]:hover {
     background-color: var(--btndisabled4);
     border-color: var(--btndisabled4)
 }
@@ -1383,7 +1460,10 @@ button.dim {
     color: inherit
 }
 
-.btn-link.active,.btn-link:active,.btn-link:focus,.btn-link:hover {
+.btn-link.active,
+.btn-link:active,
+.btn-link:focus,
+.btn-link:hover {
     color: var(--purple);
     text-decoration: none
 }
@@ -1396,7 +1476,9 @@ button.dim {
     color: var(--btndisabled3)
 }
 
-.btn-link[disabled]:active,.btn-link[disabled]:focus,.btn-link[disabled]:hover {
+.btn-link[disabled]:active,
+.btn-link[disabled]:focus,
+.btn-link[disabled]:hover {
     color: var(--btndisabled3)
 }
 
@@ -1411,7 +1493,8 @@ button.dim {
     border: 1px solid var(--btndefault)
 }
 
-.btn-white.active:focus,.btn-white.active:hover {
+.btn-white.active:focus,
+.btn-white.active:hover {
     color: inherit;
     border: 1px solid var(--btndefault)
 }
@@ -1421,17 +1504,20 @@ button.dim {
     border: 1px solid var(--btndefault)
 }
 
-.btn-white:active:focus,.btn-white:active:hover {
+.btn-white:active:focus,
+.btn-white:active:hover {
     color: inherit;
     border: 1px solid var(--btndefault)
 }
 
-.btn-white:focus,.btn-white:hover {
+.btn-white:focus,
+.btn-white:hover {
     color: inherit;
     border: 1px solid var(--btndefault)
 }
 
-.btn-white.active,.btn-white:active {
+.btn-white.active,
+.btn-white:active {
     background-image: none
 }
 
@@ -1443,7 +1529,9 @@ button.dim {
     color: var(--btndisabled3)
 }
 
-.btn-white[disabled]:active,.btn-white[disabled]:focus,.btn-white[disabled]:hover {
+.btn-white[disabled]:active,
+.btn-white[disabled]:focus,
+.btn-white[disabled]:hover {
     color: var(--btndisabled3)
 }
 
@@ -1455,11 +1543,16 @@ button.dim {
     box-shadow: none
 }
 
-.has-error .form-control:focus,.has-success .form-control:focus,.has-warning .form-control:focus,.navbar-collapse,.navbar-form {
+.has-error .form-control:focus,
+.has-success .form-control:focus,
+.has-warning .form-control:focus,
+.navbar-collapse,
+.navbar-form {
     box-shadow: none
 }
 
-.navbar-form-custom .form-control:focus,.navbar-form-custom .form-control:hover {
+.navbar-form-custom .form-control:focus,
+.navbar-form-custom .form-control:hover {
     box-shadow: none
 }
 
@@ -1500,43 +1593,43 @@ button.dim:active {
 }
 
 button.btn-primary.dim {
-    box-shadow: inset 0 0 0 var(--dim),0 5px 0 0 var(--dim),0 10px 5px var(--nine)
+    box-shadow: inset 0 0 0 var(--dim), 0 5px 0 0 var(--dim), 0 10px 5px var(--nine)
 }
 
 button.btn-primary.dim:active {
-    box-shadow: inset 0 0 0 var(--dim),0 2px 0 0 var(--dim),0 5px 3px var(--nine)
+    box-shadow: inset 0 0 0 var(--dim), 0 2px 0 0 var(--dim), 0 5px 3px var(--nine)
 }
 
 button.btn-default.dim {
-    box-shadow: inset 0 0 0 var(--dim2),0 5px 0 0 var(--dim2),0 10px 5px var(--nine)
+    box-shadow: inset 0 0 0 var(--dim2), 0 5px 0 0 var(--dim2), 0 10px 5px var(--nine)
 }
 
 button.btn-default.dim:active {
-    box-shadow: inset 0 0 0 var(--dim2),0 2px 0 0 var(--dim2),0 5px 3px var(--nine)
+    box-shadow: inset 0 0 0 var(--dim2), 0 2px 0 0 var(--dim2), 0 5px 3px var(--nine)
 }
 
 button.btn-warning.dim {
-    box-shadow: inset 0 0 0 var(--dim3),0 5px 0 0 var(--dim3),0 10px 5px var(--nine)
+    box-shadow: inset 0 0 0 var(--dim3), 0 5px 0 0 var(--dim3), 0 10px 5px var(--nine)
 }
 
 button.btn-warning.dim:active {
-    box-shadow: inset 0 0 0 var(--dim3),0 2px 0 0 var(--dim3),0 5px 3px var(--nine)
+    box-shadow: inset 0 0 0 var(--dim3), 0 2px 0 0 var(--dim3), 0 5px 3px var(--nine)
 }
 
 button.btn-info.dim {
-    box-shadow: inset 0 0 0 var(--dim4),0 5px 0 0 var(--dim4),0 10px 5px var(--nine)
+    box-shadow: inset 0 0 0 var(--dim4), 0 5px 0 0 var(--dim4), 0 10px 5px var(--nine)
 }
 
 button.btn-info.dim:active {
-    box-shadow: inset 0 0 0 var(--dim4),0 2px 0 0 var(--dim4),0 5px 3px var(--nine)
+    box-shadow: inset 0 0 0 var(--dim4), 0 2px 0 0 var(--dim4), 0 5px 3px var(--nine)
 }
 
 button.btn-success.dim {
-    box-shadow: inset 0 0 0 var(--dim5),0 5px 0 0 var(--dim5),0 10px 5px var(--nine)
+    box-shadow: inset 0 0 0 var(--dim5), 0 5px 0 0 var(--dim5), 0 10px 5px var(--nine)
 }
 
 button.btn-success.dim:active {
-    box-shadow: inset 0 0 0 var(--dim5),0 2px 0 0 var(--dim5),0 5px 3px var(--nine)
+    box-shadow: inset 0 0 0 var(--dim5), 0 2px 0 0 var(--dim5), 0 5px 3px var(--nine)
 }
 
 button.dim:before {
@@ -1642,7 +1735,8 @@ button.dim:active:before {
     vertical-align: middle
 }
 
-.vertical-align h2,.vertical-align h3 {
+.vertical-align h2,
+.vertical-align h3 {
     margin: 0
 }
 
@@ -1722,14 +1816,17 @@ button.dim:active:before {
     text-align: center
 }
 
-.dd,.dd-list {
+.dd,
+.dd-list {
     display: block;
     padding: 0;
     margin: 0;
     list-style: none
 }
 
-.dd,.dd-item>button,.dd-list {
+.dd,
+.dd-item>button,
+.dd-list {
     position: relative
 }
 
@@ -1746,7 +1843,8 @@ button.dim:active:before {
     display: none
 }
 
-.dd-item,.dd-placeholder {
+.dd-item,
+.dd-placeholder {
     display: block;
     position: relative;
     margin: 0;
@@ -1795,7 +1893,8 @@ button.dim:active:before {
     -moz-box-sizing: border-box
 }
 
-#wrapper,body {
+#wrapper,
+body {
     overflow-x: hidden
 }
 
@@ -1864,7 +1963,7 @@ label.error {
 
 @media only screen and (min-width: 1170px) {
     #vertical-timeline.center-orientation {
-        margin-top:3em;
+        margin-top: 3em;
         margin-bottom: 3em
     }
 
@@ -1895,7 +1994,7 @@ label.error {
 
 @media only screen and (min-width: 1170px) {
     .center-orientation .vertical-timeline-block {
-        margin:4em 0
+        margin: 4em 0
     }
 
     .center-orientation .vertical-timeline-block:first-child {
@@ -1931,7 +2030,7 @@ label.error {
 
 @media only screen and (min-width: 1170px) {
     .center-orientation .vertical-timeline-icon {
-        width:50px;
+        width: 50px;
         height: 50px;
         left: 50%;
         margin-left: -25px;
@@ -1995,7 +2094,7 @@ label.error {
 
 @media only screen and (min-width: 768px) {
     .vertical-timeline-content h2 {
-        font-size:18px
+        font-size: 18px
     }
 
     .vertical-timeline-content p {
@@ -2005,7 +2104,7 @@ label.error {
 
 @media only screen and (min-width: 1170px) {
     .center-orientation .vertical-timeline-content {
-        margin-left:0;
+        margin-left: 0;
         padding: 1.6em;
         width: 45%
     }
@@ -2050,7 +2149,8 @@ label.error {
     }
 }
 
-.slick-next:before,.slick-prev:before {
+.slick-next:before,
+.slick-prev:before {
     color: var(--purple) !important
 }
 
@@ -2075,7 +2175,8 @@ a {
     cursor: pointer
 }
 
-a:focus,a:hover {
+a:focus,
+a:hover {
     text-decoration: none
 }
 
@@ -2107,21 +2208,30 @@ a:focus,a:hover {
 
 @media (min-width: 768px) {
     #page-wrapper {
-        position:inherit;
+        position: inherit;
         margin: 0 0 0 240px;
         min-height: 2002px
     }
 }
 
-.ibox-content h1,.ibox-content h2,.ibox-content h3,.ibox-content h4,.ibox-content h5 {
+.ibox-content h1,
+.ibox-content h2,
+.ibox-content h3,
+.ibox-content h4,
+.ibox-content h5 {
     margin-top: 5px
 }
 
-.ibox-title h1,.ibox-title h2,.ibox-title h3,.ibox-title h4,.ibox-title h5 {
+.ibox-title h1,
+.ibox-title h2,
+.ibox-title h3,
+.ibox-title h4,
+.ibox-title h5 {
     margin-top: 5px
 }
 
-.link-block,.nav.navbar-top-links .link-block a {
+.link-block,
+.nav.navbar-top-links .link-block a {
     font-size: 12px
 }
 
@@ -2134,7 +2244,9 @@ a:focus,a:hover {
     border-top: 0 !important
 }
 
-.border-left,.border-left-right,.border-right {
+.border-left,
+.border-left-right,
+.border-right {
     border-top: none;
     border-bottom: none
 }
@@ -2194,7 +2306,8 @@ code {
     padding: 2px 4px
 }
 
-.ibox-content,.ibox-title {
+.ibox-content,
+.ibox-title {
     background-color: var(--white);
     border-color: var(--navborder2);
     border-image: none;
@@ -2212,7 +2325,8 @@ code {
     display: none
 }
 
-.ibox:after,.ibox:before {
+.ibox:after,
+.ibox:before {
     display: table
 }
 
@@ -2318,7 +2432,8 @@ code {
     color: var(--white)
 }
 
-.contact-box,.light-navbar .navbar.navbar-static-top {
+.contact-box,
+.light-navbar .navbar.navbar-static-top {
     background-color: var(--white)
 }
 
@@ -2511,7 +2626,8 @@ a.close-canvas-menu:hover {
     margin-top: 140px
 }
 
-.timeline-item .content,.timeline-item .date i {
+.timeline-item .content,
+.timeline-item .date i {
     border-left: 1px solid var(--navborder2);
     border-top: 1px solid var(--navborder2)
 }
@@ -2595,7 +2711,8 @@ ul.clear-list:first-child {
     margin-right: 10px
 }
 
-.file .icon,.file .image {
+.file .icon,
+.file .image {
     height: 100px;
     overflow: hidden
 }
@@ -2629,7 +2746,8 @@ ul.clear-list:first-child {
     color: var(--navli)
 }
 
-.vote-icon,.vote-title {
+.vote-icon,
+.vote-title {
     display: block
 }
 
@@ -2668,7 +2786,8 @@ ul.clear-list:first-child {
     margin-bottom: 20px
 }
 
-.mail-body,.mail-text {
+.mail-body,
+.mail-text {
     border-top: 1px solid var(--navborder2)
 }
 
@@ -2709,7 +2828,8 @@ ul.clear-list:first-child {
     line-height: 22px
 }
 
-.article h1,.blog h2 {
+.article h1,
+.blog h2 {
     font-weight: 700
 }
 
@@ -2718,7 +2838,8 @@ ul.clear-list:first-child {
     color: var(--contact)
 }
 
-.blog .btn,.blog h5 {
+.blog .btn,
+.blog h5 {
     margin: 0 0 5px
 }
 
@@ -2826,7 +2947,8 @@ ul.clear-list:first-child {
     margin-bottom: 2px
 }
 
-.vote-title:focus,.vote-title:hover {
+.vote-title:focus,
+.vote-title:hover {
     color: inherit
 }
 
@@ -2900,7 +3022,9 @@ body.landing-page {
 }
 
 @-webkit-keyframes sk-doubleBounce {
-    0%, 100% {
+
+    0%,
+    100% {
         -webkit-transform: scale(0);
         transform: scale(0)
     }
@@ -2912,7 +3036,9 @@ body.landing-page {
 }
 
 @keyframes sk-doubleBounce {
-    0%, 100% {
+
+    0%,
+    100% {
         -webkit-transform: scale(0);
         transform: scale(0)
     }
@@ -2924,7 +3050,10 @@ body.landing-page {
 }
 
 @-webkit-keyframes sk-waveStretchDelay {
-    0%, 100%, 40% {
+
+    0%,
+    100%,
+    40% {
         -webkit-transform: scaleY(0.4);
         transform: scaleY(0.4)
     }
@@ -2936,7 +3065,10 @@ body.landing-page {
 }
 
 @keyframes sk-waveStretchDelay {
-    0%, 100%, 40% {
+
+    0%,
+    100%,
+    40% {
         -webkit-transform: scaleY(0.4);
         transform: scaleY(0.4)
     }
@@ -3042,7 +3174,9 @@ body.landing-page {
 }
 
 @-webkit-keyframes sk-chasingDotsBounce {
-    0%, 100% {
+
+    0%,
+    100% {
         -webkit-transform: scale(0);
         transform: scale(0)
     }
@@ -3054,7 +3188,9 @@ body.landing-page {
 }
 
 @keyframes sk-chasingDotsBounce {
-    0%, 100% {
+
+    0%,
+    100% {
         -webkit-transform: scale(0);
         transform: scale(0)
     }
@@ -3066,7 +3202,10 @@ body.landing-page {
 }
 
 @-webkit-keyframes sk-threeBounceDelay {
-    0%, 100%, 80% {
+
+    0%,
+    100%,
+    80% {
         -webkit-transform: scale(0);
         transform: scale(0)
     }
@@ -3078,7 +3217,10 @@ body.landing-page {
 }
 
 @keyframes sk-threeBounceDelay {
-    0%, 100%, 80% {
+
+    0%,
+    100%,
+    80% {
         -webkit-transform: scale(0);
         transform: scale(0)
     }
@@ -3090,7 +3232,10 @@ body.landing-page {
 }
 
 @-webkit-keyframes sk-circleBounceDelay {
-    0%, 100%, 80% {
+
+    0%,
+    100%,
+    80% {
         -webkit-transform: scale(0);
         transform: scale(0)
     }
@@ -3102,7 +3247,10 @@ body.landing-page {
 }
 
 @keyframes sk-circleBounceDelay {
-    0%, 100%, 80% {
+
+    0%,
+    100%,
+    80% {
         -webkit-transform: scale(0);
         transform: scale(0)
     }
@@ -3114,7 +3262,10 @@ body.landing-page {
 }
 
 @-webkit-keyframes sk-cubeGridScaleDelay {
-    0%, 100%, 70% {
+
+    0%,
+    100%,
+    70% {
         -webkit-transform: scale3D(1, 1, 1);
         transform: scale3D(1, 1, 1)
     }
@@ -3126,7 +3277,10 @@ body.landing-page {
 }
 
 @keyframes sk-cubeGridScaleDelay {
-    0%, 100%, 70% {
+
+    0%,
+    100%,
+    70% {
         -webkit-transform: scale3D(1, 1, 1);
         transform: scale3D(1, 1, 1)
     }
@@ -3162,7 +3316,10 @@ body.landing-page {
 }
 
 @-webkit-keyframes sk-circleFadeDelay {
-    0%, 100%, 39% {
+
+    0%,
+    100%,
+    39% {
         opacity: 0
     }
 
@@ -3172,7 +3329,10 @@ body.landing-page {
 }
 
 @keyframes sk-circleFadeDelay {
-    0%, 100%, 39% {
+
+    0%,
+    100%,
+    39% {
         opacity: 0
     }
 
@@ -3199,7 +3359,8 @@ body.landing-page {
     background-color: var(--white3) !important
 }
 
-.potw-title,.potw-topic .panel-heading a::before {
+.potw-title,
+.potw-topic .panel-heading a::before {
     color: var(--navli);
     font-weight: 800
 }
@@ -3218,7 +3379,8 @@ body.landing-page {
     font-family: 'Open Sans', helvetica, arial, sans-serif
 }
 
-.panel-link:hover,.panel-link:focus {
+.panel-link:hover,
+.panel-link:focus {
     background-color: var(--potw);
     color: var(--white)
 }
@@ -3232,7 +3394,8 @@ body.landing-page {
     flex-wrap: wrap
 }
 
-.potw-row .potw-label,.potw-row .potw-link {
+.potw-row .potw-label,
+.potw-row .potw-link {
     font-weight: 600;
     text-align: center;
     display: inline-block;
@@ -3272,7 +3435,8 @@ body.landing-page {
     transition: all 1s
 }
 
-.potw-row .potw-link:hover,.potw-row .potw-link:focus {
+.potw-row .potw-link:hover,
+.potw-row .potw-link:focus {
     background-color: var(--potw);
     color: var(--white)
 }
@@ -3393,7 +3557,8 @@ body.landing-page {
     transition: all .3s ease-in-out 0s
 }
 
-.landing-page .navbar-default .navbar-brand:focus,.landing-page .navbar-default .navbar-brand:hover {
+.landing-page .navbar-default .navbar-brand:focus,
+.landing-page .navbar-default .navbar-brand:hover {
     background: var(--purple);
     color: var(--white2)
 }
@@ -3480,13 +3645,15 @@ body.landing-page {
     opacity: 1
 }
 
-.landing-page .carousel-fade .carousel-inner .active.left,.landing-page .carousel-fade .carousel-inner .active.right {
+.landing-page .carousel-fade .carousel-inner .active.left,
+.landing-page .carousel-fade .carousel-inner .active.right {
     left: 0;
     opacity: 0;
     z-index: 1
 }
 
-.landing-page .carousel-fade .carousel-inner .next.left,.landing-page .carousel-fade .carousel-inner .prev.right {
+.landing-page .carousel-fade .carousel-inner .next.left,
+.landing-page .carousel-fade .carousel-inner .prev.right {
     opacity: 1
 }
 
@@ -3498,7 +3665,8 @@ body.landing-page {
     width: 6%
 }
 
-.landing-page .carousel-control.left,.landing-page .carousel-control.right {
+.landing-page .carousel-control.left,
+.landing-page .carousel-control.right {
     background: 0 0
 }
 
@@ -3553,7 +3721,8 @@ body.landing-page {
     color: inherit
 }
 
-.landing-page .features-block,.landing-page .features-text {
+.landing-page .features-block,
+.landing-page .features-text {
     margin-top: 40px
 }
 
@@ -3650,7 +3819,10 @@ body.landing-page {
     margin-right: 10px
 }
 
-.landing-page .btn-info.btn-outline:hover,.landing-page .btn-primary.btn-outline:hover,.landing-page .btn-success.btn-outline:hover,.landing-page .btn-warning.btn-outline:hover {
+.landing-page .btn-info.btn-outline:hover,
+.landing-page .btn-primary.btn-outline:hover,
+.landing-page .btn-success.btn-outline:hover,
+.landing-page .btn-warning.btn-outline:hover {
     color: var(--white)
 }
 
@@ -3661,13 +3833,17 @@ body.landing-page {
     padding: 10px 20px
 }
 
-.landing-page .btn-primary.active,.landing-page .btn-primary:active,.landing-page .btn-primary:focus,.landing-page .btn-primary:hover {
+.landing-page .btn-primary.active,
+.landing-page .btn-primary:active,
+.landing-page .btn-primary:focus,
+.landing-page .btn-primary:hover {
     background-color: var(--purple);
     border-color: var(--purple);
     color: var(--white)
 }
 
-.landing-page .btn-primary.active,.landing-page .btn-primary:active {
+.landing-page .btn-primary.active,
+.landing-page .btn-primary:active {
     background-image: none
 }
 
@@ -3681,14 +3857,16 @@ body.landing-page {
     border-color: var(--btndisabled5)
 }
 
-.landing-page .btn-primary[disabled]:active,.landing-page .btn-primary[disabled]:focus,.landing-page .btn-primary[disabled]:hover {
+.landing-page .btn-primary[disabled]:active,
+.landing-page .btn-primary[disabled]:focus,
+.landing-page .btn-primary[disabled]:hover {
     background-color: var(--btndisabled5);
     border-color: var(--btndisabled5)
 }
 
 @media (min-width: 768px) {
     .landing-page .navbar-wrapper {
-        margin-top:20px
+        margin-top: 20px
     }
 
     .landing-page .navbar-wrapper .container {
@@ -3711,13 +3889,13 @@ body.landing-page {
 
 @media (max-width: 992px) {
     .landing-page .carousel-image {
-        display:none
+        display: none
     }
 }
 
 @media (max-width: 768px) {
     .landing-page .carousel-caption {
-        left:5%;
+        left: 5%;
         top: 80px
     }
 
@@ -3816,7 +3994,7 @@ body.landing-page {
 
 @media (max-width: 390px) {
     .page-footer {
-        height:200px
+        height: 200px
     }
 }
 
@@ -3835,7 +4013,7 @@ body.landing-page {
 
 @media (max-width: 390px) {
     .page-footer .logo {
-        box-shadow:var(--dim2) 0px 2px 0px
+        box-shadow: var(--dim2) 0px 2px 0px
     }
 }
 
@@ -3913,7 +4091,7 @@ label:active:after {
 
 @media screen and (max-width: 767px) {
     #forswitch {
-        margin-top:10px
+        margin-top: 10px
     }
 
     .laptop {
@@ -3928,7 +4106,7 @@ label:active:after {
 
 @media screen and (min-width: 767px) {
     .phone {
-        display:none
+        display: none
     }
 
     #forswitch {
@@ -3943,7 +4121,10 @@ label:active:after {
 }
 
 .sun {
-    zoom:0.01;-ms-zoom:0.01;-webkit-zoom:0.01;-moz-transform: scale(0.01, 0.01);
+    zoom: 0.01;
+    -ms-zoom: 0.01;
+    -webkit-zoom: 0.01;
+    -moz-transform: scale(0.01, 0.01);
     transform: scale(0.01, 0.01);
     -moz-transform-origin: left center;
     transform-origin: left center;
@@ -3951,7 +4132,10 @@ label:active:after {
 }
 
 .moon {
-    zoom:0.01;-ms-zoom:0.01;-webkit-zoom:0.01;-moz-transform: scale(0.01, 0.01);
+    zoom: 0.01;
+    -ms-zoom: 0.01;
+    -webkit-zoom: 0.01;
+    -moz-transform: scale(0.01, 0.01);
     transform: scale(0.01, 0.01);
     -moz-transform-origin: left center;
     transform-origin: left center;
@@ -3966,7 +4150,10 @@ label:active:after {
     display: none !important
 }
 
-html.transition,html.transition *,html.transition *:before,html.transition *:after {
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
     transition: all 750ms !important;
     transition-delay: 0 !important
 }
@@ -3975,7 +4162,8 @@ html.transition,html.transition *,html.transition *:before,html.transition *:aft
     background-color: inherit
 }
 
-.dropdown-menu li a:focus,.dropdown-menu li a:hover {
+.dropdown-menu li a:focus,
+.dropdown-menu li a:hover {
     background-color: var(--dropdownbg)
 }
 
@@ -3983,7 +4171,9 @@ html.transition,html.transition *,html.transition *:before,html.transition *:aft
     background-color: var(--white)
 }
 
-.navbar-scroll .dropdown-menu li a:focus,.navbar-scroll .dropdown-menu li a:hover,.navbar-scroll .dropdown-menu li.active a {
+.navbar-scroll .dropdown-menu li a:focus,
+.navbar-scroll .dropdown-menu li a:hover,
+.navbar-scroll .dropdown-menu li.active a {
     color: var(--white2) !important
 }
 

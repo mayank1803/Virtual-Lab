@@ -28,20 +28,16 @@
 //    dragObj.style.top = y + "px";
 //};
 
-function del(val)
-{
+function del(val) {
     document.getElementById("d").value = val;//calculate value
 
 }
-function v(val)
-{
+function v(val) {
     document.getElementById("d").value += val;//read value
 
 }
 
-function Root(fn)
-
-{
+function Root(fn) {
 
 
     if (fn == "sq")
@@ -51,9 +47,7 @@ function Root(fn)
 
 }
 
-function Power(fn)
-
-{
+function Power(fn) {
 
     if (fn == "sq")
         document.getElementById("d").value = Math.pow(document.getElementById("d").value, 2);
@@ -77,14 +71,11 @@ function TrigFunc(tn) {
 
 
 
-function eqls()
-{
-    try
-    {
+function eqls() {
+    try {
         del(eval(document.getElementById("d").value))
     }
-    catch (eqls)
-    {
+    catch (eqls) {
         del('Error')
     }
 }

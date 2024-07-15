@@ -2,20 +2,166 @@
    HTML5 CSS Reset Minified 
    ========================================================================== */
 
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-body{line-height:1}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-nav ul{list-style:none}
-blockquote,q{quotes:none}
-blockquote:before,blockquote:after,q:before,q:after{content:none}
-a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
-mark{background-color:rgb(114, 210, 219);color:#000;font-style:italic;font-weight:bold}
-del{text-decoration:line-through}
-abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
-table{border-collapse:collapse;border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid #77abed;margin:1em 0;padding:0}
-input,select{vertical-align:middle}
-li{list-style:none; }
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent
+}
+
+body {
+  line-height: 1
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block
+}
+
+nav ul {
+  list-style: none
+}
+
+blockquote,
+q {
+  quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none
+}
+
+mark {
+  background-color: rgb(114, 210, 219);
+  color: #000;
+  font-style: italic;
+  font-weight: bold
+}
+
+del {
+  text-decoration: line-through
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #77abed;
+  margin: 1em 0;
+  padding: 0
+}
+
+input,
+select {
+  vertical-align: middle
+}
+
+li {
+  list-style: none;
+}
 
 
 /* =============================================================================
@@ -24,31 +170,32 @@ li{list-style:none; }
 
 /* ---- base ---- */
 
-html,body{ 
-	width:100%;
-	/* height:75%; */
-	background:black;
+html,
+body {
+  width: 100%;
+  /* height:75%; */
+  background: black;
   height: 40vh;
 }
 
-html{
+html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-body{
-  font:normal 75% Arial, Helvetica, sans-serif;
+body {
+  font: normal 75% Arial, Helvetica, sans-serif;
   background-color: black !important;
 }
 
-canvas{
-  display:block;
-  vertical-align:bottom;
+canvas {
+  display: block;
+  vertical-align: bottom;
 }
 
 
 /* ---- stats.js ---- */
 
-.count-particles{
+.count-particles {
   background: #000022;
   position: absolute;
   top: 48px;
@@ -63,7 +210,8 @@ canvas{
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
-.mct{
+
+.mct {
   /* background-color: rgb(0, 0, 0); */
   width: 100%;
   height: 40px;
@@ -73,7 +221,8 @@ canvas{
   text-align: center;
   /* padding: 7px 0; */
 }
-.jct{
+
+.jct {
   width: 100%;
   border-radius: 10px;
   padding: 2.4rem;
@@ -89,31 +238,31 @@ canvas{
 
 
 
-.js-count-particles{
+.js-count-particles {
   font-size: 1.1em;
 }
 
 #stats,
-.count-particles{
+.count-particles {
   -webkit-user-select: none;
   user-select: none;
   margin-top: 5px;
   margin-left: 5px;
 }
 
-#stats{
+#stats {
   border-radius: 3px 3px 0 0;
   overflow: hidden;
 }
 
-.count-particles{
+.count-particles {
   border-radius: 0 0 3px 3px;
 }
 
 
 /* ---- particles.js container ---- */
 
-#particles-js{
+#particles-js {
   width: 100%;
   height: 45%;
   background-color: rgb(0, 0, 0);
@@ -123,32 +272,32 @@ canvas{
   background-repeat: no-repeat;
 }
 
-#particles-js canvas{
+#particles-js canvas {
   height: 1000% !important;
 }
 
-.topic{
+.topic {
   margin: 2.2em 0;
 }
 
-.mct h3{
+.mct h3 {
   font-size: 42px;
 
 }
 
 
-.nav-item-1{
+.nav-item-1 {
   color: white;
   transition: all 0.6s ease;
   /* transition: background-color 0.3s ease; */
 }
 
-.nav-item-1:hover{
+.nav-item-1:hover {
   color: rgb(8, 224, 244);
 
 }
 
-.my-container{
+.my-container {
   width: 50%;
   margin: 0 auto;
   border-radius: 10px;
@@ -163,29 +312,29 @@ canvas{
   /* text-align: center; */
 }
 
-.option-selector{
+.option-selector {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.option-selector .image{
+.option-selector .image {
   padding: 0.6em;
   background-color: white;
   border-radius: 0.4em;
 }
 
-.option-selector img{
+.option-selector img {
   width: 180px;
   height: 180px;
   background-color: white;
 }
 
-.option-selector a{
+.option-selector a {
   color: white;
   transition: all 0.3s ease;
 }
 
-.option-selector a:hover{
+.option-selector a:hover {
   color: rgb(8, 224, 244);
 }

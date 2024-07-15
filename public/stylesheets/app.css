@@ -1,111 +1,120 @@
-
-body{
+body {
     font-family: 'Nunito', sans-serif;
-     background: #ffffff;
-     overflow-x: hidden;
+    background: #ffffff;
+    overflow-x: hidden;
 }
 
-#mainNavbar{
-    font-size:1.5rem;
+#mainNavbar {
+    font-size: 1.5rem;
     font-weight: 100;
     padding-top: 50%;
-    padding-bottom:0% ;
+    padding-bottom: 0%;
     /* alternatively can be py-0  */
 }
-#mainNavbar .nav-link{
-    color:rgb(0, 0, 0);;
+
+#mainNavbar .nav-link {
+    color: rgb(0, 0, 0);
+    ;
 
 }
 
-    .container{
-        max-width: 970px;
-    }
-
-
-#mainNavbar .nav-link:hover{
-    color:#010c08;
+.container {
+    max-width: 970px;
 }
 
-#mainNavbar .navbar-brand
-{
-    color:rgba(238, 233, 233, 1);
-    
+
+#mainNavbar .nav-link:hover {
+    color: #010c08;
 }
 
-.navbar.scrolled{
-    background-color :rgba(238, 233, 233, 0.7)
+#mainNavbar .navbar-brand {
+    color: rgba(238, 233, 233, 1);
+
 }
+
+.navbar.scrolled {
+    background-color: rgba(238, 233, 233, 0.7)
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  th, td {
+}
+
+th,
+td {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #ddd;
-  }
-  
-  tr:hover {background-color:#222222;}
-
-  .hide{
-      display: none;
-  }
-
-.instruct{
-	color:white;
-	width: 0px;
-    font-size: 0px;
-	transition: 0.2s;
 }
 
-h5:hover .instruct{
+tr:hover {
+    background-color: #222222;
+}
+
+.hide {
+    display: none;
+}
+
+.instruct {
+    color: white;
+    width: 0px;
+    font-size: 0px;
+    transition: 0.2s;
+}
+
+h5:hover .instruct {
 
     width: 40px;
     transition-delay: 1;
     font-size: 15px;
 
 }
-div#lab-article-navigation, #experiment-article-navigation 
-{
-	height:90px;
-	margin: 0 auto;
-	width:1024px;
-	background: url(../images/content_bg.jpg);
-} 
-nav#lab-article-navigation ul li, #experiment-article-navigation ul li
-{
-	float: left ;
-	list-style: none;
-	margin-right: 0.3em; 
+
+div#lab-article-navigation,
+#experiment-article-navigation {
+    height: 90px;
+    margin: 0 auto;
+    width: 1024px;
+    background: url(../images/content_bg.jpg);
 }
 
-nav#lab-article-navigation ul li img, #experiment-article-navigation ul li img
-{
-	width:50px;
-	height:50px;
-} 
-nav#lab-article-navigation ul li a:link, #experiment-article-navigation ul li a:link,
-nav#lab-article-navigation ul li a:visited, #experiment-article-navigation ul li a:visited
-{
-	color:#02568e;
-	text-decoration: underline;
-	float: right;
-	font-size: 16px;
-	text-transform:uppercase;
-	padding: 9px;
+nav#lab-article-navigation ul li,
+#experiment-article-navigation ul li {
+    float: left;
+    list-style: none;
+    margin-right: 0.3em;
 }
 
-nav#lab-article-navigation ul li a:hover, #experiment-article-navigation ul li a:hover,
-nav#lab-article-navigation ul li a:focus, #experiment-article-navigation ul li a:focus 
-{
-	color: #ffffff;
-	background-color:#c5ccc8;
+nav#lab-article-navigation ul li img,
+#experiment-article-navigation ul li img {
+    width: 50px;
+    height: 50px;
 }
 
-.center{
+nav#lab-article-navigation ul li a:link,
+#experiment-article-navigation ul li a:link,
+nav#lab-article-navigation ul li a:visited,
+#experiment-article-navigation ul li a:visited {
+    color: #02568e;
+    text-decoration: underline;
+    float: right;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 9px;
+}
+
+nav#lab-article-navigation ul li a:hover,
+#experiment-article-navigation ul li a:hover,
+nav#lab-article-navigation ul li a:focus,
+#experiment-article-navigation ul li a:focus {
+    color: #ffffff;
+    background-color: #c5ccc8;
+}
+
+.center {
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }

@@ -34,10 +34,6 @@ jsPlumb.ready(function () {
             });
         },
 
-    // notice there are no dragOptions specified here, which is different from the
-    // draggableConnectors2 demo.  all connections on this page are therefore
-    // implicitly in the default scope.
-	//-------------------------voltage connection----------------//
          endpoint = {
             anchor: [0.5, 0.5, 0, -1],
             connectorStyle: { strokeWidth: 5, stroke: "rgba(255,0,0,1)" },

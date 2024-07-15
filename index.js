@@ -2,14 +2,14 @@ var express = require("express"),
   bodyParser = require("body-parser"),
   indexPage = require("./routes/index"),
   assignmentPage = require("./routes/assignment")
-  path = require('path'),
+path = require('path'),
   fs = require('fs'),
   multer = require('multer'),
   methodOverride = require("method-override"),
   app = express(),
   flash = require("connect-flash");
-  const PORT = process.env.PORT || 8000;
-  app.set('views', path.join(__dirname + '/views'));
+const PORT = process.env.PORT || 8000;
+app.set('views', path.join(__dirname + '/views'));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.urlencoded({ extended: false }));

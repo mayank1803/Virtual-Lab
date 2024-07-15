@@ -4,7 +4,7 @@ var flag;
 var axes = {};
 var vmaxs;  //in volt
 var tmaxs; // in msec  0.001; //in sec
-var voltperdiv,timeperdiv;
+var voltperdiv, timeperdiv;
 
 //-----------------------------------------------Oscilliscope on-off function----------------------------------------------------------//
 function mainswt() {
@@ -19,9 +19,9 @@ function mainswt() {
         document.getElementById("chhn2").disabled = true;
         document.getElementById("dual").disabled = true;
         document.getElementById("grnd").disabled = true;
-        document.getElementById("resistor").disabled=false;
-        document.getElementById("resistor").value='0';
-         document.getElementById("restr").value='0';
+        document.getElementById("resistor").disabled = false;
+        document.getElementById("resistor").value = '0';
+        document.getElementById("restr").value = '0';
         document.getElementById("sinecrv").disabled = true;
         document.getElementById("rectifiedop").disabled = true;
 
@@ -31,8 +31,8 @@ function mainswt() {
 
         document.getElementById("sinecrv").disabled = false;
         document.getElementById("rectifiedop").disabled = true;
-       
-        document.getElementById("resistor").disabled=true;
+
+        document.getElementById("resistor").disabled = true;
         document.getElementById("chhn1").disabled = true;
         document.getElementById("chhn2").disabled = true;
         document.getElementById("dual").disabled = true;
@@ -44,40 +44,39 @@ function mainswt() {
     }
 }
 //------------------------------------------------Amp1perdiv(volt/div)--------------------------------------------------------//
-function amp1pdiv()
-{
-     voltperdiv = document.getElementById("amp-knob1").value;
-  vmaxs = parseFloat(voltperdiv)*4;//volt 
+function amp1pdiv() {
+    voltperdiv = document.getElementById("amp-knob1").value;
+    vmaxs = parseFloat(voltperdiv) * 4;//volt 
 
     if (flag == 1) {
-        drawsine();
-    }
-     if (flag == 2) {
-        drawhlfrectifier();
-    }
-
-   if(flag==3){
-        bthdhlfrc();
-    }
-    if(flag==4){
-       grndhlfrc();
-    }
-}
-//------------------------------------------------timeperdiv(ms/div)--------------------------------------------------------//
-function timepdiv() {
-    timeperdiv = document.getElementById("fq-knob").value ;
-	tmaxs =parseFloat(timeperdiv)*10*Math.pow(10,-3); //1sec
-   if (flag == 1) {
         drawsine();
     }
     if (flag == 2) {
         drawhlfrectifier();
     }
-if(flag==3){
+
+    if (flag == 3) {
         bthdhlfrc();
     }
-    if(flag==4){
-       grndhlfrc();
+    if (flag == 4) {
+        grndhlfrc();
+    }
+}
+//------------------------------------------------timeperdiv(ms/div)--------------------------------------------------------//
+function timepdiv() {
+    timeperdiv = document.getElementById("fq-knob").value;
+    tmaxs = parseFloat(timeperdiv) * 10 * Math.pow(10, -3); //1sec
+    if (flag == 1) {
+        drawsine();
+    }
+    if (flag == 2) {
+        drawhlfrectifier();
+    }
+    if (flag == 3) {
+        bthdhlfrc();
+    }
+    if (flag == 4) {
+        grndhlfrc();
     }
 }
 //
@@ -89,27 +88,27 @@ function drawAxis() {
     canvas = document.getElementById("mycanvas");
     ctx = canvas.getContext("2d");
 
-   voltperdiv1 = document.getElementById("amp-knob1").value;
-   vmaxs1 = parseFloat(voltperdiv1)*4;//volt 
-  voltperdiv2 = document.getElementById("amp-knob2").value;
-  vmaxs2 = parseFloat(voltperdiv2)*4;//volt 
+    voltperdiv1 = document.getElementById("amp-knob1").value;
+    vmaxs1 = parseFloat(voltperdiv1) * 4;//volt 
+    voltperdiv2 = document.getElementById("amp-knob2").value;
+    vmaxs2 = parseFloat(voltperdiv2) * 4;//volt 
 
     axes.x0 = 0.5 + 0.0 * canvas.width;//260.5
     axes.y0 = 0.5 + 0.5 * canvas.height;//175.5
     // axes.scale = 50;
-    axes.xscale = (canvas.width) / ( tmaxs); 	// x pix per s//260000
-   
+    axes.xscale = (canvas.width) / (tmaxs); 	// x pix per s//260000
+
     axes.N = 101;
-     if(flag==1){
-          axes.yscale = (canvas.height) / (2 * vmaxs1);    // y pix per V //87.5
-     }
-     if(flag==2){
-         axes.yscale = (canvas.height) / (2 * vmaxs2);    // y pix per V //87.5
-     }
-    if(flag==3){
-         axes.yscale1 = (canvas.height) / (2 * vmaxs1);    // y pix per V //87.5
-         axes.yscale2 = (canvas.height) / (2 * vmaxs2);    // y pix per V //87.5
-     }
+    if (flag == 1) {
+        axes.yscale = (canvas.height) / (2 * vmaxs1);    // y pix per V //87.5
+    }
+    if (flag == 2) {
+        axes.yscale = (canvas.height) / (2 * vmaxs2);    // y pix per V //87.5
+    }
+    if (flag == 3) {
+        axes.yscale1 = (canvas.height) / (2 * vmaxs1);    // y pix per V //87.5
+        axes.yscale2 = (canvas.height) / (2 * vmaxs2);    // y pix per V //87.5
+    }
     axes.doNegativeX = true;
     ctx.lineWidth = 0.5;
     ctx.lineWidth = ticklinewidth;
@@ -140,23 +139,23 @@ function drawGrid(ctx) {
 }
 
 var axismargin = 30,
-        axisorigin = {x: 0, y: 0},
-        axisright = 520,
-        horzntickspcng = 8.7,
-        vrtcltickspcng = 8.8,
-        axiswidth = axisright, //520
-        axisheight = axisorigin.y, //350
-        numofvrtcltick = axisheight / vrtcltickspcng, //175
-        numofhorzntick = axiswidth / horzntickspcng, //57.77777777777778
-        tickwidth = 10,
-        ticklinewidth = 0.5,
-        tickcolor = 'black',
-        axislinewidth = 1.0,
-        axiscolor = 'lightgray';
+    axisorigin = { x: 0, y: 0 },
+    axisright = 520,
+    horzntickspcng = 8.7,
+    vrtcltickspcng = 8.8,
+    axiswidth = axisright, //520
+    axisheight = axisorigin.y, //350
+    numofvrtcltick = axisheight / vrtcltickspcng, //175
+    numofhorzntick = axiswidth / horzntickspcng, //57.77777777777778
+    tickwidth = 10,
+    ticklinewidth = 0.5,
+    tickcolor = 'black',
+    axislinewidth = 1.0,
+    axiscolor = 'lightgray';
 //alert(numofvrtcltick);
 //------------------------------------------------------Horizontal Axis----------------------------------------------------------------------------------//
 function drawHorizontalAxis() {
-//axes.y0=175.5,w=520
+    //axes.y0=175.5,w=520
     var y0 = axes.y0, w = ctx.canvas.width;
     ctx.beginPath();
     ctx.strokeStyle = "rgb(128,128,128)";
@@ -167,8 +166,8 @@ function drawHorizontalAxis() {
 }
 //------------------------------------------------------Vertical Axis------------------------------------------------------------------------------------//          
 function drawVerticalAxis() {
-//axes.x0=260.5,h=350
-    var x0 = axes.x0+218, h = ctx.canvas.height;
+    //axes.x0=260.5,h=350
+    var x0 = axes.x0 + 218, h = ctx.canvas.height;
     ctx.beginPath();
     ctx.strokeStyle = "rgb(128,128,128)";
     ctx.moveTo(x0, 0);
@@ -189,10 +188,10 @@ function drawVerticalAxisTicks() {
             deltaX = tickwidth / 3;
 
         ctx.moveTo(axisorigin.x + 218 - deltaX,
-                axisorigin.y + 1 + i * vrtcltickspcng);
+            axisorigin.y + 1 + i * vrtcltickspcng);
 
         ctx.lineTo(axisorigin.x + 218 + deltaX,
-                axisorigin.y + 1 + i * vrtcltickspcng);
+            axisorigin.y + 1 + i * vrtcltickspcng);
         ctx.stroke();
 
     }
@@ -210,10 +209,10 @@ function drawHorizontalAxisTicks() {
             deltaY = tickwidth / 3;
 
         ctx.moveTo(axisorigin.x + i * horzntickspcng,
-                axisorigin.y + 350 - 175 - deltaY);
+            axisorigin.y + 350 - 175 - deltaY);
 
         ctx.lineTo(axisorigin.x + i * horzntickspcng,
-                axisorigin.y + 350 - 175 + deltaY);
+            axisorigin.y + 350 - 175 + deltaY);
 
         ctx.stroke();
     }
@@ -221,18 +220,18 @@ function drawHorizontalAxisTicks() {
 }
 
 
-function chnlo(){
-drawsine();
+function chnlo() {
+    drawsine();
 }
 
-function chnlt(){
- drawhlfrectifier();   
+function chnlt() {
+    drawhlfrectifier();
 }
 
-function bthd(){
+function bthd() {
     bthdhlfrc();
 }
-  
-  function grnds(){
+
+function grnds() {
     grndhlfrc();
 }

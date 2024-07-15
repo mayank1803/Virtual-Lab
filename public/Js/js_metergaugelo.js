@@ -84,11 +84,11 @@ function check() {
 
     vi = document.getElementById("dc").value;
     rs = document.getElementById("res").value;
-//    re=rs/1000;
-//    document.getElementById("res").value=re;
+    //    re=rs/1000;
+    //    document.getElementById("res").value=re;
     rl = document.getElementById("resl").value;
 
-     rlm = (parseFloat(vz) * parseInt(rs)) / (parseFloat(vi) - parseFloat(vz)); // minimum load resistance
+    rlm = (parseFloat(vz) * parseInt(rs)) / (parseFloat(vi) - parseFloat(vz)); // minimum load resistance
 
     is = (parseFloat(vi) - parseFloat(vz)) / parseInt(rs);
     ise = parseFloat(is) * 1000;
@@ -110,32 +110,32 @@ function check() {
     }
     else {
         document.getElementById("volt").value = vi;
-        document.getElementById("ampz").value=0;
+        document.getElementById("ampz").value = 0;
     }
-//    if (vi == "") {
-//        Alert.render("Enter the Input Voltage");
-//        document.getElementById("add").style.display = "none";
-//    }
-//    else if (rs == "") {
-//        Alert.render("Enter the Series Resistance Value");
-//        document.getElementById("add").style.display = "none";
-//    }
-//    else if (rs != 1000) {
-//        Alert.render("Set Series Resistance Value to 1Kohm");
-//        document.getElementById("add").style.display = "none";
-//    }
-//    else if (rl == "") {
-//        Alert.render("Enter the Load Resistance Value");
-//        document.getElementById("add").style.display = "none";
-//    }
-//    else if (vz == "") {
-//        Alert.render("Enter the Zener Voltage");
-//        document.getElementById("add").style.display = "none";
-//
-//    }
-//    else {
-//        document.getElementById("add").style.display = "block";
-//    }
+    //    if (vi == "") {
+    //        Alert.render("Enter the Input Voltage");
+    //        document.getElementById("add").style.display = "none";
+    //    }
+    //    else if (rs == "") {
+    //        Alert.render("Enter the Series Resistance Value");
+    //        document.getElementById("add").style.display = "none";
+    //    }
+    //    else if (rs != 1000) {
+    //        Alert.render("Set Series Resistance Value to 1Kohm");
+    //        document.getElementById("add").style.display = "none";
+    //    }
+    //    else if (rl == "") {
+    //        Alert.render("Enter the Load Resistance Value");
+    //        document.getElementById("add").style.display = "none";
+    //    }
+    //    else if (vz == "") {
+    //        Alert.render("Enter the Zener Voltage");
+    //        document.getElementById("add").style.display = "none";
+    //
+    //    }
+    //    else {
+    //        document.getElementById("add").style.display = "block";
+    //    }
 
 
 
@@ -210,32 +210,32 @@ function check() {
     var vlt = clmns.innerHTML;
 
     if (document.getElementById("znv").value != document.getElementById("zenrv").value) {
-//        document.getElementById("add").style.display = "none";
-//        Alert.render("Make the Zener Voltage Constant");
- document.getElementById("zenrv").style.borderColor = "red";
+        //        document.getElementById("add").style.display = "none";
+        //        Alert.render("Make the Zener Voltage Constant");
+        document.getElementById("zenrv").style.borderColor = "red";
         document.getElementById("demo").innerHTML = "Make the Zener Voltage Constant";
     }
     else if (document.getElementById("rs").value != (document.getElementById("res").value) / 1000) {
-//        document.getElementById("add").style.display = "none";
-//        Alert.render("Make the Series Resistance Constant");
- document.getElementById("demo").innerHTML = "Make the Series Resistance Constant";
+        //        document.getElementById("add").style.display = "none";
+        //        Alert.render("Make the Series Resistance Constant");
+        document.getElementById("demo").innerHTML = "Make the Series Resistance Constant";
         document.getElementById("res").style.borderColor = "red";
     }
-    else if (document.getElementById("vin").value != document.getElementById("dc").value){
-//        document.getElementById("add").style.display = "none";
-//        Alert.render("Make the Input Voltage Constant");
- document.getElementById("dc").style.borderColor = "red";
+    else if (document.getElementById("vin").value != document.getElementById("dc").value) {
+        //        document.getElementById("add").style.display = "none";
+        //        Alert.render("Make the Input Voltage Constant");
+        document.getElementById("dc").style.borderColor = "red";
         document.getElementById("demo").innerHTML = "Make the Input Voltage Constant";
     }
     else if (vlt == document.getElementById("resl").value) {
-//        document.getElementById("add").style.display = "none";
-//        Alert.render("Change the Load Resistance");
-document.getElementById("demo").innerHTML = "Change the Load Resistance";
+        //        document.getElementById("add").style.display = "none";
+        //        Alert.render("Change the Load Resistance");
+        document.getElementById("demo").innerHTML = "Change the Load Resistance";
         document.getElementById("resl").style.borderColor = "red";
     }
-//    else {
-//        document.getElementById("add").style.display = "block";
-//    }
+    //    else {
+    //        document.getElementById("add").style.display = "block";
+    //    }
 
 
 

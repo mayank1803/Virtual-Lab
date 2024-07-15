@@ -30,15 +30,12 @@ jsPlumb.ready(function () {
                     jsPlumb.removeClass(elId, "jsPlumb_dragged");
                     return;
                 }
-               
+
             });
         },
 
-    // notice there are no dragOptions specified here, which is different from the
-    // draggableConnectors2 demo.  all connections on this page are therefore
-    // implicitly in the default scope.
-	//-------------------------voltage connection----------------//
-         endpoint = {
+
+        endpoint = {
             anchor: [0.5, 0.5, 0, -1],
             connectorStyle: { strokeWidth: 5, stroke: "rgba(255,0,0,1)" },
             endpointsOnTop: true,
@@ -53,8 +50,8 @@ jsPlumb.ready(function () {
 
             return instance.addEndpoint(elId, endpoint);
         },
-		//-------------------------ground connection----------------//
-         endpoint1 = {
+        //-------------------------ground connection----------------//
+        endpoint1 = {
             anchor: [0.5, 0.5, 0, -1],
             connectorStyle: { strokeWidth: 5, stroke: "rgba(0,0,0,1)" },
             endpointsOnTop: true,
@@ -70,7 +67,7 @@ jsPlumb.ready(function () {
             return instance.addEndpoint(elId, endpoint1);
         },
 
-    // this is overridden by the YUI demo.
+        // this is overridden by the YUI demo.
         createDisc = function () {
             var d = document.createElement("div");
             d.className = "bigdot";
@@ -82,14 +79,14 @@ jsPlumb.ready(function () {
             var y = (5 * h) + Math.floor(Math.random() * (10 * h));
             d.style.top = y + 'px';
             d.style.left = x + 'px';
-            return {d: d, id: id};
+            return { d: d, id: id };
         };
 
     // get a jsPlumb instance, setting some appropriate defaults and a Container.
     instance = jsPlumb.getInstance({
         DragOptions: { cursor: 'wait', zIndex: 20 },
-        Endpoint: [ "Image", { url: "./images/littledot.png"} ],
-        Connector: [ "Bezier", { curviness: -10 } ],
+        Endpoint: ["Image", { url: "./images/littledot.png" }],
+        Connector: ["Bezier", { curviness: -10 }],
         Container: "canvas"
     });
 
@@ -103,24 +100,24 @@ jsPlumb.ready(function () {
             e7 = prepare("ld7"),
             e8 = prepare("ld8"),
             e9 = prepare("ld9"),
-        
+
             e12 = prepare1("ld12"),
 
             clearBtn = jsPlumb.getSelector("#delete-connct"),
             addBtn = jsPlumb.getSelector("#add");
 
-         var detachLinks = jsPlumb.getSelector(".littledot .detach");
-            instance.on(detachLinks, "click", function (e) {
-                instance.deleteConnectionsForElement(this.getAttribute("rel"));
-                jsPlumbUtil.consume(e);
-            });
+        var detachLinks = jsPlumb.getSelector(".littledot .detach");
+        instance.on(detachLinks, "click", function (e) {
+            instance.deleteConnectionsForElement(this.getAttribute("rel"));
+            jsPlumbUtil.consume(e);
+        });
 
-            //instance.on(document.getElementById("delete-connct"), "click", function (e) {
-               // instance.detachEveryConnection();
-            //showConnectionInfo("");
-               // jsPlumbUtil.consume(e);
+        //instance.on(document.getElementById("delete-connct"), "click", function (e) {
+        // instance.detachEveryConnection();
+        //showConnectionInfo("");
+        // jsPlumbUtil.consume(e);
 
-            //});
+        //});
     });
 
     jsPlumb.fire("jsPlumbDemoLoaded", instance);
@@ -129,7 +126,7 @@ jsPlumb.ready(function () {
         //var d = instance.exportData();
         //console.log(instance.getAllConnections());
 
-      
+
         var correct_connections_1_3 = [
             {
                 "source": "ld1",
@@ -152,14 +149,14 @@ jsPlumb.ready(function () {
                 "source": "ld7",
                 "target": "ld5"
             }
-        ];        
+        ];
 
         var correct_connections_6_8 = [
             {
                 "source": "ld6",
                 "target": "ld8"
             },
-    
+
             {
                 "source": "ld8",
                 "target": "ld6"
@@ -202,7 +199,7 @@ jsPlumb.ready(function () {
             }
         ];
 
-        
+
 
 
 
@@ -212,12 +209,12 @@ jsPlumb.ready(function () {
                 "source": "ld1",
                 "target": "ld3"
             },
-    
+
             {
                 "source": "ld3",
                 "target": "ld1"
             },
-            
+
             {
                 "source": "ld5",
                 "target": "ld7"
@@ -237,7 +234,7 @@ jsPlumb.ready(function () {
                 "source": "ld9",
                 "target": "ld6"
             },
-        
+
 
             {
                 "source": "ld9",
@@ -277,7 +274,7 @@ jsPlumb.ready(function () {
         var is_connected_4_5 = false;
         var is_connected_6_9 = false;
         var unallowed_connection_present = false;
-        var count =0; // counts number of connection
+        var count = 0; // counts number of connection
 
 
         actual_connections.forEach(function (connection) {
@@ -287,13 +284,13 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_1_3){
+            if (!is_connected_1_3) {
                 is_connected_1_3 = correct_connections_1_3.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
-                  });
+                });
             }
 
-            if(!unallowed_connection_present){
+            if (!unallowed_connection_present) {
                 unallowed_connection_present = !(allowed_connections.find(function (conn) {
                     return (conn.source === this_connection.source && conn.target === this_connection.target);
                 }));
@@ -313,19 +310,19 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_5_7){
+            if (!is_connected_5_7) {
                 is_connected_5_7 = correct_connections_5_7.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                 });
             }
-              // if this_connection exists in correct_connections
+            // if this_connection exists in correct_connections
             // remove this connection from correct ones
             // continue
             // else
             // return false
         });
 
-        
+
 
         actual_connections.forEach(function (connection) {
             var this_connection = {
@@ -333,12 +330,12 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_6_8){
+            if (!is_connected_6_8) {
                 is_connected_6_8 = correct_connections_6_8.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                 });
             }
-              // if this_connection exists in correct_connections
+            // if this_connection exists in correct_connections
             // remove this connection from correct ones
             // continue
             // else
@@ -351,12 +348,12 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_9_12){
+            if (!is_connected_9_12) {
                 is_connected_9_12 = correct_connections_9_12.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                 });
             }
-              // if this_connection exists in correct_connections
+            // if this_connection exists in correct_connections
             // remove this connection from correct ones
             // continue
             // else
@@ -369,12 +366,12 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_6_9){
+            if (!is_connected_6_9) {
                 is_connected_6_9 = correct_connections_6_9.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                 });
             }
-              // if this_connection exists in correct_connections
+            // if this_connection exists in correct_connections
             // remove this connection from correct ones
             // continue
             // else
@@ -387,31 +384,31 @@ jsPlumb.ready(function () {
                 "target": connection.targetId
             };
 
-            if(!is_connected_4_5){
+            if (!is_connected_4_5) {
                 is_connected_4_5 = correct_connections_4_5.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                 });
             }
-              // if this_connection exists in correct_connections
+            // if this_connection exists in correct_connections
             // remove this connection from correct ones
             // continue
             // else
             // return false
         });
 
-        if (is_connected_1_3 && is_connected_5_7 &&  is_connected_6_8 && is_connected_9_12 && is_connected_6_9 && is_connected_4_5 && !unallowed_connection_present) {
-			
-			
-			 	document.getElementById('add').disabled = false;
-  				document.getElementById('graphplot').disabled = false;
- 				document.getElementById('clr').disabled = false;
-	   			
-	  
+        if (is_connected_1_3 && is_connected_5_7 && is_connected_6_8 && is_connected_9_12 && is_connected_6_9 && is_connected_4_5 && !unallowed_connection_present) {
+
+
+            document.getElementById('add').disabled = false;
+            document.getElementById('graphplot').disabled = false;
+            document.getElementById('clr').disabled = false;
+
+
             alert("RIGHT CONNECTION \n set resistance and input DC voltage");
-            } else {
-               alert("WRONG CONNECTION");
-                return;
-            }  
+        } else {
+            alert("WRONG CONNECTION");
+            return;
+        }
 
 
 
@@ -420,8 +417,8 @@ jsPlumb.ready(function () {
 
 
 
-function deleteconnection(){
-window.location.reload();
+function deleteconnection() {
+    window.location.reload();
 }
 
 

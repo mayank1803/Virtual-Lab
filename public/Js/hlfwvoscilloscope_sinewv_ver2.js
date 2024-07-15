@@ -15,7 +15,7 @@ function posiy1chnge() {
     if (flag == 1) {
         drawsine();
     }
-    
+
 }
 
 function posix2chnge() {
@@ -24,9 +24,9 @@ function posix2chnge() {
         drawsine();
     }
     if (flag == 2) {
-          drawhlfrectifier();;
+        drawhlfrectifier();;
     }
- 
+
 }
 
 function ampfng() {
@@ -35,15 +35,15 @@ function ampfng() {
         drawsine();
     }
     if (flag == 2) {
-          drawhlfrectifier();;
+        drawhlfrectifier();;
     }
-if(flag==3){
+    if (flag == 3) {
         bthdhlfrc();
     }
-    if(flag==4){
-       grndhlfrc();
+    if (flag == 4) {
+        grndhlfrc();
     }
-    
+
 }
 
 function freqfng() {
@@ -52,14 +52,14 @@ function freqfng() {
         drawsine();
     }
     if (flag == 2) {
-          drawhlfrectifier();;
+        drawhlfrectifier();;
     }
 
-   if(flag==3){
+    if (flag == 3) {
         bthdhlfrc();
     }
-    if(flag==4){
-       grndhlfrc();
+    if (flag == 4) {
+        grndhlfrc();
     }
 }
 
@@ -72,7 +72,7 @@ function drawsine() {
     // fill canvas
     ctx.fillStyle = "white";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-     document.getElementById("rectifiedop").disabled = false;
+    document.getElementById("rectifiedop").disabled = false;
     drawGrid(ctx);
     drawAxis();
     sinwv();
@@ -84,8 +84,8 @@ function sinwv() {
     frqfng = document.getElementById("fq-knob-fng").value;//frequency
     phsl = document.getElementById("positionx").value;
     posy1 = document.getElementById("positiony1").value;
-   tmaxs= document.getElementById("fq-knob").value *10*Math.pow(10,-3);// in msec  0.001; //in sec
-//---------------------------------------------------------Sine wave-------------------------------------------------------------------------------//
+    tmaxs = document.getElementById("fq-knob").value * 10 * Math.pow(10, -3);// in msec  0.001; //in sec
+    //---------------------------------------------------------Sine wave-------------------------------------------------------------------------------//
 
     var x = new Array(), y = new Array();  // x,y plotting variables
     var dt, tstart, tstop;             // time variables

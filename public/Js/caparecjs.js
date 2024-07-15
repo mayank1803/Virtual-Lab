@@ -69,8 +69,8 @@ function draw() {
     drawGrid(ctx);
     drawAxis();
     sinecrv();
-//    document.getElementById("tym").style.display = "block";
-//    document.getElementById("volt").style.display = "block";
+    //    document.getElementById("tym").style.display = "block";
+    //    document.getElementById("volt").style.display = "block";
     document.getElementById("peakslider").disabled = false;
     document.getElementById("fullps").disabled = false;
     document.getElementById("phs").disabled = false;
@@ -151,7 +151,7 @@ function sinecrv() {
     var pos = document.getElementById("flps").value;
     var fo = document.getElementById("freq").value;
 
-//---------------------------------------------------------Input Sinewave-------------------------------------------------------------------------------//
+    //---------------------------------------------------------Input Sinewave-------------------------------------------------------------------------------//
     flag = 1;
     ctx.beginPath();
 
@@ -187,7 +187,7 @@ function sinecrv() {
     yscale = axes.yscale;
 
     ctx.beginPath();
-//260.5,80
+    //260.5,80
     var p = y0 - parseInt(pos) * yscale;
     for (i = 0; i < axes.N; i++) {
         // translate actual x,y to plot xp,yp
@@ -235,7 +235,7 @@ function drwn() {
     drawAxis();
     //sinecrv();
     sinfw();
-//chnlt();
+    //chnlt();
 }
 
 //-------------------------------------------Channel 2-------------------------------------------------------------//
@@ -340,12 +340,12 @@ function sinfw() {
     // alert(y0);150.5
     xscale = axes.xscale;//250000
     yscale = axes.yscale;//75
-//alert(xscale);
-//alert(yscale);
+    //alert(xscale);
+    //alert(yscale);
     ctx.beginPath();
 
     var p = y0 - parseInt(pst) * yscale;
-//alert(p);
+    //alert(p);
 
     for (i = 0; i < 14; i++) {
 
@@ -432,7 +432,7 @@ function sinwvb() {
     var fo = document.getElementById("freq").value;
 
     flag = 3;
-//---------------------------------------------------------Input Sinewave-------------------------------------------------------------------------------//
+    //---------------------------------------------------------Input Sinewave-------------------------------------------------------------------------------//
     ctx.beginPath();
 
     ctx.lineWidth = 1.5;
@@ -467,7 +467,7 @@ function sinwvb() {
     yscale = axes.yscale;
 
     ctx.beginPath();
-//260.5,80
+    //260.5,80
     var p = y0 - parseInt(pos) * yscale;
     for (i = 0; i < axes.N; i++) {
         // translate actual x,y to plot xp,yp
@@ -483,7 +483,7 @@ function sinwvb() {
 
     ctx.stroke();
 
-//---------------------------------------------------------Output Halfwave Rectifier--------------------------------------------------------------------//   
+    //---------------------------------------------------------Output Halfwave Rectifier--------------------------------------------------------------------//   
     var vps = document.getElementById("pksld").value;
     var pst = document.getElementById("flrec").value;
     var phss = document.getElementById("phases").value;
@@ -524,12 +524,12 @@ function sinwvb() {
     // alert(y0);150.5
     xscale = axes.xscale;//250000
     yscale = axes.yscale;//75
-//alert(xscale);
-//alert(yscale);
+    //alert(xscale);
+    //alert(yscale);
     ctx.beginPath();
 
     var p = y0 - parseInt(pst) * yscale;
-//alert(p);
+    //alert(p);
 
     for (i = 0; i < 14; i++) {
 
@@ -618,7 +618,7 @@ function singr() {
     var fo = document.getElementById("freq").value;
 
     flag = 4;
-//---------------------------------------------------------Input Sinewave-------------------------------------------------------------------------------//
+    //---------------------------------------------------------Input Sinewave-------------------------------------------------------------------------------//
     ctx.beginPath();
 
     ctx.lineWidth = 1.5;
@@ -653,7 +653,7 @@ function singr() {
     yscale = axes.yscale;
 
     ctx.beginPath();
-//260.5,80
+    //260.5,80
     var p = y0 - parseInt(pos) * yscale;
     for (i = 0; i < axes.N; i++) {
         // translate actual x,y to plot xp,yp
@@ -669,7 +669,7 @@ function singr() {
 
     ctx.stroke();
 
-//---------------------------------------------------------Output Halfwave Rectifier--------------------------------------------------------------------//   
+    //---------------------------------------------------------Output Halfwave Rectifier--------------------------------------------------------------------//   
     var vps = 0;
     var pst = document.getElementById("flrec").value;
     var phss = document.getElementById("phases").value;
@@ -710,12 +710,12 @@ function singr() {
     // alert(y0);150.5
     xscale = axes.xscale;//250000
     yscale = axes.yscale;//75
-//alert(xscale);
-//alert(yscale);
+    //alert(xscale);
+    //alert(yscale);
     ctx.beginPath();
 
     var p = y0 - parseInt(pst) * yscale;
-//alert(p);
+    //alert(p);
 
     for (i = 0; i < 14; i++) {
 
@@ -789,8 +789,8 @@ function drawAxis() {
     axes.yscale = (canvas.height) / (2 * vmaxs);    // y pix per V //43.75
     axes.N = 101;
     //alert(axes.xscale );
-//alert(axes.yscale );
-//alert(axes.N );
+    //alert(axes.yscale );
+    //alert(axes.N );
 
     axes.doNegativeX = true;
     ctx.lineWidth = 0.5;
@@ -823,30 +823,30 @@ function drawGrid(ctx) {
 }
 
 var axismargin = 30,
-        axisorigin = {x: 0, y: 310 - 10},
-axistop = axismargin - 30,
-        axisright = 520,
-        horzntickspcng = 30,
-        vrtcltickspcng = 30,
-        axiswidth = axisright,
-        axisheight = axisorigin.y,
-        numofvrtcltick = axisheight / vrtcltickspcng,
-        numofhorzntick = axiswidth / horzntickspcng,
-        tickwidth = 10,
-        ticklinewidth = 0.5,
-        tickcolor = 'black',
-        axislinewidth = 1.0,
-        axiscolor = 'lightgray';
+    axisorigin = { x: 0, y: 310 - 10 },
+    axistop = axismargin - 30,
+    axisright = 520,
+    horzntickspcng = 30,
+    vrtcltickspcng = 30,
+    axiswidth = axisright,
+    axisheight = axisorigin.y,
+    numofvrtcltick = axisheight / vrtcltickspcng,
+    numofhorzntick = axiswidth / horzntickspcng,
+    tickwidth = 10,
+    ticklinewidth = 0.5,
+    tickcolor = 'black',
+    axislinewidth = 1.0,
+    axiscolor = 'lightgray';
 
 //------------------------------------------------------Horizontal Axis----------------------------------------------------------------------------------//
 function drawHorizontalAxis() {
-//    ctx.beginPath();
-//    ctx.moveTo(axisorigin.x, axisorigin.y-130);
-//    ctx.lineTo(axisright, axisorigin.y-130);
-//    ctx.stroke();
+    //    ctx.beginPath();
+    //    ctx.moveTo(axisorigin.x, axisorigin.y-130);
+    //    ctx.lineTo(axisright, axisorigin.y-130);
+    //    ctx.stroke();
     var y0 = axes.y0, w = ctx.canvas.width;
 
-//
+    //
     ctx.beginPath();
     ctx.strokeStyle = "rgb(128,128,128)";
     ctx.moveTo(0, y0);
@@ -855,10 +855,10 @@ function drawHorizontalAxis() {
 }
 ////------------------------------------------------------Vertical Axis----------------------------------------------------------------------------------//          
 function drawVerticalAxis() {
-//    ctx.beginPath();
-//    ctx.moveTo(axisorigin.x+270, axisorigin.y+100);
-//    ctx.lineTo(axisorigin.x+270, axistop);
-//    ctx.stroke();
+    //    ctx.beginPath();
+    //    ctx.moveTo(axisorigin.x+270, axisorigin.y+100);
+    //    ctx.lineTo(axisorigin.x+270, axistop);
+    //    ctx.stroke();
     var x0 = axes.x0, h = ctx.canvas.height;
     ctx.beginPath();
     ctx.strokeStyle = "rgb(128,128,128)";
@@ -879,10 +879,10 @@ function drawVerticalAxisTicks() {
             deltaX = tickwidth / 2;
 
         ctx.moveTo(axisorigin.x += 180 - deltaX,
-                axisorigin.y + 120 - i * vrtcltickspcng);
+            axisorigin.y + 120 - i * vrtcltickspcng);
 
         ctx.lineTo(axisorigin.x + 180 + deltaX,
-                axisorigin.y + 120 - i * vrtcltickspcng);
+            axisorigin.y + 120 - i * vrtcltickspcng);
         ctx.stroke();
 
     }
@@ -900,10 +900,10 @@ function drawHorizontalAxisTicks() {
             deltaY = tickwidth / 2;
 
         ctx.moveTo(axisorigin.x + i * horzntickspcng,
-                axisorigin.y - 30 - deltaY);
+            axisorigin.y - 30 - deltaY);
 
         ctx.lineTo(axisorigin.x + i * horzntickspcng,
-                axisorigin.y - 30 + deltaY);
+            axisorigin.y - 30 + deltaY);
 
         ctx.stroke();
     }

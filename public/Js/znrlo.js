@@ -1,8 +1,4 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 //function myfnc() {
 //    document.getElementById("add").style.display = "none";
 //    document.getElementById("plt").style.display = "none";
@@ -89,12 +85,12 @@ function tabled() {
         document.getElementById("res").style.borderColor = "red";
         document.getElementById("demo").innerHTML = "Enter the Series Resistance Value";
     }
-//    else if (document.getElementById("res").value != 1000) {
-//        //Alert.render("Set Series Resistance Value to 1Kohm");
-//        //document.getElementById("add").style.display = "none";
-//        document.getElementById("res").style.borderColor = "red";
-//        document.getElementById("demo").innerHTML = "Set Series Resistance Value to 1 Kohm";
-//    }
+    //    else if (document.getElementById("res").value != 1000) {
+    //        //Alert.render("Set Series Resistance Value to 1Kohm");
+    //        //document.getElementById("add").style.display = "none";
+    //        document.getElementById("res").style.borderColor = "red";
+    //        document.getElementById("demo").innerHTML = "Set Series Resistance Value to 1 Kohm";
+    //    }
     else if (document.getElementById("resl").value == "") {
         //Alert.render("Enter the Load Resistance Value");
         // document.getElementById("add").style.display = "none";
@@ -160,20 +156,20 @@ function tabled() {
     }
 
 
-//    var showAlert;
-//    if (arr[0] == 6) {
-//
-//        document.getElementById("plt").style.display = "block";
-//        document.getElementById("add").style.display = "none";
-//        document.getElementById("siml").style.display = "none";
-//    }
-//    else {
-//        document.getElementById("plt").style.display = "none";
-////        if (showAlert == true)
-////        {
-////            alert("Take 6 readings");
-////            showAlert = false;
-////        }
+    //    var showAlert;
+    //    if (arr[0] == 6) {
+    //
+    //        document.getElementById("plt").style.display = "block";
+    //        document.getElementById("add").style.display = "none";
+    //        document.getElementById("siml").style.display = "none";
+    //    }
+    //    else {
+    //        document.getElementById("plt").style.display = "none";
+    ////        if (showAlert == true)
+    ////        {
+    ////            alert("Take 6 readings");
+    ////            showAlert = false;
+    ////        }
 
     //}
 }
@@ -188,8 +184,9 @@ function printf() {
 $(document).ready(function () {
     $("#plt").click(function () {
         $('html,body').animate({
-            scrollTop: $("#grpwrap").offset().top},
-        'slow');
+            scrollTop: $("#grpwrap").offset().top
+        },
+            'slow');
     });
 });
 // -------------------------------------canvas.js ------------------------//
@@ -198,7 +195,7 @@ function plot() {
     for (var tabrowindex = 1; tabrowindex < table.rows.length; tabrowindex++) {
         var rwe1 = table.rows[tabrowindex].cells;
 
-        dataPoints.push({x: parseFloat(rwe1[1].innerHTML), y: parseFloat(rwe1[4].innerHTML)});
+        dataPoints.push({ x: parseFloat(rwe1[1].innerHTML), y: parseFloat(rwe1[4].innerHTML) });
     }
 
     chart = new CanvasJS.Chart("chartContainer", {
@@ -236,9 +233,9 @@ function plot() {
 
 //---------------------------------------clear data----------------------------------------------------------------------------//
 function clearf() {
-//    document.getElementById("siml").style.display = "block";
-//    document.getElementById("plt").style.display = "none";
-//    document.getElementById("clr").style.display = "none";
+    //    document.getElementById("siml").style.display = "block";
+    //    document.getElementById("plt").style.display = "none";
+    //    document.getElementById("clr").style.display = "none";
 
     document.getElementById("dc").value = "";
     document.getElementById("volt").value = "";
@@ -271,7 +268,7 @@ function clearf() {
     }
     tabrowindex = 0;
     dataPoints = [];
-//tabled();
+    //tabled();
     //window.location.reload();
     $(document).ready(function () {
         s1 = [0];
@@ -291,7 +288,7 @@ function clearf() {
         });
     });
 
-//---------------------------------------------Metergauge2---------------------------------------------------//
+    //---------------------------------------------Metergauge2---------------------------------------------------//
     $(document).ready(function () {
         s2 = [0];
         plot3 = $.jqplot('chart2', [s2], {
@@ -327,7 +324,7 @@ function clearf() {
             }
         });
     });
-//---------------------------------------------Metergauge4(zener current)---------------------------------------------------//
+    //---------------------------------------------Metergauge4(zener current)---------------------------------------------------//
     $(document).ready(function () {
         s4 = [0];
         plot3 = $.jqplot('chart4', [s4], {

@@ -13,7 +13,7 @@ var resc;
 function rescChange() {
     resc = document.getElementById("collector_r").value;
     document.getElementById("r_collector").value = resc;
-   secondres();
+    secondres();
 }
 
 
@@ -51,8 +51,8 @@ function tabled() {
         document.getElementById("voltbe").style.borderColor = "red";
         document.getElementById("demo").innerHTML = "Change the Base-Emitter Voltage by adjusting Rheostat R<sub>h1</sub>";
     }
-    
-   
+
+
 
     else if (table.rows.length <= 21) {
         document.getElementById("voltbe").style.borderColor = "";
@@ -73,8 +73,8 @@ function tabled() {
     clmns = table.rows[tabrowindex + 1].cells[1];
     vlt = clmns.innerHTML;
 
-     if (document.getElementById("voltbc").value != ((document.getElementById("tbvbc1").value))) {
-       
+    if (document.getElementById("voltbc").value != ((document.getElementById("tbvbc1").value))) {
+
         document.getElementById("voltbc").style.borderColor = "red";
         document.getElementById("demo").innerHTML = "Make the Base-Collector Volatge Constant";
     }
@@ -84,8 +84,9 @@ function tabled() {
 $(document).ready(function () {
     $("#plt").click(function () {
         $('html,body').animate({
-            scrollTop: $("#grpwrap").offset().top},
-        'slow');
+            scrollTop: $("#grpwrap").offset().top
+        },
+            'slow');
     });
 });
 
@@ -95,7 +96,7 @@ function plot() {
     for (var tabrowindex = 2; tabrowindex < table.rows.length; tabrowindex++) {
         var rwe1 = table.rows[tabrowindex].cells;
 
-        dataPoints.push({x: parseFloat(rwe1[1].innerHTML), y: parseFloat(rwe1[2].innerHTML)});
+        dataPoints.push({ x: parseFloat(rwe1[1].innerHTML), y: parseFloat(rwe1[2].innerHTML) });
     }
 
     chart = new CanvasJS.Chart("chartContainer", {
@@ -146,11 +147,11 @@ function clearf() {
     document.getElementById("voltbc").value = "";
     document.getElementById("ampb").value = "";
     document.getElementById("ampc").value = "";
-     document.getElementById("r_base").value = 1;
+    document.getElementById("r_base").value = 1;
     document.getElementById("r_collector").value = 1;
-     document.getElementById("base_r").value = 1;
+    document.getElementById("base_r").value = 1;
     document.getElementById("collector_r").value = 1;
-    
+
     document.getElementById("chartContainer").innerHTML = "";
     document.getElementById("demo").innerHTML = "";
     document.getElementById("demos").innerHTML = "";
@@ -185,7 +186,7 @@ function clearf() {
         });
     });
 
-//---------------------------------------------Metergauge2(emitter current)---------------------------------------------------//
+    //---------------------------------------------Metergauge2(emitter current)---------------------------------------------------//
     $(document).ready(function () {
         s2 = [0];
         plot3 = $.jqplot('chart2', [s2], {
@@ -205,7 +206,7 @@ function clearf() {
     });
 
 
-//---------------------------------------------Metergauge3(collector-base voltage)---------------------------------------------------//
+    //---------------------------------------------Metergauge3(collector-base voltage)---------------------------------------------------//
     $(document).ready(function () {
         s3 = [0];
         plot3 = $.jqplot('chart3', [s3], {

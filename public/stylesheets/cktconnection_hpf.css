@@ -1,21 +1,20 @@
-
-  
 .demo {
     /* for IE10+ touch devices */
-    touch-action:none;
+    touch-action: none;
 }
 
-.jtk-demo-canvas {    
-    height:550px;
+.jtk-demo-canvas {
+    height: 550px;
     /*max-height:700px;
     border:1px solid #CCC;
     background-color:white;*/
     display: flex;
-    position:absolute;
-    top:5px;
+    position: absolute;
+    top: 5px;
 }
+
 .canvas-wide {
-    margin-left:0;
+    margin-left: 0;
 }
 
 /** JSPLUMB ARTEFACTS **/
@@ -33,8 +32,7 @@
 }
 
 /** ELEMENTS **/
-.littledot
-{
+.littledot {
     cursor: pointer;
     width: 12px;
     height: 12px;
@@ -46,8 +44,9 @@
     margin-left: 0px;
     margin-right: 0px;
 }
-.cmdLink detach{
-  margin-bottom: 0px;
+
+.cmdLink detach {
+    margin-bottom: 0px;
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -63,7 +62,7 @@
 
 /** ELEMENT POSITIONS **/
 #ld1 {
- position: absolute;
+    position: absolute;
     top: 270px;
     left: 150px;
 }
@@ -71,53 +70,57 @@
 
 
 #ld3 {
- position: absolute;
-    top:35px;
-    left:145px;
+    position: absolute;
+    top: 35px;
+    left: 145px;
 }
 
 #ld4 {
- position: absolute;
+    position: absolute;
     top: 35px;
-    left:360px;
+    left: 360px;
 }
 
 #ld5 {
- position: absolute;
-    top:25px;
-    left:430px;
+    position: absolute;
+    top: 25px;
+    left: 430px;
 }
+
 #ld6 {
- position: absolute;
-    top:235px;
-    left:430px;
+    position: absolute;
+    top: 235px;
+    left: 430px;
 }
 
 #ld7 {
- position: absolute;
-    top:72px;
-    left:500px;
+    position: absolute;
+    top: 72px;
+    left: 500px;
 }
-#ld8{
- position: absolute;
-    top:205px;
-    left:500px;
+
+#ld8 {
+    position: absolute;
+    top: 205px;
+    left: 500px;
 }
 
 
 #ld9 {
- position: absolute;
-    top:270px;
-    left:360px;
+    position: absolute;
+    top: 270px;
+    left: 360px;
 }
 
 
 #ld12 {
- position: absolute;
+    position: absolute;
     top: 330px;
     left: 410px;
-    
+
 }
-path, .jtk-endpoint {
+
+path,
+.jtk-endpoint {
     cursor: pointer;
 }

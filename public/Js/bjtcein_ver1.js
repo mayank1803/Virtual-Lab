@@ -9,7 +9,7 @@ var resc;
 function rescChange() {
     resc = document.getElementById("collector_r").value;
     document.getElementById("r_collector").value = resc;
-   secondres();
+    secondres();
 }
 
 
@@ -82,8 +82,9 @@ function tabled() {
 $(document).ready(function () {
     $("#plt").click(function () {
         $('html,body').animate({
-            scrollTop: $("#grpwrap").offset().top},
-        'slow');
+            scrollTop: $("#grpwrap").offset().top
+        },
+            'slow');
     });
 });
 
@@ -93,7 +94,7 @@ function plot() {
     for (var tabrowindex = 2; tabrowindex < table.rows.length; tabrowindex++) {
         var rwe1 = table.rows[tabrowindex].cells;
 
-        dataPoints.push({x: parseFloat(rwe1[1].innerHTML), y: parseFloat(rwe1[2].innerHTML)});
+        dataPoints.push({ x: parseFloat(rwe1[1].innerHTML), y: parseFloat(rwe1[2].innerHTML) });
     }
 
     chart = new CanvasJS.Chart("chartContainer", {
@@ -140,14 +141,14 @@ function printf() {
 }
 function clearfn() {
 
-   
+
     document.getElementById("voltbe").value = "";
     document.getElementById("voltce").value = "";
     document.getElementById("ampb").value = "";
     document.getElementById("ampc").value = "";
-     document.getElementById("r_base").value = 1;
+    document.getElementById("r_base").value = 1;
     document.getElementById("r_collector").value = 1;
-     document.getElementById("base_r").value = 1;
+    document.getElementById("base_r").value = 1;
     document.getElementById("collector_r").value = 1;
 
 
@@ -157,15 +158,15 @@ function clearfn() {
     document.getElementById("voltbe").style.borderColor = "";
     document.getElementById("voltce").style.borderColor = "";
     document.getElementById("tbvce1").value = "";
-    
+
     var rowCount = mytable.rows.length;
 
     for (var j = rowCount - 1; j > 1; j--) {
         mytable.deleteRow(j);
- }
+    }
     tabrowindex = 0;
-    dataPoints=[];
-//---------------------------------------------Metergauge1(base-emitter voltage)----------------------------------------------//
+    dataPoints = [];
+    //---------------------------------------------Metergauge1(base-emitter voltage)----------------------------------------------//
     $(document).ready(function () {
         s1 = [0];
         plot3 = $.jqplot('chart1', [s1], {
@@ -184,7 +185,7 @@ function clearfn() {
         });
     });
 
-//---------------------------------------------Metergauge2(base current)---------------------------------------------------//
+    //---------------------------------------------Metergauge2(base current)---------------------------------------------------//
     $(document).ready(function () {
         s2 = [0];
         plot3 = $.jqplot('chart2', [s2], {
@@ -204,7 +205,7 @@ function clearfn() {
     });
 
 
-//---------------------------------------------Metergauge3(collector-emitter voltage)---------------------------------------------------//
+    //---------------------------------------------Metergauge3(collector-emitter voltage)---------------------------------------------------//
     $(document).ready(function () {
         s3 = [0];
         plot3 = $.jqplot('chart3', [s3], {
@@ -222,7 +223,7 @@ function clearfn() {
             }
         });
     });
-    
+
     //---------------------------------------------Metergauge4(collector current)---------------------------------------------------//
     $(document).ready(function () {
         s4 = [0];

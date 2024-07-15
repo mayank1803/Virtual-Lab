@@ -30,15 +30,12 @@ jsPlumb.ready(function () {
                     jsPlumb.removeClass(elId, "jsPlumb_dragged");
                     return;
                 }
-               
+
             });
         },
 
-    // notice there are no dragOptions specified here, which is different from the
-    // draggableConnectors2 demo.  all connections on this page are therefore
-    // implicitly in the default scope.
-         //--------for voltage connections--------//
-         endpoint = {
+
+        endpoint = {
             anchor: [0.5, 0.5, 0, -1],
             connectorStyle: { strokeWidth: 5, stroke: "rgba(255,0,0,1)" },
             endpointsOnTop: true,
@@ -53,8 +50,8 @@ jsPlumb.ready(function () {
 
             return instance.addEndpoint(elId, endpoint);
         },
-//--------for ground connections--------//
-endpoint1 = {
+        //--------for ground connections--------//
+        endpoint1 = {
             anchor: [0.5, 0.5, 0, -1],
             connectorStyle: { strokeWidth: 5, stroke: "rgba(0,0,0,1)" },
             endpointsOnTop: true,
@@ -63,13 +60,13 @@ endpoint1 = {
             isTarget: true,
             dropOptions: { tolerance: "touch", hoverClass: "dropHover" }
         },
-prepare1 = function (elId) {
+        prepare1 = function (elId) {
             initAnimation(elId);
 
             return instance.addEndpoint(elId, endpoint1);
         },
 
-    // this is overridden by the YUI demo.
+        // this is overridden by the YUI demo.
         createDisc = function () {
             var d = document.createElement("div");
             d.className = "bigdot";
@@ -81,14 +78,14 @@ prepare1 = function (elId) {
             var y = (5 * h) + Math.floor(Math.random() * (10 * h));
             d.style.top = y + 'px';
             d.style.left = x + 'px';
-            return {d: d, id: id};
+            return { d: d, id: id };
         };
 
     // get a jsPlumb instance, setting some appropriate defaults and a Container.
     instance = jsPlumb.getInstance({
         DragOptions: { cursor: 'wait', zIndex: 20 },
-        Endpoint: [ "Image", { url: "littledot.png" } ],
-        Connector: [ "Bezier", { curviness: -40 } ],
+        Endpoint: ["Image", { url: "littledot.png" }],
+        Connector: ["Bezier", { curviness: -40 }],
         Container: "canvas"
     });
 
@@ -109,18 +106,18 @@ prepare1 = function (elId) {
             clearBtn = jsPlumb.getSelector("#delete-connct"),
             addBtn = jsPlumb.getSelector("#add");
 
-         var detachLinks = jsPlumb.getSelector(".littledot .detach");
-            instance.on(detachLinks, "click", function (e) {
-                instance.deleteConnectionsForElement(this.getAttribute("rel"));
-                jsPlumbUtil.consume(e);
-            });
+        var detachLinks = jsPlumb.getSelector(".littledot .detach");
+        instance.on(detachLinks, "click", function (e) {
+            instance.deleteConnectionsForElement(this.getAttribute("rel"));
+            jsPlumbUtil.consume(e);
+        });
 
-            //instance.on(document.getElementById("delete-connct"), "click", function (e) {
-               // instance.detachEveryConnection();
-            //showConnectionInfo("");
-               // jsPlumbUtil.consume(e);
+        //instance.on(document.getElementById("delete-connct"), "click", function (e) {
+        // instance.detachEveryConnection();
+        //showConnectionInfo("");
+        // jsPlumbUtil.consume(e);
 
-            //});
+        //});
     });
 
     jsPlumb.fire("jsPlumbDemoLoaded", instance);
@@ -129,7 +126,7 @@ prepare1 = function (elId) {
         //var d = instance.exportData();
         //console.log(instance.getAllConnections());
 
-      
+
         var correct_connections_1_3 = [
             {
                 "source": "ld1",
@@ -152,21 +149,21 @@ prepare1 = function (elId) {
                 "source": "ld7",
                 "target": "ld4"
             }
-        ];        
+        ];
 
         var correct_connections_8_10 = [
             {
                 "source": "ld8",
                 "target": "ld10"
             },
-    
+
             {
                 "source": "ld10",
                 "target": "ld8"
             }
         ];
 
-        
+
 
         var correct_connections_9_12 = [
             {
@@ -203,7 +200,7 @@ prepare1 = function (elId) {
                 "target": "ld5"
             }
         ];
-		var correct_connections_9_11 = [
+        var correct_connections_9_11 = [
             {
                 "source": "ld9",
                 "target": "ld11"
@@ -223,12 +220,12 @@ prepare1 = function (elId) {
                 "source": "ld1",
                 "target": "ld3"
             },
-    
+
             {
                 "source": "ld3",
                 "target": "ld1"
             },
-            
+
             {
                 "source": "ld4",
                 "target": "ld7"
@@ -261,7 +258,7 @@ prepare1 = function (elId) {
                 "source": "ld5",
                 "target": "ld10"
             },
-{
+            {
                 "source": "ld10",
                 "target": "ld5"
             },
@@ -270,15 +267,15 @@ prepare1 = function (elId) {
                 "source": "ld6",
                 "target": "ld11"
             },
-			 {
+            {
                 "source": "ld11",
                 "target": "ld6"
             },
-			{
+            {
                 "source": "ld9",
                 "target": "ld11"
             },
-			 {
+            {
                 "source": "ld11",
                 "target": "ld9"
             },
@@ -287,14 +284,14 @@ prepare1 = function (elId) {
         var actual_connections = instance.getAllConnections();
 
         var is_connected_1_3 = false;
-        var is_connected_4_7 = false;        
+        var is_connected_4_7 = false;
         var is_connected_8_10 = false;
-		 var is_connected_5_10 = false;
+        var is_connected_5_10 = false;
         var is_connected_9_12 = false;
         var is_connected_9_11 = false;
         var is_connected_6_11 = false;
         var unallowed_connection_present = false;
-        var count =0; // counts number of connection
+        var count = 0; // counts number of connection
 
 
         actual_connections.forEach(function (connection) {
@@ -304,13 +301,13 @@ prepare1 = function (elId) {
                 "target": connection.targetId
             };
 
-            if(!is_connected_1_3){
+            if (!is_connected_1_3) {
                 is_connected_1_3 = correct_connections_1_3.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
-                  });
+                });
             }
 
-            if(!unallowed_connection_present){
+            if (!unallowed_connection_present) {
                 unallowed_connection_present = !(allowed_connections.find(function (conn) {
                     return (conn.source === this_connection.source && conn.target === this_connection.target);
                 }));
@@ -330,12 +327,12 @@ prepare1 = function (elId) {
                 "target": connection.targetId
             };
 
-            if(!is_connected_4_7){
+            if (!is_connected_4_7) {
                 is_connected_4_7 = correct_connections_4_7.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                 });
             }
-              // if this_connection exists in correct_connections
+            // if this_connection exists in correct_connections
             // remove this connection from correct ones
             // continue
             // else
@@ -348,19 +345,19 @@ prepare1 = function (elId) {
                 "target": connection.targetId
             };
 
-            if(!is_connected_8_10){
+            if (!is_connected_8_10) {
                 is_connected_8_10 = correct_connections_8_10.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                 });
             }
-              // if this_connection exists in correct_connections
+            // if this_connection exists in correct_connections
             // remove this connection from correct ones
             // continue
             // else
             // return false
         });
 
-        
+
 
         actual_connections.forEach(function (connection) {
             var this_connection = {
@@ -368,12 +365,12 @@ prepare1 = function (elId) {
                 "target": connection.targetId
             };
 
-            if(!is_connected_9_12){
+            if (!is_connected_9_12) {
                 is_connected_9_12 = correct_connections_9_12.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                 });
             }
-              // if this_connection exists in correct_connections
+            // if this_connection exists in correct_connections
             // remove this connection from correct ones
             // continue
             // else
@@ -386,12 +383,12 @@ prepare1 = function (elId) {
                 "target": connection.targetId
             };
 
-            if(!is_connected_6_11){
+            if (!is_connected_6_11) {
                 is_connected_6_11 = correct_connections_6_11.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                 });
             }
-              // if this_connection exists in correct_connections
+            // if this_connection exists in correct_connections
             // remove this connection from correct ones
             // continue
             // else
@@ -404,48 +401,48 @@ prepare1 = function (elId) {
                 "target": connection.targetId
             };
 
-            if(!is_connected_5_10){
+            if (!is_connected_5_10) {
                 is_connected_5_10 = correct_connections_5_10.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                 });
             }
-              // if this_connection exists in correct_connections
+            // if this_connection exists in correct_connections
             // remove this connection from correct ones
             // continue
             // else
             // return false
         });
-		actual_connections.forEach(function (connection) {
+        actual_connections.forEach(function (connection) {
             var this_connection = {
                 "source": connection.sourceId,
                 "target": connection.targetId
             };
 
-            if(!is_connected_9_11){
+            if (!is_connected_9_11) {
                 is_connected_9_11 = correct_connections_9_11.find(function (conn) {
                     return conn.source === this_connection.source && conn.target === this_connection.target;
                 });
             }
-              // if this_connection exists in correct_connections
+            // if this_connection exists in correct_connections
             // remove this connection from correct ones
             // continue
             // else
             // return false
         });
 
-        if (is_connected_1_3 && is_connected_4_7 && is_connected_8_10 &&  is_connected_9_12 && is_connected_6_11 && is_connected_5_10 && is_connected_9_11&& !unallowed_connection_present) {
-			
-			
-			 	document.getElementById('add').disabled = false;
-  				document.getElementById('plt').disabled = false;
- 				document.getElementById('clr').disabled = false;
-	   			
-	  
+        if (is_connected_1_3 && is_connected_4_7 && is_connected_8_10 && is_connected_9_12 && is_connected_6_11 && is_connected_5_10 && is_connected_9_11 && !unallowed_connection_present) {
+
+
+            document.getElementById('add').disabled = false;
+            document.getElementById('plt').disabled = false;
+            document.getElementById('clr').disabled = false;
+
+
             alert("RIGHT CONNECTION \n set resistance and input DC voltage");
-            } else {
-               alert("WRONG CONNECTION");
-                return;
-            }  
+        } else {
+            alert("WRONG CONNECTION");
+            return;
+        }
 
 
 
@@ -454,8 +451,8 @@ prepare1 = function (elId) {
 
 
 
-function deleteconnection(){
-window.location.reload();
+function deleteconnection() {
+    window.location.reload();
 }
 
 

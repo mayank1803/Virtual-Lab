@@ -49,7 +49,7 @@ $(document).ready(function () {
             rendererOptions: {
                 min: -2,
                 max: 4,
-                intervals: [-2,0,2,4],
+                intervals: [-2, 0, 2, 4],
                 intervalColors: ['#66cc66', '#cc6666', '#cc6666', '#E7E658']
             }
         }
@@ -76,24 +76,24 @@ $(document).ready(function () {
 
 
 var bf = 120, br = 0.3;
-var alpha=0.95;
+var alpha = 0.95;
 
 var vbe, vbc, ie, ic;
 var table;
-var clmns, vlt,clmns1, vlt1;
+var clmns, vlt, clmns1, vlt1;
 //---------------------------------------------------------Simulation--------------------------------------------------------------------------------//
-function check(){
-  collector_res=document.getElementById("r_collector").value;
- 
- 
-     
-     vcb=0.1*collector_res-vbe;
-     //alert(vcb);
-      ic =parseFloat(ie)*(Math.exp(parseFloat(vcb))-Math.exp(parseFloat(-vcb)))/(Math.exp(parseFloat(vcb))+Math.exp(parseFloat(-vcb)));
-     document.getElementById("ampc").value=parseFloat(ic).toPrecision(4);
-     document.getElementById("voltcb").value=parseFloat(vcb).toPrecision(4);
-     
-     s3[0] = parseFloat(document.getElementById('voltcb').value);
+function check() {
+    collector_res = document.getElementById("r_collector").value;
+
+
+
+    vcb = 0.1 * collector_res - vbe;
+    //alert(vcb);
+    ic = parseFloat(ie) * (Math.exp(parseFloat(vcb)) - Math.exp(parseFloat(-vcb))) / (Math.exp(parseFloat(vcb)) + Math.exp(parseFloat(-vcb)));
+    document.getElementById("ampc").value = parseFloat(ic).toPrecision(4);
+    document.getElementById("voltcb").value = parseFloat(vcb).toPrecision(4);
+
+    s3[0] = parseFloat(document.getElementById('voltcb').value);
     plot3 = $.jqplot('chart3', [s3], {
         grid: {
             background: "transparent"
@@ -101,14 +101,14 @@ function check(){
         seriesDefaults: {
             renderer: $.jqplot.MeterGaugeRenderer,
             rendererOptions: {
-                  min: -2,
+                min: -2,
                 max: 4,
-                intervals: [-2,0,2,4],
+                intervals: [-2, 0, 2, 4],
                 intervalColors: ['#66cc66', '#cc6666', '#cc6666', '#E7E658']
             }
         }
     });
- s4[0] = parseFloat(document.getElementById('ampc').value);
+    s4[0] = parseFloat(document.getElementById('ampc').value);
     plot3 = $.jqplot('chart4', [s4], {
         grid: {
             background: "transparent"
@@ -124,17 +124,17 @@ function check(){
         }
     });
 }
-function   firstres() {
+function firstres() {
 
-    
-      base_res=document.getElementById("r_base").value;
-      vbe=base_res*0.02;
- 
-     ie = 2 * Math.exp((parseFloat(vbe) /0.7) - 1).toPrecision(4); //in mili ampere 
-     document.getElementById("ampe").value = parseFloat(ie).toPrecision(2);
-     document.getElementById("voltbe").value=vbe.toPrecision(4);
 
-    
+    base_res = document.getElementById("r_base").value;
+    vbe = base_res * 0.02;
+
+    ie = 2 * Math.exp((parseFloat(vbe) / 0.7) - 1).toPrecision(4); //in mili ampere 
+    document.getElementById("ampe").value = parseFloat(ie).toPrecision(2);
+    document.getElementById("voltbe").value = vbe.toPrecision(4);
+
+
 
 
 
@@ -174,23 +174,23 @@ function   firstres() {
 
     clmns = table.rows[tabrowindex + 1].cells[1];
     vlt = clmns.innerHTML;
-  
-    if (document.getElementById("ampe").value !=((document.getElementById("tbie1").value ))) {
+
+    if (document.getElementById("ampe").value != ((document.getElementById("tbie1").value))) {
         //Alert.render("Make the Emitter Current Constant");
         //document.getElementById("add").style.display = "none";
-        document.getElementById("ampe").style.borderColor="red";
-        document.getElementById("demo").innerHTML="Make the Emitter Current Constant";
+        document.getElementById("ampe").style.borderColor = "red";
+        document.getElementById("demo").innerHTML = "Make the Emitter Current Constant";
     }
 
     else if (vlt == document.getElementById("voltbc").value) {
-       // document.getElementById("add").style.display = "none";
+        // document.getElementById("add").style.display = "none";
         //Alert.render("Change the Base-Collector Voltage");
-        document.getElementById("voltbc").style.borderColor="red";
-         document.getElementById("demo").innerHTML="Change the Base-Collector Voltage";
+        document.getElementById("voltbc").style.borderColor = "red";
+        document.getElementById("demo").innerHTML = "Change the Base-Collector Voltage";
     }
-    
-//    else {
-//        document.getElementById("add").style.display = "block";
-//    }
+
+    //    else {
+    //        document.getElementById("add").style.display = "block";
+    //    }
 
 }

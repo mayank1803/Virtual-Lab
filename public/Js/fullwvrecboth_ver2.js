@@ -14,27 +14,27 @@ function posiy1chnge() {
     if (flag == 1) {
         drawsine();
     }
-    if(flag==3){
-       bthdhlfrc();
+    if (flag == 3) {
+        bthdhlfrc();
     }
-    if(flag==4){
+    if (flag == 4) {
         grndhlfrc();
     }
 }
 
 function posiy2chnge() {
     posy2 = document.getElementById("positiony2").value;
-    
+
     if (flag == 2) {
-       drawhlfrectifier();
+        drawhlfrectifier();
     }
-if(flag==3){
+    if (flag == 3) {
         bthdhlfrc();
     }
-    if(flag==4){
-       grndhlfrc();
+    if (flag == 4) {
+        grndhlfrc();
     }
-   
+
 }
 
 function posix2chnge() {
@@ -43,12 +43,12 @@ function posix2chnge() {
         drawsine();
     }
     if (flag == 2) {
-          drawhlfrectifier();;
+        drawhlfrectifier();;
     }
- if(flag==3){
+    if (flag == 3) {
         bthdhlfrc();
     }
-    if(flag==4){
+    if (flag == 4) {
         grndhlfrc();
     }
 }
@@ -59,13 +59,13 @@ function ampfng() {
         drawsine();
     }
     if (flag == 2) {
-          drawhlfrectifier();;
+        drawhlfrectifier();;
     }
 
-    if(flag==3){
+    if (flag == 3) {
         bthdhlfrc();
     }
-    if(flag==4){
+    if (flag == 4) {
         grndhlfrc();
     }
 }
@@ -76,13 +76,13 @@ function freqfng() {
         drawsine();
     }
     if (flag == 2) {
-          drawhlfrectifier();;
+        drawhlfrectifier();;
     }
 
-   if(flag==3){
+    if (flag == 3) {
         bthdhlfrc();
     }
-    if(flag==4){
+    if (flag == 4) {
         grndhlfrc();
     }
 }
@@ -99,18 +99,18 @@ function bthdhlfrc() {
     drawGrid(ctx);
     drawAxis();
     sinerectify();
-  
+
 }
 
-function sinerectify(){
-    
-      vp = document.getElementById("amp-knob-fng").value;
+function sinerectify() {
+
+    vp = document.getElementById("amp-knob-fng").value;
     frqfng = document.getElementById("fq-knob-fng").value;
     phsl = document.getElementById("positionx").value;
     posy1 = document.getElementById("positiony1").value;
-   posy2 = document.getElementById("positiony2").value;
-tmaxs= document.getElementById("fq-knob").value *10*Math.pow(10,-3);// in msec  0.001; //in sec
-//---------------------------------------------------------Sine wave-------------------------------------------------------------------------------//
+    posy2 = document.getElementById("positiony2").value;
+    tmaxs = document.getElementById("fq-knob").value * 10 * Math.pow(10, -3);// in msec  0.001; //in sec
+    //---------------------------------------------------------Sine wave-------------------------------------------------------------------------------//
 
     var x = new Array(), y = new Array();  // x,y plotting variables
     var dt, tstart, tstop;             // time variables
@@ -151,12 +151,12 @@ tmaxs= document.getElementById("fq-knob").value *10*Math.pow(10,-3);// in msec  
     }
 
     ctx.stroke();
-    
+
     //-------------------rctfy---------------//
-    
+
     var x1 = new Array(), y1 = new Array();  // x,y plotting variables
     var dt1, tstart1, tstop1;             // time variables
-  
+
     // define plot paramaters
     tstart1 = 0; //in sec
     tstop1 = tmaxs;
@@ -183,7 +183,7 @@ tmaxs= document.getElementById("fq-knob").value *10*Math.pow(10,-3);// in msec  
 
         // translate actual x,y to plot xp,yp
         xp1 = x0 + x1[j] * xscale;
-       yp1 = (y0 - Math.abs(y1[j]) * yscale + p1 - 175);
+        yp1 = (y0 - Math.abs(y1[j]) * yscale + p1 - 175);
 
         // draw line to next point
         if (j == 0)
@@ -191,10 +191,10 @@ tmaxs= document.getElementById("fq-knob").value *10*Math.pow(10,-3);// in msec  
         else
             ctx.lineTo(xp1, yp1);
     }
-   
+
     ctx.stroke();
 
-    
+
 }
 
- 
+

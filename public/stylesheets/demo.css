@@ -1,7 +1,8 @@
 .demo {
     /* for IE10+ touch devices */
-    touch-action:none;
+    touch-action: none;
 }
+
 /** JSPLUMB ARTEFACTS **/
 .jtk-overlay {
     z-index: 51;
@@ -15,6 +16,7 @@
 .jtk-connector {
     z-index: 1;
 }
+
 /** ELEMENTS **/
 .bigdot {
     cursor: pointer;
@@ -86,6 +88,7 @@
 }
 
 
-path, .jtk-endpoint {
+path,
+.jtk-endpoint {
     cursor: pointer;
 }

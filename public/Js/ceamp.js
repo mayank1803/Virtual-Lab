@@ -1,6 +1,4 @@
-/* 
 
- */
 //var vs;
 //var rs=100, rc=4000, re=1000, rl=2000;
 //var rb1=47000, rb2=10000;
@@ -90,7 +88,7 @@ function tabled() {
     rb = ((parseInt(rb1) * parseInt(rb2)) / (parseInt(rb1) + parseInt(rb2))).toPrecision(6);
     vbb = (parseInt(vcc) * parseInt(rb2) / (parseInt(rb1) + parseInt(rb2))).toPrecision(6);
     icq = (parseInt(beta) * (parseFloat(vbb) - parseFloat(vbe)) / (parseFloat(rb) + (parseInt(beta) + 1) * parseInt(re))).toPrecision(6);
-//-------Calculation of low frequency poles-----//
+    //-------Calculation of low frequency poles-----//
     rpi = ((parseInt(beta) * parseFloat(vt) / parseFloat(icq))).toPrecision(6);
     rb_rpi = (parseFloat(rpi) * parseFloat(rb) / (parseFloat(rpi) + parseFloat(rb))).toPrecision(6);
     rin = (parseInt(rs) + parseFloat(rb_rpi)).toPrecision(6);
@@ -125,19 +123,19 @@ function tabled() {
     dt += w + "<br>";
     fr += f + "<br>";
 
-//-----------------------------------------------------------------------------------------------//        
+    //-----------------------------------------------------------------------------------------------//        
 
-    var num = math.complex({re: (parseFloat(am) * parseFloat(wz) * Math.pow(parseFloat(w), 2)), im: (parseFloat(am) * Math.pow(parseFloat(w), 3))});
+    var num = math.complex({ re: (parseFloat(am) * parseFloat(wz) * Math.pow(parseFloat(w), 2)), im: (parseFloat(am) * Math.pow(parseFloat(w), 3)) });
     // alert("num"+num.re);
     // alert("numim"+num.im);
     h1 += num + "<br>";
 
-    var den = math.complex({re: ((Math.pow(w, 4) / parseFloat(wh)) - parseFloat(wl3) * Math.pow(w, 2) - parseFloat(wl2) * Math.pow(w, 2) - ((parseFloat(wl3) * parseFloat(wl2)) / parseFloat(wh)) * Math.pow(w, 2) - parseFloat(wl1) * Math.pow(w, 2) - ((parseFloat(wl3) * parseFloat(wl1)) / parseFloat(wh)) * Math.pow(w, 2) - ((parseFloat(wl1) * parseFloat(wl2)) / parseFloat(wh)) * Math.pow(w, 2) + (parseFloat(wl1) * parseFloat(wl2) * parseFloat(wl3))), im: (-Math.pow(w, 3) - (parseFloat(wl3) / parseFloat(wh)) * Math.pow(w, 3) - (parseFloat(wl2) / parseFloat(wh)) * Math.pow(w, 3) + parseFloat(wl2) * parseFloat(wl3) * parseFloat(w) - (parseFloat(wl1) / parseFloat(wh)) * Math.pow(w, 3) + parseFloat(wl3) * parseFloat(wl1) * parseFloat(w) + parseFloat(wl1) * parseFloat(w) + ((parseFloat(wl1) * parseFloat(wl2) * parseFloat(wl3)) / parseFloat(wh)) * parseFloat(w))});
+    var den = math.complex({ re: ((Math.pow(w, 4) / parseFloat(wh)) - parseFloat(wl3) * Math.pow(w, 2) - parseFloat(wl2) * Math.pow(w, 2) - ((parseFloat(wl3) * parseFloat(wl2)) / parseFloat(wh)) * Math.pow(w, 2) - parseFloat(wl1) * Math.pow(w, 2) - ((parseFloat(wl3) * parseFloat(wl1)) / parseFloat(wh)) * Math.pow(w, 2) - ((parseFloat(wl1) * parseFloat(wl2)) / parseFloat(wh)) * Math.pow(w, 2) + (parseFloat(wl1) * parseFloat(wl2) * parseFloat(wl3))), im: (-Math.pow(w, 3) - (parseFloat(wl3) / parseFloat(wh)) * Math.pow(w, 3) - (parseFloat(wl2) / parseFloat(wh)) * Math.pow(w, 3) + parseFloat(wl2) * parseFloat(wl3) * parseFloat(w) - (parseFloat(wl1) / parseFloat(wh)) * Math.pow(w, 3) + parseFloat(wl3) * parseFloat(wl1) * parseFloat(w) + parseFloat(wl1) * parseFloat(w) + ((parseFloat(wl1) * parseFloat(wl2) * parseFloat(wl3)) / parseFloat(wh)) * parseFloat(w)) });
     h2 += den + "<br>";
-//--------------------------------------------------------------complex division-----------------------------------------------//
+    //--------------------------------------------------------------complex division-----------------------------------------------//
     var real = ((num.re * den.re + num.im * den.im) / (Math.pow(den.re, 2) + Math.pow(den.im, 2))).toPrecision(5);
     var imaginary = ((num.im * den.re - num.re * den.im) / (Math.pow(den.re, 2) + Math.pow(den.im, 2))).toPrecision(5);
-    var frw = math.complex({re: parseFloat(real), im: parseFloat(imaginary)});
+    var frw = math.complex({ re: parseFloat(real), im: parseFloat(imaginary) });
     h += frw + "<br>";
     var absolute = Math.sqrt(Math.pow((parseFloat(real)), 2) + Math.pow((parseFloat(imaginary)), 2));//gain
     mag = 20 * Math.log10(parseFloat(absolute)).toPrecision(6);//gain in db
@@ -188,11 +186,11 @@ function tabled() {
     else if (document.getElementById("fqr").value == "") {
         alert("Enter the Input Frequency");
         document.getElementById("fqr").style.borderColor = "red";
-//        document.getElementById("demo").innerHTML = "Enter the Input Voltage";
+        //        document.getElementById("demo").innerHTML = "Enter the Input Voltage";
     }
 
     else if (Math.round(frqncy) == Math.round(f)) {
-//document.getElementById("demo").innerHTML = "Change the Frequency";
+        //document.getElementById("demo").innerHTML = "Change the Frequency";
         alert("Change the Frequency");
         document.getElementById("fqr").style.borderColor = "red";
     }
@@ -216,8 +214,9 @@ function tabled() {
 $(document).ready(function () {
     $("#plt").click(function () {
         $('html,body').animate({
-            scrollTop: $("#grpwrap").offset().top},
-        'slow');
+            scrollTop: $("#grpwrap").offset().top
+        },
+            'slow');
     });
 
 });
@@ -226,7 +225,7 @@ function plot() {
 
     for (var tabrowindex = 1; tabrowindex < table.rows.length; tabrowindex++) {
         var rwe1 = table.rows[tabrowindex].cells;
-        dataPoints.push({x: parseFloat(rwe1[1].innerHTML), y: parseFloat(rwe1[2].innerHTML)});
+        dataPoints.push({ x: parseFloat(rwe1[1].innerHTML), y: parseFloat(rwe1[2].innerHTML) });
     }
 
 
@@ -276,14 +275,14 @@ function addSymbols(e) {
 }
 //---------------------------------------------- clearing----------------------------------------------------------//
 function cleard() {
-//-------------------------table clearing-------------------------------//
+    //-------------------------table clearing-------------------------------//
     var rowCount = mytable.rows.length;
     for (var j = rowCount - 1; j > 0; j--) {
         mytable.deleteRow(j);
     }
     tabrowindex = 0;
     dataPoints = [];
-//--------------------------text box clearing---------------------------//
+    //--------------------------text box clearing---------------------------//
     document.getElementById("fqr").value = "";
     document.getElementById("bypscapt").value = "";
     document.getElementById("cplcp2t").value = "";

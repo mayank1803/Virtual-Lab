@@ -1,23 +1,23 @@
 var express = require('express')
 var router = express.Router()
-var experiments = ["1. VI Characteristics of a Diode","2. BJT Common Emitter Input Characteristics**","3. BJT Common Emitter Output Characteristics**","4. BJT Common Base Input Characteristics**",
-"5. BJT Common Base Output Characteristics**","6. Half Wave Rectification","7. Full Wave Rectification ","8. RC Low Pass Filter","9.RC High Pass Filter","10. RC Phase Shift Oscillator","11.CE Amplifier Frequency Response"]
+var experiments = ["1. VI Characteristics of a Diode", "2. BJT Common Emitter Input Characteristics**", "3. BJT Common Emitter Output Characteristics**", "4. BJT Common Base Input Characteristics**",
+    "5. BJT Common Base Output Characteristics**", "6. Half Wave Rectification", "7. Full Wave Rectification ", "8. RC Low Pass Filter", "9.RC High Pass Filter", "10. RC Phase Shift Oscillator", "11.CE Amplifier Frequency Response"]
 
-router.get("/experiment",  function (req, res) {
+router.get("/experiment", function (req, res) {
 
     res.render("experimentmenu", { experiments: experiments });
 });
-router.get("/home",  function (req, res) {
+router.get("/home", function (req, res) {
 
     res.render("home");
 });
-router.get("/index/:number",  function (req, res) {
+router.get("/index/:number", function (req, res) {
     var experimentnumber = req.params.number;
     res.render("experimentindex", { experimentnumber: experimentnumber });
 });
 
 // Experiments 
-router.get("/theory1",  function (req, res) {
+router.get("/theory1", function (req, res) {
     res.render("experiments/experiment1/theory");
 });
 
@@ -53,30 +53,30 @@ router.get("/procedure3", function (req, res) {
 router.get("/simulation3", function (req, res) {
     res.render("experiments/experiment3/simulation");
 });
-router.get("/theory4",  function (req, res) {
+router.get("/theory4", function (req, res) {
     res.render("experiments/experiment4/theory");
 });
 
-router.get("/procedure4",function (req, res) {
+router.get("/procedure4", function (req, res) {
     res.render("experiments/experiment4/procedure");
 });
 
-router.get("/simulation4",function (req, res) {
+router.get("/simulation4", function (req, res) {
     res.render("experiments/experiment4/simulation");
-    
+
 });
 router.get("/circuitmaking6", function (req, res) {
     res.render("experiments/experiment6/circuitmaking");
 });
-router.get("/theory5",  function (req, res) {
+router.get("/theory5", function (req, res) {
     res.render("experiments/experiment5/theory");
 });
 
-router.get("/procedure5",function (req, res) {
+router.get("/procedure5", function (req, res) {
     res.render("experiments/experiment5/procedure");
 });
 
-router.get("/simulation5",function (req, res) {
+router.get("/simulation5", function (req, res) {
     res.render("experiments/experiment5/simulation");
 });
 router.get("/circuitmaking7", function (req, res) {
@@ -86,7 +86,7 @@ router.get("/theory6", function (req, res) {
     res.render("experiments/experiment6/theory");
 });
 
-router.get("/procedure6",  function (req, res) {
+router.get("/procedure6", function (req, res) {
     res.render("experiments/experiment6/procedure");
 });
 
