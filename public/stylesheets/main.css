@@ -16,124 +16,111 @@
   min-height: 100vh;
 } */
 
+/* Base Footer Styles */
 .footer {
-    position: relative;
-    width: 100%;
-    background: #3586ff;
-    min-height: 70px;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background-color: #222; /* Background color of the footer */
+  padding: 20px 0;
+  text-align: center;
+  color: white;
 }
 
-.social-icon,
-.menu {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 25px 0;
-    flex-wrap: wrap;
+/* Waves Container */
+.waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
 }
 
-.social-icon__item,
-.menu__item {
-    list-style: none;
+/* Individual Waves */
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 200%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0.3;
+  transform: rotate(180deg);
+  animation: wave-animation 6s linear infinite;
+}
+
+#wave1 {
+  animation-delay: -2s;
+  background: linear-gradient(to bottom, rgba(0, 136, 255, 0.5), rgba(255, 255, 255, 0.5));
+}
+
+#wave2 {
+  animation-delay: -4s;
+  background: linear-gradient(to bottom, rgba(0, 128, 128, 0.5), rgba(255, 255, 255, 0.5));
+}
+
+#wave3 {
+  animation-delay: -6s;
+  background: linear-gradient(to bottom, rgba(255, 165, 0, 0.5), rgba(255, 255, 255, 0.5));
+}
+
+#wave4 {
+  animation-delay: -8s;
+  background: linear-gradient(to bottom, rgba(0, 102, 204, 0.5), rgba(255, 255, 255, 0.5));
+}
+
+/* Animation for Waves */
+@keyframes wave-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Social Icons */
+.social-icon {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icon__item {
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .social-icon__link {
-    font-size: 2rem;
-    color: #fff;
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
 }
 
 .social-icon__link:hover {
-    transform: translateY(-10px);
+  color: #00aced; /* Hover color for social icons */
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.menu__item {
+  display: inline-block;
+  margin: 0 10px;
 }
 
 .menu__link {
-    font-size: 1.2rem;
-    color: #fff;
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
-    text-decoration: none;
-    opacity: 0.75;
-    font-weight: 300;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .menu__link:hover {
-    opacity: 1;
+  color: #ff6600; /* Hover color for menu links */
 }
 
-.footer p {
-    color: #fff;
-    margin: 15px 0 10px 0;
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-.wave {
-    position: absolute;
-    top: -60px;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: url("https://img.freepik.com/premium-vector/wave-background-website_688032-63.jpg?w=2000");
-    background-size: 1000px 100px;
-}
-
-.wave#wave1 {
-    z-index: 1000;
-    opacity: 1;
-    bottom: 0;
-    animation: animateWaves 4s linear infinite;
-}
-
-.wave#wave2 {
-    z-index: 999;
-    opacity: 0.5;
-    bottom: 10px;
-    animation: animate 4s linear infinite !important;
-}
-
-.wave#wave3 {
-    z-index: 1000;
-    opacity: 0.2;
-    bottom: 15px;
-    animation: animateWaves 3s linear infinite;
-}
-
-.wave#wave4 {
-    z-index: 999;
-    opacity: 0.7;
-    bottom: 20px;
-    animation: animate 3s linear infinite;
-}
-
-@keyframes animateWaves {
-    0% {
-        background-position-x: 1000px;
-    }
-
-    100% {
-        background-positon-x: 0px;
-    }
-}
-
-@keyframes animate {
-    0% {
-        background-position-x: -1000px;
-    }
-
-    100% {
-        background-positon-x: 0px;
-    }
-}
 
 html {
     font-family: sans-serif;
